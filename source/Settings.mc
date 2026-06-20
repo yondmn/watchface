@@ -6,15 +6,10 @@ module Settings {
     const BACKGROUND_COLOR = Graphics.COLOR_BLACK;
     const PRIMARY_COLOR = Graphics.COLOR_WHITE;
     const SECONDARY_COLOR = Graphics.COLOR_LT_GRAY;
-    const MUTED_COLOR = Graphics.COLOR_DK_GRAY;
-    const ACCENT_ORANGE = 0xFF8C1A;
-    const HEART_RED = 0xFF2A2A;
-    const STEPS_GREEN = 0x7FD43B;
-    const WEATHER_YELLOW = 0xFFC21A;
-    const WEATHER_CLOUD = 0xF2F2F2;
-    const BATTERY_GREEN = 0x7FD43B;
-
     const TOP_FONT = Graphics.FONT_MEDIUM;
+    const TIME_FONT = Graphics.FONT_NUMBER_THAI_HOT;
+    const TIME_FALLBACK_FONT = Graphics.FONT_NUMBER_HOT;
+    const TIME_COMPACT_FONT = Graphics.FONT_NUMBER_MEDIUM;
     const SECONDS_FONT = Graphics.FONT_TINY;
     const METRIC_FONT = Graphics.FONT_SMALL;
 
@@ -26,17 +21,12 @@ module Settings {
     const SCREEN_SIZE = 280;
     const CENTER_X = 140;
     const CENTER_Y = 140;
-    const DATE_Y = 58;
-    const DATE_SIDE_GAP = 52;
-    const DATE_RULE_Y = 58;
-    const TIME_Y = 120;
+    const DATE_Y = 38;
+    const TIME_Y = 104;
+    const TIME_MAX_WIDTH = 128;
     const SECONDS_GAP = 8;
-    const METRIC_Y = 184;
-    const METRIC_VALUE_Y_OFFSET = 31;
-    const METRIC_ICON_Y_OFFSET = 0;
-    const METRIC_SEPARATOR_TOP = 175;
-    const METRIC_SEPARATOR_BOTTOM = 220;
-    const METRIC_RULE_Y = 230;
+    const METRIC_Y = 194;
+    const METRIC_ICON_GAP = 3;
     const COLUMN_1_X = 50;
     const COLUMN_2_X = 110;
     const COLUMN_3_X = 170;
