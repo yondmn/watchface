@@ -18,15 +18,15 @@ module Settings {
     const GRID_LINE = 0x3A3A3A;
 
     const TOP_META_FONT = Graphics.FONT_TINY;
-    const DATE_FONT = Graphics.FONT_MEDIUM;
+    const DATE_FONT = Graphics.FONT_SMALL;
     const TIME_FONT = Graphics.FONT_NUMBER_THAI_HOT;
     const TIME_FALLBACK_FONT = Graphics.FONT_NUMBER_HOT;
     const TIME_COMPACT_FONT = Graphics.FONT_NUMBER_MEDIUM;
-    const SECONDS_FONT = Graphics.FONT_SMALL;
-    const METRIC_FONT = Graphics.FONT_MEDIUM;
+    const SECONDS_FONT = Graphics.FONT_TINY;
+    const METRIC_FONT = Graphics.FONT_SMALL;
     const BODY_LABEL_FONT = Graphics.FONT_TINY;
     const BODY_VALUE_FONT = Graphics.FONT_NUMBER_MEDIUM;
-    const BOTTOM_FONT = Graphics.FONT_SMALL;
+    const BOTTOM_FONT = Graphics.FONT_TINY;
 
     const ICON_HEART = 0;
     const ICON_STEPS = 1;
@@ -38,19 +38,19 @@ module Settings {
     const CENTER_Y = 140;
 
     // Top area
-    const MOVE_Y = 24;
-    const ALTITUDE_Y = 45;
-    const DATE_Y = 70;
+    const MOVE_Y = 22;
+    const ALTITUDE_Y = 42;
+    const DATE_Y = 66;
 
     // Main time
-    const TIME_Y = 114;
-    const TIME_MAX_WIDTH = 235;
-    const SECONDS_X_GAP = 6;
-    const SECONDS_Y_OFFSET = 24;
+    const TIME_Y = 112;
+    const TIME_MAX_WIDTH = 212;
+    const SECONDS_X = 238;
+    const SECONDS_Y = 126;
 
     // Metrics
-    const METRIC_ICON_Y = 166;
-    const METRIC_VALUE_Y = 195;
+    const METRIC_ICON_Y = 164;
+    const METRIC_VALUE_Y = 190;
     const METRIC_SEPARATOR_TOP = 158;
     const METRIC_SEPARATOR_BOTTOM = 205;
     const COLUMN_1_X = 45;
@@ -59,10 +59,10 @@ module Settings {
     const COLUMN_4_X = 235;
 
     // Body Battery
-    const BODY_RULE_Y = 216;
-    const BODY_LABEL_Y = 228;
-    const BODY_VALUE_Y = 246;
-    const BODY_BLOCK_Y = 263;
+    const BODY_RULE_Y = 213;
+    const BODY_LABEL_Y = 224;
+    const BODY_VALUE_Y = 244;
+    const BODY_BLOCK_Y = 264;
 
     // Temporary placeholders for V2 visual restoration.
     // Later we can wire these to real Garmin APIs.

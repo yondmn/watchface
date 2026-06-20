@@ -17,22 +17,24 @@ class Renderer {
         drawTime(dc, data);
         drawMetrics(dc, data);
         drawBodyBattery(dc);
-        drawBottomDistance(dc);
+
+        // 暂时不画底部距离，280x280 空间不够。
+        // 后续等主体稳定后再恢复。
+        // drawBottomDistance(dc);
     }
 
     function drawOuterRings(dc as Dc) as Void {
-        // These are visual placeholders for the reference-style segmented rings.
-        // Later we can bind each ring to real data.
-        drawSegmentRange(dc, 310, 360, 118, 123, 4, Settings.ORANGE);
-        drawSegmentRange(dc, 0, 58, 118, 123, 4, Settings.ORANGE);
+        // Rings are pushed near the bezel to avoid crossing the content area.
+        drawSegmentRange(dc, 314, 358, 130, 136, 4, Settings.ORANGE);
+        drawSegmentRange(dc, 2, 54, 130, 136, 4, Settings.ORANGE);
 
-        drawSegmentRange(dc, 78, 148, 118, 123, 4, Settings.BLUE);
-        drawSegmentRange(dc, 205, 280, 118, 123, 4, Settings.GREEN);
+        drawSegmentRange(dc, 82, 145, 130, 136, 4, Settings.BLUE);
+        drawSegmentRange(dc, 210, 278, 130, 136, 4, Settings.GREEN);
 
-        // muted guide arcs
-        drawSegmentRange(dc, 60, 76, 118, 123, 8, Settings.DARK_RING);
-        drawSegmentRange(dc, 150, 200, 118, 123, 8, Settings.DARK_RING);
-        drawSegmentRange(dc, 282, 308, 118, 123, 8, Settings.DARK_RING);
+        // Muted guide arcs.
+        drawSegmentRange(dc, 58, 78, 130, 136, 8, Settings.DARK_RING);
+        drawSegmentRange(dc, 148, 205, 130, 136, 8, Settings.DARK_RING);
+        drawSegmentRange(dc, 282, 310, 130, 136, 8, Settings.DARK_RING);
     }
 
     function drawSegmentRange(dc as Dc, startDeg as Number, endDeg as Number, innerR as Number, outerR as Number, step as Number, color as ColorType) as Void {
@@ -100,8 +102,8 @@ class Renderer {
 
         dc.setColor(Settings.GRID_LINE, Settings.BACKGROUND_COLOR);
         dc.setPenWidth(1);
-        dc.drawLine(40, Settings.DATE_Y, 82, Settings.DATE_Y);
-        dc.drawLine(198, Settings.DATE_Y, 240, Settings.DATE_Y);
+        dc.drawLine(42, Settings.DATE_Y, 82, Settings.DATE_Y);
+        dc.drawLine(198, Settings.DATE_Y, 238, Settings.DATE_Y);
 
         drawCenteredText(dc, text, Settings.CENTER_X, Settings.DATE_Y, Settings.DATE_FONT, Settings.SECONDARY_COLOR);
     }
@@ -116,15 +118,14 @@ class Renderer {
         );
 
         var timeFont = getTimeFont(dc, timeText);
-        var timeWidth = dc.getTextWidthInPixels(timeText, timeFont);
         var secondsText = formatNumber(data.second, 2);
 
         drawCenteredText(dc, timeText, Settings.CENTER_X, Settings.TIME_Y, timeFont, Settings.PRIMARY_COLOR);
 
         dc.setColor(Settings.SECONDARY_COLOR, Settings.BACKGROUND_COLOR);
         dc.drawText(
-            Settings.CENTER_X + (timeWidth / 2) + Settings.SECONDS_X_GAP,
-            Settings.TIME_Y + Settings.SECONDS_Y_OFFSET,
+            Settings.SECONDS_X,
+            Settings.SECONDS_Y,
             Settings.SECONDS_FONT,
             secondsText,
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
@@ -171,47 +172,49 @@ class Renderer {
     function drawHeartIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
         dc.setColor(color, Settings.BACKGROUND_COLOR);
         dc.fillPolygon([
-            [x, y + 12],
-            [x - 13, y],
-            [x - 11, y - 8],
-            [x - 5, y - 11],
-            [x, y - 6],
-            [x + 5, y - 11],
-            [x + 11, y - 8],
-            [x + 13, y]
+            [x, y + 11],
+            [x - 12, y],
+            [x - 10, y - 7],
+            [x - 5, y - 10],
+            [x, y - 5],
+            [x + 5, y - 10],
+            [x + 10, y - 7],
+            [x + 12, y]
         ]);
     }
 
     function drawStepsIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
         dc.setColor(color, Settings.BACKGROUND_COLOR);
 
-        // left foot
-        dc.fillCircle(x - 7, y + 3, 5);
-        dc.fillCircle(x - 10, y - 6, 2);
-        dc.fillCircle(x - 6, y - 8, 2);
+        // Left foot
+        dc.fillCircle(x - 7, y + 3, 4);
+        dc.fillCircle(x - 10, y - 5, 2);
+        dc.fillCircle(x - 6, y - 7, 2);
 
-        // right foot
-        dc.fillCircle(x + 7, y - 1, 5);
-        dc.fillCircle(x + 4, y - 10, 2);
-        dc.fillCircle(x + 9, y - 10, 2);
+        // Right foot
+        dc.fillCircle(x + 7, y - 1, 4);
+        dc.fillCircle(x + 4, y - 9, 2);
+        dc.fillCircle(x + 9, y - 9, 2);
     }
 
     function drawWeatherIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
         dc.setColor(color, Settings.BACKGROUND_COLOR);
         dc.setPenWidth(2);
-        dc.fillCircle(x - 3, y - 4, 6);
 
-        dc.drawLine(x - 3, y - 16, x - 3, y - 12);
-        dc.drawLine(x - 15, y - 4, x - 11, y - 4);
-        dc.drawLine(x + 5, y - 4, x + 10, y - 4);
-        dc.drawLine(x - 11, y - 12, x - 8, y - 9);
-        dc.drawLine(x + 2, y - 9, x + 5, y - 12);
+        // Sun
+        dc.fillCircle(x - 3, y - 4, 5);
+        dc.drawLine(x - 3, y - 15, x - 3, y - 12);
+        dc.drawLine(x - 14, y - 4, x - 11, y - 4);
+        dc.drawLine(x + 4, y - 4, x + 8, y - 4);
+        dc.drawLine(x - 10, y - 11, x - 8, y - 9);
+        dc.drawLine(x + 2, y - 9, x + 4, y - 11);
 
+        // Cloud
         dc.setColor(Settings.CLOUD, Settings.BACKGROUND_COLOR);
-        dc.fillCircle(x - 8, y + 6, 5);
-        dc.fillCircle(x, y + 4, 7);
-        dc.fillCircle(x + 8, y + 6, 5);
-        dc.fillRectangle(x - 13, y + 6, 26, 6);
+        dc.fillCircle(x - 8, y + 5, 4);
+        dc.fillCircle(x, y + 3, 6);
+        dc.fillCircle(x + 8, y + 5, 4);
+        dc.fillRectangle(x - 12, y + 5, 24, 5);
 
         dc.setPenWidth(1);
     }
@@ -220,14 +223,14 @@ class Renderer {
         dc.setColor(Settings.PRIMARY_COLOR, Settings.BACKGROUND_COLOR);
         dc.setPenWidth(2);
 
-        dc.drawLine(x - 15, y - 8, x + 10, y - 8);
-        dc.drawLine(x - 15, y + 8, x + 10, y + 8);
-        dc.drawLine(x - 15, y - 8, x - 15, y + 8);
-        dc.drawLine(x + 10, y - 8, x + 10, y + 8);
-        dc.drawLine(x + 14, y - 3, x + 14, y + 3);
+        dc.drawLine(x - 13, y - 7, x + 9, y - 7);
+        dc.drawLine(x - 13, y + 7, x + 9, y + 7);
+        dc.drawLine(x - 13, y - 7, x - 13, y + 7);
+        dc.drawLine(x + 9, y - 7, x + 9, y + 7);
+        dc.drawLine(x + 13, y - 3, x + 13, y + 3);
 
         dc.setColor(color, Settings.BACKGROUND_COLOR);
-        dc.fillRectangle(x - 11, y - 5, 15, 10);
+        dc.fillRectangle(x - 10, y - 4, 14, 8);
 
         dc.setPenWidth(1);
     }
@@ -235,7 +238,7 @@ class Renderer {
     function drawBodyBattery(dc as Dc) as Void {
         dc.setColor(Settings.GRID_LINE, Settings.BACKGROUND_COLOR);
         dc.setPenWidth(1);
-        dc.drawLine(42, Settings.BODY_RULE_Y, 238, Settings.BODY_RULE_Y);
+        dc.drawLine(52, Settings.BODY_RULE_Y, 228, Settings.BODY_RULE_Y);
 
         drawCenteredText(dc, "BODY BATTERY", Settings.CENTER_X, Settings.BODY_LABEL_Y, Settings.BODY_LABEL_FONT, Settings.BLUE);
 
@@ -243,7 +246,7 @@ class Renderer {
 
         dc.setColor(Settings.PRIMARY_COLOR, Settings.BACKGROUND_COLOR);
         dc.drawText(
-            Settings.CENTER_X - 9,
+            Settings.CENTER_X - 8,
             Settings.BODY_VALUE_Y,
             Settings.BODY_VALUE_FONT,
             valueText,
@@ -252,8 +255,8 @@ class Renderer {
 
         dc.setColor(Settings.MUTED_COLOR, Settings.BACKGROUND_COLOR);
         dc.drawText(
-            Settings.CENTER_X - 2,
-            Settings.BODY_VALUE_Y,
+            Settings.CENTER_X - 1,
+            Settings.BODY_VALUE_Y + 2,
             Settings.METRIC_FONT,
             "/100",
             Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
@@ -264,8 +267,8 @@ class Renderer {
 
     function drawBodyBlocks(dc as Dc, centerX as Number, y as Number, value as Number) as Void {
         var blockCount = 10;
-        var blockWidth = 10;
-        var blockGap = 4;
+        var blockWidth = 9;
+        var blockGap = 3;
         var totalWidth = (blockCount * blockWidth) + ((blockCount - 1) * blockGap);
         var startX = centerX - (totalWidth / 2);
         var filledBlocks = (value * blockCount) / 100;
