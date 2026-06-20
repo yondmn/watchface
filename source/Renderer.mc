@@ -38,50 +38,35 @@ class Renderer {
         );
         var timeFont = getTimeFont(dc, timeText);
         var timeWidth = dc.getTextWidthInPixels(timeText, timeFont);
-        var timeHeight = dc.getFontHeight(timeFont);
         var secondsText = formatNumber(data.second, 2);
 
         drawCenteredText(dc, timeText, Settings.CENTER_X, Settings.TIME_Y, timeFont, Settings.PRIMARY_COLOR);
 
         dc.setColor(Settings.SECONDARY_COLOR, Settings.BACKGROUND_COLOR);
         dc.drawText(
-            Settings.CENTER_X + (timeWidth / 2) + Settings.SECONDS_GAP,
-            Settings.TIME_Y + (timeHeight / 4),
+            Settings.CENTER_X + (timeWidth / 2) + Settings.SECONDS_X_GAP,
+            Settings.SECONDS_Y,
             Settings.SECONDS_FONT,
             secondsText,
-            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+            Graphics.TEXT_JUSTIFY_LEFT
         );
     }
 
     function drawMetrics(dc as Dc, data as WatchFaceData) as Void {
-        drawMetric(dc, Settings.COLUMN_1_X, Settings.METRIC_Y, Settings.ICON_HEART, formatValue(data.heartRate, "--"));
-        drawMetric(dc, Settings.COLUMN_2_X, Settings.METRIC_Y, Settings.ICON_STEPS, compactNumber(data.steps));
-        drawMetric(dc, Settings.COLUMN_3_X, Settings.METRIC_Y, Settings.ICON_TEMP, formatWeather(data.temperature));
-        drawMetric(dc, Settings.COLUMN_4_X, Settings.METRIC_Y, Settings.ICON_BATTERY, formatBattery(data.batteryPercent));
+        drawMetric(dc, Settings.COLUMN_1_X, Settings.ICON_HEART, formatValue(data.heartRate, "--"));
+        drawMetric(dc, Settings.COLUMN_2_X, Settings.ICON_STEPS, compactNumber(data.steps));
+        drawMetric(dc, Settings.COLUMN_3_X, Settings.ICON_TEMP, formatWeather(data.temperature));
+        drawMetric(dc, Settings.COLUMN_4_X, Settings.ICON_BATTERY, formatBattery(data.batteryPercent));
     }
 
-    function drawMetric(dc as Dc, x as Number, y as Number, icon as Number, value as String) as Void {
-        var valueWidth = dc.getTextWidthInPixels(value, Settings.METRIC_FONT);
-        var iconWidth = 18;
-        var groupWidth = valueWidth + iconWidth + Settings.METRIC_ICON_GAP;
-        var iconX = x - (groupWidth / 2) + 9;
-        var textX = iconX + 14 + Settings.METRIC_ICON_GAP;
-
-        drawMetricIcon(dc, icon, iconX, y);
-
-        dc.setColor(Settings.PRIMARY_COLOR, Settings.BACKGROUND_COLOR);
-        dc.drawText(
-            textX,
-            y,
-            Settings.METRIC_FONT,
-            value,
-            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
-        );
+    function drawMetric(dc as Dc, x as Number, icon as Number, value as String) as Void {
+        drawMetricIcon(dc, icon, x, Settings.METRIC_ICON_Y);
+        drawCenteredText(dc, value, x, Settings.METRIC_VALUE_Y, Settings.METRIC_FONT, Settings.PRIMARY_COLOR);
     }
 
     function drawMetricIcon(dc as Dc, icon as Number, x as Numeric, y as Numeric) as Void {
         dc.setColor(Settings.PRIMARY_COLOR, Settings.BACKGROUND_COLOR);
-        dc.setPenWidth(2);
+        dc.setPenWidth(1);
 
         switch (icon) {
             case Settings.ICON_HEART:
@@ -102,28 +87,23 @@ class Renderer {
     }
 
     function drawHeartIcon(dc as Dc, x as Numeric, y as Numeric) as Void {
-        dc.drawLine(x, y + 7, x - 7, y);
-        dc.drawLine(x - 7, y, x - 7, y - 4);
-        dc.drawLine(x - 7, y - 4, x - 4, y - 6);
-        dc.drawLine(x - 4, y - 6, x, y - 3);
-        dc.drawLine(x, y - 3, x + 4, y - 6);
-        dc.drawLine(x + 4, y - 6, x + 7, y - 4);
-        dc.drawLine(x + 7, y - 4, x + 7, y);
-        dc.drawLine(x + 7, y, x, y + 7);
+        dc.fillPolygon([
+            [x, y + 7],
+            [x - 8, y],
+            [x - 6, y - 6],
+            [x, y - 3],
+            [x + 6, y - 6],
+            [x + 8, y]
+        ]);
     }
 
     function drawStepsIcon(dc as Dc, x as Numeric, y as Numeric) as Void {
-        dc.drawCircle(x - 4, y - 9, 1);
-        dc.drawCircle(x, y - 10, 1);
-        dc.drawCircle(x + 4, y - 8, 1);
-        dc.drawLine(x - 5, y + 6, x - 7, y);
-        dc.drawLine(x - 7, y, x - 5, y - 5);
-        dc.drawLine(x - 5, y - 5, x, y - 6);
-        dc.drawLine(x, y - 6, x + 5, y - 3);
-        dc.drawLine(x + 5, y - 3, x + 6, y + 2);
-        dc.drawLine(x + 6, y + 2, x + 3, y + 7);
-        dc.drawLine(x + 3, y + 7, x - 2, y + 7);
-        dc.drawLine(x - 2, y + 7, x - 5, y + 6);
+        dc.fillCircle(x - 5, y + 2, 3);
+        dc.fillCircle(x - 6, y - 4, 2);
+        dc.fillCircle(x - 3, y - 5, 2);
+        dc.fillCircle(x + 5, y - 1, 3);
+        dc.fillCircle(x + 4, y - 7, 2);
+        dc.fillCircle(x + 7, y - 8, 2);
     }
 
     function drawSunIcon(dc as Dc, x as Numeric, y as Numeric) as Void {

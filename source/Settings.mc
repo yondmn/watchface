@@ -10,8 +10,8 @@ module Settings {
     const TIME_FONT = Graphics.FONT_NUMBER_THAI_HOT;
     const TIME_FALLBACK_FONT = Graphics.FONT_NUMBER_HOT;
     const TIME_COMPACT_FONT = Graphics.FONT_NUMBER_MEDIUM;
-    const SECONDS_FONT = Graphics.FONT_TINY;
-    const METRIC_FONT = Graphics.FONT_SMALL;
+    const SECONDS_FONT = Graphics.FONT_SMALL;
+    const METRIC_FONT = Graphics.FONT_MEDIUM;
 
     const ICON_HEART = 0;
     const ICON_STEPS = 1;
@@ -21,16 +21,17 @@ module Settings {
     const SCREEN_SIZE = 280;
     const CENTER_X = 140;
     const CENTER_Y = 140;
-    const DATE_Y = 38;
-    const TIME_Y = 104;
-    const TIME_MAX_WIDTH = 128;
-    const SECONDS_GAP = 8;
-    const METRIC_Y = 194;
-    const METRIC_ICON_GAP = 3;
-    const COLUMN_1_X = 50;
-    const COLUMN_2_X = 110;
-    const COLUMN_3_X = 170;
-    const COLUMN_4_X = 230;
+    const DATE_Y = 48;
+    const TIME_Y = 115;
+    const TIME_MAX_WIDTH = 190;
+    const SECONDS_X_GAP = 6;
+    const SECONDS_Y = 135;
+    const METRIC_ICON_Y = 178;
+    const METRIC_VALUE_Y = 205;
+    const COLUMN_1_X = 45;
+    const COLUMN_2_X = 108;
+    const COLUMN_3_X = 172;
+    const COLUMN_4_X = 235;
     const COLUMN_WIDTH = 50;
 
     function dayName(dayOfWeek as Object) as String {
