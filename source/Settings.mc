@@ -6,12 +6,27 @@ module Settings {
     const BACKGROUND_COLOR = Graphics.COLOR_BLACK;
     const PRIMARY_COLOR = Graphics.COLOR_WHITE;
     const SECONDARY_COLOR = Graphics.COLOR_LT_GRAY;
-    const TOP_FONT = Graphics.FONT_MEDIUM;
+    const MUTED_COLOR = Graphics.COLOR_DK_GRAY;
+
+    const ORANGE = 0xFF8C1A;
+    const GREEN = 0x7FD43B;
+    const BLUE = 0x21A8FF;
+    const RED = 0xFF2A2A;
+    const YELLOW = 0xFFC21A;
+    const CLOUD = 0xF2F2F2;
+    const DARK_RING = 0x323232;
+    const GRID_LINE = 0x3A3A3A;
+
+    const TOP_META_FONT = Graphics.FONT_TINY;
+    const DATE_FONT = Graphics.FONT_MEDIUM;
     const TIME_FONT = Graphics.FONT_NUMBER_THAI_HOT;
     const TIME_FALLBACK_FONT = Graphics.FONT_NUMBER_HOT;
     const TIME_COMPACT_FONT = Graphics.FONT_NUMBER_MEDIUM;
     const SECONDS_FONT = Graphics.FONT_SMALL;
     const METRIC_FONT = Graphics.FONT_MEDIUM;
+    const BODY_LABEL_FONT = Graphics.FONT_TINY;
+    const BODY_VALUE_FONT = Graphics.FONT_NUMBER_MEDIUM;
+    const BOTTOM_FONT = Graphics.FONT_SMALL;
 
     const ICON_HEART = 0;
     const ICON_STEPS = 1;
@@ -21,18 +36,40 @@ module Settings {
     const SCREEN_SIZE = 280;
     const CENTER_X = 140;
     const CENTER_Y = 140;
-    const DATE_Y = 48;
-    const TIME_Y = 115;
-    const TIME_MAX_WIDTH = 190;
+
+    // Top area
+    const MOVE_Y = 24;
+    const ALTITUDE_Y = 45;
+    const DATE_Y = 70;
+
+    // Main time
+    const TIME_Y = 114;
+    const TIME_MAX_WIDTH = 235;
     const SECONDS_X_GAP = 6;
-    const SECONDS_Y = 135;
-    const METRIC_ICON_Y = 178;
-    const METRIC_VALUE_Y = 205;
+    const SECONDS_Y_OFFSET = 24;
+
+    // Metrics
+    const METRIC_ICON_Y = 166;
+    const METRIC_VALUE_Y = 195;
+    const METRIC_SEPARATOR_TOP = 158;
+    const METRIC_SEPARATOR_BOTTOM = 205;
     const COLUMN_1_X = 45;
     const COLUMN_2_X = 108;
     const COLUMN_3_X = 172;
     const COLUMN_4_X = 235;
-    const COLUMN_WIDTH = 50;
+
+    // Body Battery
+    const BODY_RULE_Y = 216;
+    const BODY_LABEL_Y = 228;
+    const BODY_VALUE_Y = 246;
+    const BODY_BLOCK_Y = 263;
+
+    // Temporary placeholders for V2 visual restoration.
+    // Later we can wire these to real Garmin APIs.
+    const MOVE_VALUE = 78;
+    const ALTITUDE_VALUE = 1258;
+    const BODY_BATTERY_VALUE = 82;
+    const DISTANCE_TEXT = "10.4 km";
 
     function dayName(dayOfWeek as Object) as String {
         if (dayOfWeek instanceof Number) {

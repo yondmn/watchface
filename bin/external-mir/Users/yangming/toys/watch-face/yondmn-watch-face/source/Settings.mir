@@ -25,41 +25,71 @@ module Settings {
         %tmp.6 = getv %tmp.5 :COLOR_LT_GRAY;
         putv self :SECONDARY_COLOR %tmp.6;
 [ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 9 10 ]
-        symbol [ Graphics %tmp.7 9 21 29 ];
+        symbol [ Graphics %tmp.7 9 24 32 ];
         %tmp.7 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.8 9 30 41 ];
-        %tmp.8 = getv %tmp.7 :FONT_MEDIUM;
-        putv self :TOP_FONT %tmp.8;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 10 10 ]
-        symbol [ Graphics %tmp.9 10 22 30 ];
+        symbol [ COLOR_DK_GRAY %tmp.8 9 33 46 ];
+        %tmp.8 = getv %tmp.7 :COLOR_DK_GRAY;
+        putv self :MUTED_COLOR %tmp.8;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 20 10 ]
+        symbol [ Graphics %tmp.9 20 26 34 ];
         %tmp.9 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_THAI_HOT %tmp.10 10 31 51 ];
-        %tmp.10 = getv %tmp.9 :FONT_NUMBER_THAI_HOT;
-        putv self :TIME_FONT %tmp.10;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 11 10 ]
-        symbol [ Graphics %tmp.11 11 31 39 ];
+        symbol [ FONT_TINY %tmp.10 20 35 44 ];
+        %tmp.10 = getv %tmp.9 :FONT_TINY;
+        putv self :TOP_META_FONT %tmp.10;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 21 10 ]
+        symbol [ Graphics %tmp.11 21 22 30 ];
         %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.12 11 40 55 ];
-        %tmp.12 = getv %tmp.11 :FONT_NUMBER_HOT;
-        putv self :TIME_FALLBACK_FONT %tmp.12;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 12 10 ]
-        symbol [ Graphics %tmp.13 12 30 38 ];
+        symbol [ FONT_MEDIUM %tmp.12 21 31 42 ];
+        %tmp.12 = getv %tmp.11 :FONT_MEDIUM;
+        putv self :DATE_FONT %tmp.12;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 22 10 ]
+        symbol [ Graphics %tmp.13 22 22 30 ];
         %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.14 12 39 57 ];
-        %tmp.14 = getv %tmp.13 :FONT_NUMBER_MEDIUM;
-        putv self :TIME_COMPACT_FONT %tmp.14;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 13 10 ]
-        symbol [ Graphics %tmp.15 13 25 33 ];
+        symbol [ FONT_NUMBER_THAI_HOT %tmp.14 22 31 51 ];
+        %tmp.14 = getv %tmp.13 :FONT_NUMBER_THAI_HOT;
+        putv self :TIME_FONT %tmp.14;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 23 10 ]
+        symbol [ Graphics %tmp.15 23 31 39 ];
         %tmp.15 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.16 13 34 44 ];
-        %tmp.16 = getv %tmp.15 :FONT_SMALL;
-        putv self :SECONDS_FONT %tmp.16;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 14 10 ]
-        symbol [ Graphics %tmp.17 14 24 32 ];
+        symbol [ FONT_NUMBER_HOT %tmp.16 23 40 55 ];
+        %tmp.16 = getv %tmp.15 :FONT_NUMBER_HOT;
+        putv self :TIME_FALLBACK_FONT %tmp.16;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 24 10 ]
+        symbol [ Graphics %tmp.17 24 30 38 ];
         %tmp.17 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.18 14 33 44 ];
-        %tmp.18 = getv %tmp.17 :FONT_MEDIUM;
-        putv self :METRIC_FONT %tmp.18;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.18 24 39 57 ];
+        %tmp.18 = getv %tmp.17 :FONT_NUMBER_MEDIUM;
+        putv self :TIME_COMPACT_FONT %tmp.18;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 25 10 ]
+        symbol [ Graphics %tmp.19 25 25 33 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.20 25 34 44 ];
+        %tmp.20 = getv %tmp.19 :FONT_SMALL;
+        putv self :SECONDS_FONT %tmp.20;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 26 10 ]
+        symbol [ Graphics %tmp.21 26 24 32 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.22 26 33 44 ];
+        %tmp.22 = getv %tmp.21 :FONT_MEDIUM;
+        putv self :METRIC_FONT %tmp.22;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 27 10 ]
+        symbol [ Graphics %tmp.23 27 28 36 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.24 27 37 46 ];
+        %tmp.24 = getv %tmp.23 :FONT_TINY;
+        putv self :BODY_LABEL_FONT %tmp.24;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 28 10 ]
+        symbol [ Graphics %tmp.25 28 28 36 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.26 28 37 55 ];
+        %tmp.26 = getv %tmp.25 :FONT_NUMBER_MEDIUM;
+        putv self :BODY_VALUE_FONT %tmp.26;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 29 10 ]
+        symbol [ Graphics %tmp.27 29 24 32 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.28 29 33 43 ];
+        %tmp.28 = getv %tmp.27 :FONT_SMALL;
+        putv self :BOTTOM_FONT %tmp.28;
     }
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 6; @position = 10; @symbol_constdef = [BACKGROUND_COLOR,6,10,26]; ]
     const BACKGROUND_COLOR;
@@ -67,423 +97,471 @@ module Settings {
     const PRIMARY_COLOR;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 8; @position = 10; @symbol_constdef = [SECONDARY_COLOR,8,10,25]; ]
     const SECONDARY_COLOR;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 9; @position = 10; @symbol_constdef = [TOP_FONT,9,10,18]; ]
-    const TOP_FONT;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 10; @position = 10; @symbol_constdef = [TIME_FONT,10,10,19]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 9; @position = 10; @symbol_constdef = [MUTED_COLOR,9,10,21]; ]
+    const MUTED_COLOR;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 11; @position = 10; @symbol_constdef = [ORANGE,11,10,16]; ]
+    const ORANGE = 0xFF8C1A;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 12; @position = 10; @symbol_constdef = [GREEN,12,10,15]; ]
+    const GREEN = 0x7FD43B;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 13; @position = 10; @symbol_constdef = [BLUE,13,10,14]; ]
+    const BLUE = 0x21A8FF;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 14; @position = 10; @symbol_constdef = [RED,14,10,13]; ]
+    const RED = 0xFF2A2A;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 15; @position = 10; @symbol_constdef = [YELLOW,15,10,16]; ]
+    const YELLOW = 0xFFC21A;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 16; @position = 10; @symbol_constdef = [CLOUD,16,10,15]; ]
+    const CLOUD = 0xF2F2F2;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 17; @position = 10; @symbol_constdef = [DARK_RING,17,10,19]; ]
+    const DARK_RING = 0x323232;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 18; @position = 10; @symbol_constdef = [GRID_LINE,18,10,19]; ]
+    const GRID_LINE = 0x3A3A3A;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 20; @position = 10; @symbol_constdef = [TOP_META_FONT,20,10,23]; ]
+    const TOP_META_FONT;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 21; @position = 10; @symbol_constdef = [DATE_FONT,21,10,19]; ]
+    const DATE_FONT;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 22; @position = 10; @symbol_constdef = [TIME_FONT,22,10,19]; ]
     const TIME_FONT;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 11; @position = 10; @symbol_constdef = [TIME_FALLBACK_FONT,11,10,28]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 23; @position = 10; @symbol_constdef = [TIME_FALLBACK_FONT,23,10,28]; ]
     const TIME_FALLBACK_FONT;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 12; @position = 10; @symbol_constdef = [TIME_COMPACT_FONT,12,10,27]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 24; @position = 10; @symbol_constdef = [TIME_COMPACT_FONT,24,10,27]; ]
     const TIME_COMPACT_FONT;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 13; @position = 10; @symbol_constdef = [SECONDS_FONT,13,10,22]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 25; @position = 10; @symbol_constdef = [SECONDS_FONT,25,10,22]; ]
     const SECONDS_FONT;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 14; @position = 10; @symbol_constdef = [METRIC_FONT,14,10,21]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 26; @position = 10; @symbol_constdef = [METRIC_FONT,26,10,21]; ]
     const METRIC_FONT;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 16; @position = 10; @symbol_constdef = [ICON_HEART,16,10,20]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 27; @position = 10; @symbol_constdef = [BODY_LABEL_FONT,27,10,25]; ]
+    const BODY_LABEL_FONT;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 28; @position = 10; @symbol_constdef = [BODY_VALUE_FONT,28,10,25]; ]
+    const BODY_VALUE_FONT;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 29; @position = 10; @symbol_constdef = [BOTTOM_FONT,29,10,21]; ]
+    const BOTTOM_FONT;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 31; @position = 10; @symbol_constdef = [ICON_HEART,31,10,20]; ]
     const ICON_HEART = 0;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 17; @position = 10; @symbol_constdef = [ICON_STEPS,17,10,20]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 32; @position = 10; @symbol_constdef = [ICON_STEPS,32,10,20]; ]
     const ICON_STEPS = 1;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 18; @position = 10; @symbol_constdef = [ICON_TEMP,18,10,19]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 33; @position = 10; @symbol_constdef = [ICON_TEMP,33,10,19]; ]
     const ICON_TEMP = 2;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 19; @position = 10; @symbol_constdef = [ICON_BATTERY,19,10,22]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 34; @position = 10; @symbol_constdef = [ICON_BATTERY,34,10,22]; ]
     const ICON_BATTERY = 3;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 21; @position = 10; @symbol_constdef = [SCREEN_SIZE,21,10,21]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 36; @position = 10; @symbol_constdef = [SCREEN_SIZE,36,10,21]; ]
     const SCREEN_SIZE = 280;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 22; @position = 10; @symbol_constdef = [CENTER_X,22,10,18]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 37; @position = 10; @symbol_constdef = [CENTER_X,37,10,18]; ]
     const CENTER_X = 140;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 23; @position = 10; @symbol_constdef = [CENTER_Y,23,10,18]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 38; @position = 10; @symbol_constdef = [CENTER_Y,38,10,18]; ]
     const CENTER_Y = 140;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 24; @position = 10; @symbol_constdef = [DATE_Y,24,10,16]; ]
-    const DATE_Y = 48;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 25; @position = 10; @symbol_constdef = [TIME_Y,25,10,16]; ]
-    const TIME_Y = 115;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 26; @position = 10; @symbol_constdef = [TIME_MAX_WIDTH,26,10,24]; ]
-    const TIME_MAX_WIDTH = 190;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 27; @position = 10; @symbol_constdef = [SECONDS_X_GAP,27,10,23]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 41; @position = 10; @symbol_constdef = [MOVE_Y,41,10,16]; ]
+    const MOVE_Y = 24;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 42; @position = 10; @symbol_constdef = [ALTITUDE_Y,42,10,20]; ]
+    const ALTITUDE_Y = 45;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 43; @position = 10; @symbol_constdef = [DATE_Y,43,10,16]; ]
+    const DATE_Y = 70;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 46; @position = 10; @symbol_constdef = [TIME_Y,46,10,16]; ]
+    const TIME_Y = 114;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 47; @position = 10; @symbol_constdef = [TIME_MAX_WIDTH,47,10,24]; ]
+    const TIME_MAX_WIDTH = 235;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 48; @position = 10; @symbol_constdef = [SECONDS_X_GAP,48,10,23]; ]
     const SECONDS_X_GAP = 6;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 28; @position = 10; @symbol_constdef = [SECONDS_Y,28,10,19]; ]
-    const SECONDS_Y = 135;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 29; @position = 10; @symbol_constdef = [METRIC_ICON_Y,29,10,23]; ]
-    const METRIC_ICON_Y = 178;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 30; @position = 10; @symbol_constdef = [METRIC_VALUE_Y,30,10,24]; ]
-    const METRIC_VALUE_Y = 205;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 31; @position = 10; @symbol_constdef = [COLUMN_1_X,31,10,20]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 49; @position = 10; @symbol_constdef = [SECONDS_Y_OFFSET,49,10,26]; ]
+    const SECONDS_Y_OFFSET = 24;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 52; @position = 10; @symbol_constdef = [METRIC_ICON_Y,52,10,23]; ]
+    const METRIC_ICON_Y = 166;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 53; @position = 10; @symbol_constdef = [METRIC_VALUE_Y,53,10,24]; ]
+    const METRIC_VALUE_Y = 195;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 54; @position = 10; @symbol_constdef = [METRIC_SEPARATOR_TOP,54,10,30]; ]
+    const METRIC_SEPARATOR_TOP = 158;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 55; @position = 10; @symbol_constdef = [METRIC_SEPARATOR_BOTTOM,55,10,33]; ]
+    const METRIC_SEPARATOR_BOTTOM = 205;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 56; @position = 10; @symbol_constdef = [COLUMN_1_X,56,10,20]; ]
     const COLUMN_1_X = 45;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 32; @position = 10; @symbol_constdef = [COLUMN_2_X,32,10,20]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 57; @position = 10; @symbol_constdef = [COLUMN_2_X,57,10,20]; ]
     const COLUMN_2_X = 108;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 33; @position = 10; @symbol_constdef = [COLUMN_3_X,33,10,20]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 58; @position = 10; @symbol_constdef = [COLUMN_3_X,58,10,20]; ]
     const COLUMN_3_X = 172;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 34; @position = 10; @symbol_constdef = [COLUMN_4_X,34,10,20]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 59; @position = 10; @symbol_constdef = [COLUMN_4_X,59,10,20]; ]
     const COLUMN_4_X = 235;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 35; @position = 10; @symbol_constdef = [COLUMN_WIDTH,35,10,22]; ]
-    const COLUMN_WIDTH = 50;
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 37; @symbol_functiondef = [dayName,37,13,20]; @symbol_param<0> = [dayOfWeek,37,21,30]; @symbol_param<0>_type<0> = [Object,37,34,40]; @symbol_return<0> = [String,37,45,51]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 62; @position = 10; @symbol_constdef = [BODY_RULE_Y,62,10,21]; ]
+    const BODY_RULE_Y = 216;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 63; @position = 10; @symbol_constdef = [BODY_LABEL_Y,63,10,22]; ]
+    const BODY_LABEL_Y = 228;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 64; @position = 10; @symbol_constdef = [BODY_VALUE_Y,64,10,22]; ]
+    const BODY_VALUE_Y = 246;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 65; @position = 10; @symbol_constdef = [BODY_BLOCK_Y,65,10,22]; ]
+    const BODY_BLOCK_Y = 263;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 69; @position = 10; @symbol_constdef = [MOVE_VALUE,69,10,20]; ]
+    const MOVE_VALUE = 78;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 70; @position = 10; @symbol_constdef = [ALTITUDE_VALUE,70,10,24]; ]
+    const ALTITUDE_VALUE = 1258;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 71; @position = 10; @symbol_constdef = [BODY_BATTERY_VALUE,71,10,28]; ]
+    const BODY_BATTERY_VALUE = 82;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 72; @position = 10; @symbol_constdef = [DISTANCE_TEXT,72,10,23]; ]
+    const DISTANCE_TEXT = "10.4 km";
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 74; @symbol_functiondef = [dayName,74,13,20]; @symbol_param<0> = [dayOfWeek,74,21,30]; @symbol_param<0>_type<0> = [Object,74,34,40]; @symbol_return<0> = [String,74,45,51]; ]
     function dayName(dayOfWeek as Object) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_37_52_62_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 38 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_8_59_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_74_52_99_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 75 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_8_96_8_if_stmt:
         %tmp.1 = lgetv %dayOfWeek;
-        symbol [ dayOfWeek %tmp.1 38 12 21 ];
-        symbol [ Number %tmp.3 38 33 39 ];
+        symbol [ dayOfWeek %tmp.1 75 12 21 ];
+        symbol [ Number %tmp.3 75 33 39 ];
         %tmp.3 = getv ? :Number;
         %tmp.4 = isa %tmp.1 %tmp.3;
-        bf %tmp.4 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_8_59_8_if_false;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_8_59_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_41_57_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 39 12 ]
+        bf %tmp.4 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_8_96_8_if_false;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_8_96_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_41_94_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 76 12 ]
         %tmp.5 = lgetv %dayOfWeek;
-        symbol [ dayOfWeek %tmp.5 39 20 29 ];
+        symbol [ dayOfWeek %tmp.5 76 20 29 ];
         %tmp.6 = as %tmp.5 { (Number) };
         %tmp.7 = as %tmp.6 Number;
-        symbol [ Number %tmp.7 39 33 39 ];
+        symbol [ Number %tmp.7 76 33 39 ];
         push %tmp.7;
-        switch %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_39_12_56_12_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_39_12_56_12_switchStmtBegin:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 40 16 ]
+        switch %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_76_12_93_12_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_76_12_93_12_switchStmtBegin:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 77 16 ]
         %tmp.8 = dup %tmp.7;
         %tmp.9 = 1;
         %tmp.10 = getv function %tmp.8 :equals;
         %tmp.11 = invoke %tmp.8 %tmp.10 (%tmp.9);
-        bt %tmp.11 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_40_16_41_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 42 16 ]
+        bt %tmp.11 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_77_16_78_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 79 16 ]
         %tmp.12 = dup %tmp.7;
         %tmp.13 = 2;
         %tmp.14 = getv function %tmp.12 :equals;
         %tmp.15 = invoke %tmp.12 %tmp.14 (%tmp.13);
-        bt %tmp.15 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_42_16_43_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 44 16 ]
+        bt %tmp.15 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_79_16_80_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 81 16 ]
         %tmp.16 = dup %tmp.7;
         %tmp.17 = 3;
         %tmp.18 = getv function %tmp.16 :equals;
         %tmp.19 = invoke %tmp.16 %tmp.18 (%tmp.17);
-        bt %tmp.19 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_44_16_45_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 46 16 ]
+        bt %tmp.19 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_81_16_82_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 83 16 ]
         %tmp.20 = dup %tmp.7;
         %tmp.21 = 4;
         %tmp.22 = getv function %tmp.20 :equals;
         %tmp.23 = invoke %tmp.20 %tmp.22 (%tmp.21);
-        bt %tmp.23 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_46_16_47_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 48 16 ]
+        bt %tmp.23 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_83_16_84_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 85 16 ]
         %tmp.24 = dup %tmp.7;
         %tmp.25 = 5;
         %tmp.26 = getv function %tmp.24 :equals;
         %tmp.27 = invoke %tmp.24 %tmp.26 (%tmp.25);
-        bt %tmp.27 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_48_16_49_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 50 16 ]
+        bt %tmp.27 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_85_16_86_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 87 16 ]
         %tmp.28 = dup %tmp.7;
         %tmp.29 = 6;
         %tmp.30 = getv function %tmp.28 :equals;
         %tmp.31 = invoke %tmp.28 %tmp.30 (%tmp.29);
-        bt %tmp.31 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_50_16_51_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 52 16 ]
+        bt %tmp.31 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_87_16_88_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 89 16 ]
         %tmp.32 = dup %tmp.7;
         %tmp.33 = 7;
         %tmp.34 = getv function %tmp.32 :equals;
         %tmp.35 = invoke %tmp.32 %tmp.34 (%tmp.33);
-        bt %tmp.35 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_52_16_53_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 54 16 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_39_12_56_12_switchStmtDefault:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_39_12_56_12_defaultCodeBegin;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_40_16_41_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 41 20 ]
+        bt %tmp.35 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_89_16_90_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 91 16 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_76_12_93_12_switchStmtDefault:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_76_12_93_12_defaultCodeBegin;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_77_16_78_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 78 20 ]
         %tmp.36 = "SUN";
         ret %tmp.36;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_42_16_43_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 43 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_79_16_80_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 80 20 ]
         %tmp.37 = "MON";
         ret %tmp.37;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_44_16_45_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 45 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_81_16_82_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 82 20 ]
         %tmp.38 = "TUE";
         ret %tmp.38;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_46_16_47_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 47 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_83_16_84_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 84 20 ]
         %tmp.39 = "WED";
         ret %tmp.39;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_48_16_49_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 49 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_85_16_86_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 86 20 ]
         %tmp.40 = "THU";
         ret %tmp.40;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_50_16_51_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 51 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_87_16_88_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 88 20 ]
         %tmp.41 = "FRI";
         ret %tmp.41;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_52_16_53_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 53 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_89_16_90_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 90 20 ]
         %tmp.42 = "SAT";
         ret %tmp.42;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_54_16_55_32_switchCase:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_39_12_56_12_defaultCodeBegin:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 55 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_91_16_92_32_switchCase:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_76_12_93_12_defaultCodeBegin:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 92 20 ]
         %tmp.43 = "---";
         ret %tmp.43;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_39_12_56_12_switchStmtEnd:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_76_12_93_12_switchStmtEnd:
         pop;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_41_57_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_8_59_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_8_59_8_if_false:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 57 15 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_15_59_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_41_94_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_8_96_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_8_96_8_if_false:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 94 15 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_stmt:
         %tmp.44 = lgetv %dayOfWeek;
-        symbol [ dayOfWeek %tmp.44 57 19 28 ];
+        symbol [ dayOfWeek %tmp.44 94 19 28 ];
         %tmp.45 = as %tmp.44 { (!Number) };
-        symbol [ String %tmp.47 57 40 46 ];
+        symbol [ String %tmp.47 94 40 46 ];
         %tmp.47 = getv ? :String;
         %tmp.48 = isa %tmp.45 %tmp.47;
-        bf %tmp.48 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_15_59_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_15_59_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_48_59_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 58 12 ]
+        bf %tmp.48 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_48_96_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 95 12 ]
         %tmp.49 = self;
-        symbol [ compactDateToken %tmp.50 58 19 35 ];
+        symbol [ compactDateToken %tmp.50 95 19 35 ];
         %tmp.50 = getv function %tmp.49 :compactDateToken;
         %tmp.51 = lgetv %dayOfWeek;
-        symbol [ dayOfWeek %tmp.51 58 36 45 ];
+        symbol [ dayOfWeek %tmp.51 95 36 45 ];
         %tmp.52 = as %tmp.51 { (!Number) && (String) };
         %tmp.53 = as %tmp.52 String;
-        symbol [ String %tmp.53 58 49 55 ];
+        symbol [ String %tmp.53 95 49 55 ];
         %tmp.54 = invoke %tmp.49 %tmp.50(%tmp.53);
         ret %tmp.54;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_48_59_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_15_59_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_57_15_59_8_if_end:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_38_8_59_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 61 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_48_96_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_end:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_8_96_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 98 8 ]
         %tmp.55 = "---";
         ret %tmp.55;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_37_52_62_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_74_52_99_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 64; @symbol_functiondef = [monthName,64,13,22]; @symbol_param<0> = [month,64,23,28]; @symbol_param<0>_type<0> = [Object,64,32,38]; @symbol_return<0> = [String,64,43,49]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 101; @symbol_functiondef = [monthName,101,13,22]; @symbol_param<0> = [month,101,23,28]; @symbol_param<0>_type<0> = [Object,101,32,38]; @symbol_return<0> = [String,101,43,49]; ]
     function monthName(month as Object) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_64_50_99_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 65 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_8_96_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_101_50_136_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 102 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_8_133_8_if_stmt:
         %tmp.1 = lgetv %month;
-        symbol [ month %tmp.1 65 12 17 ];
-        symbol [ Number %tmp.3 65 29 35 ];
+        symbol [ month %tmp.1 102 12 17 ];
+        symbol [ Number %tmp.3 102 29 35 ];
         %tmp.3 = getv ? :Number;
         %tmp.4 = isa %tmp.1 %tmp.3;
-        bf %tmp.4 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_8_96_8_if_false;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_8_96_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_37_94_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 66 12 ]
+        bf %tmp.4 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_8_133_8_if_false;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_8_133_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_37_131_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 103 12 ]
         %tmp.5 = lgetv %month;
-        symbol [ month %tmp.5 66 20 25 ];
+        symbol [ month %tmp.5 103 20 25 ];
         %tmp.6 = as %tmp.5 { (Number) };
         %tmp.7 = as %tmp.6 Number;
-        symbol [ Number %tmp.7 66 29 35 ];
+        symbol [ Number %tmp.7 103 29 35 ];
         push %tmp.7;
-        switch %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_66_12_93_12_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_66_12_93_12_switchStmtBegin:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 67 16 ]
+        switch %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_103_12_130_12_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_103_12_130_12_switchStmtBegin:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 104 16 ]
         %tmp.8 = dup %tmp.7;
         %tmp.9 = 1;
         %tmp.10 = getv function %tmp.8 :equals;
         %tmp.11 = invoke %tmp.8 %tmp.10 (%tmp.9);
-        bt %tmp.11 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_67_16_68_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 69 16 ]
+        bt %tmp.11 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_16_105_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 106 16 ]
         %tmp.12 = dup %tmp.7;
         %tmp.13 = 2;
         %tmp.14 = getv function %tmp.12 :equals;
         %tmp.15 = invoke %tmp.12 %tmp.14 (%tmp.13);
-        bt %tmp.15 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_69_16_70_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 71 16 ]
+        bt %tmp.15 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_106_16_107_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 108 16 ]
         %tmp.16 = dup %tmp.7;
         %tmp.17 = 3;
         %tmp.18 = getv function %tmp.16 :equals;
         %tmp.19 = invoke %tmp.16 %tmp.18 (%tmp.17);
-        bt %tmp.19 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_71_16_72_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 73 16 ]
+        bt %tmp.19 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_108_16_109_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 110 16 ]
         %tmp.20 = dup %tmp.7;
         %tmp.21 = 4;
         %tmp.22 = getv function %tmp.20 :equals;
         %tmp.23 = invoke %tmp.20 %tmp.22 (%tmp.21);
-        bt %tmp.23 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_73_16_74_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 75 16 ]
+        bt %tmp.23 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_110_16_111_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 112 16 ]
         %tmp.24 = dup %tmp.7;
         %tmp.25 = 5;
         %tmp.26 = getv function %tmp.24 :equals;
         %tmp.27 = invoke %tmp.24 %tmp.26 (%tmp.25);
-        bt %tmp.27 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_16_76_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 77 16 ]
+        bt %tmp.27 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_112_16_113_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 114 16 ]
         %tmp.28 = dup %tmp.7;
         %tmp.29 = 6;
         %tmp.30 = getv function %tmp.28 :equals;
         %tmp.31 = invoke %tmp.28 %tmp.30 (%tmp.29);
-        bt %tmp.31 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_77_16_78_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 79 16 ]
+        bt %tmp.31 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_114_16_115_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 116 16 ]
         %tmp.32 = dup %tmp.7;
         %tmp.33 = 7;
         %tmp.34 = getv function %tmp.32 :equals;
         %tmp.35 = invoke %tmp.32 %tmp.34 (%tmp.33);
-        bt %tmp.35 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_79_16_80_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 81 16 ]
+        bt %tmp.35 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_116_16_117_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 118 16 ]
         %tmp.36 = dup %tmp.7;
         %tmp.37 = 8;
         %tmp.38 = getv function %tmp.36 :equals;
         %tmp.39 = invoke %tmp.36 %tmp.38 (%tmp.37);
-        bt %tmp.39 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_81_16_82_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 83 16 ]
+        bt %tmp.39 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_118_16_119_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 120 16 ]
         %tmp.40 = dup %tmp.7;
         %tmp.41 = 9;
         %tmp.42 = getv function %tmp.40 :equals;
         %tmp.43 = invoke %tmp.40 %tmp.42 (%tmp.41);
-        bt %tmp.43 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_83_16_84_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 85 16 ]
+        bt %tmp.43 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_120_16_121_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 122 16 ]
         %tmp.44 = dup %tmp.7;
         %tmp.45 = 10;
         %tmp.46 = getv function %tmp.44 :equals;
         %tmp.47 = invoke %tmp.44 %tmp.46 (%tmp.45);
-        bt %tmp.47 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_85_16_86_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 87 16 ]
+        bt %tmp.47 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_122_16_123_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 124 16 ]
         %tmp.48 = dup %tmp.7;
         %tmp.49 = 11;
         %tmp.50 = getv function %tmp.48 :equals;
         %tmp.51 = invoke %tmp.48 %tmp.50 (%tmp.49);
-        bt %tmp.51 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_87_16_88_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 89 16 ]
+        bt %tmp.51 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_124_16_125_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 126 16 ]
         %tmp.52 = dup %tmp.7;
         %tmp.53 = 12;
         %tmp.54 = getv function %tmp.52 :equals;
         %tmp.55 = invoke %tmp.52 %tmp.54 (%tmp.53);
-        bt %tmp.55 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_89_16_90_32_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 91 16 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_66_12_93_12_switchStmtDefault:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_66_12_93_12_defaultCodeBegin;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_67_16_68_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 68 20 ]
+        bt %tmp.55 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_126_16_127_32_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 128 16 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_103_12_130_12_switchStmtDefault:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_103_12_130_12_defaultCodeBegin;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_16_105_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 105 20 ]
         %tmp.56 = "JAN";
         ret %tmp.56;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_69_16_70_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 70 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_106_16_107_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 107 20 ]
         %tmp.57 = "FEB";
         ret %tmp.57;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_71_16_72_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 72 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_108_16_109_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 109 20 ]
         %tmp.58 = "MAR";
         ret %tmp.58;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_73_16_74_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 74 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_110_16_111_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 111 20 ]
         %tmp.59 = "APR";
         ret %tmp.59;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_75_16_76_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 76 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_112_16_113_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 113 20 ]
         %tmp.60 = "MAY";
         ret %tmp.60;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_77_16_78_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 78 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_114_16_115_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 115 20 ]
         %tmp.61 = "JUN";
         ret %tmp.61;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_79_16_80_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 80 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_116_16_117_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 117 20 ]
         %tmp.62 = "JUL";
         ret %tmp.62;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_81_16_82_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 82 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_118_16_119_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 119 20 ]
         %tmp.63 = "AUG";
         ret %tmp.63;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_83_16_84_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 84 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_120_16_121_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 121 20 ]
         %tmp.64 = "SEP";
         ret %tmp.64;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_85_16_86_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 86 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_122_16_123_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 123 20 ]
         %tmp.65 = "OCT";
         ret %tmp.65;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_87_16_88_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 88 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_124_16_125_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 125 20 ]
         %tmp.66 = "NOV";
         ret %tmp.66;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_89_16_90_32_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 90 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_126_16_127_32_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 127 20 ]
         %tmp.67 = "DEC";
         ret %tmp.67;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_91_16_92_32_switchCase:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_66_12_93_12_defaultCodeBegin:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 92 20 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_128_16_129_32_switchCase:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_103_12_130_12_defaultCodeBegin:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 129 20 ]
         %tmp.68 = "---";
         ret %tmp.68;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_66_12_93_12_switchStmtEnd:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_103_12_130_12_switchStmtEnd:
         pop;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_37_94_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_8_96_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_8_96_8_if_false:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 94 15 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_37_131_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_8_133_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_8_133_8_if_false:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 131 15 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_15_133_8_if_stmt:
         %tmp.69 = lgetv %month;
-        symbol [ month %tmp.69 94 19 24 ];
+        symbol [ month %tmp.69 131 19 24 ];
         %tmp.70 = as %tmp.69 { (!Number) };
-        symbol [ String %tmp.72 94 36 42 ];
+        symbol [ String %tmp.72 131 36 42 ];
         %tmp.72 = getv ? :String;
         %tmp.73 = isa %tmp.70 %tmp.72;
-        bf %tmp.73 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_44_96_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 95 12 ]
+        bf %tmp.73 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_15_133_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_15_133_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_44_133_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 132 12 ]
         %tmp.74 = self;
-        symbol [ compactDateToken %tmp.75 95 19 35 ];
+        symbol [ compactDateToken %tmp.75 132 19 35 ];
         %tmp.75 = getv function %tmp.74 :compactDateToken;
         %tmp.76 = lgetv %month;
-        symbol [ month %tmp.76 95 36 41 ];
+        symbol [ month %tmp.76 132 36 41 ];
         %tmp.77 = as %tmp.76 { (!Number) && (String) };
         %tmp.78 = as %tmp.77 String;
-        symbol [ String %tmp.78 95 45 51 ];
+        symbol [ String %tmp.78 132 45 51 ];
         %tmp.79 = invoke %tmp.74 %tmp.75(%tmp.78);
         ret %tmp.79;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_44_96_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_94_15_96_8_if_end:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_65_8_96_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 98 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_44_133_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_15_133_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_131_15_133_8_if_end:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_102_8_133_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 135 8 ]
         %tmp.80 = "---";
         ret %tmp.80;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_64_50_99_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_101_50_136_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 101; @symbol_functiondef = [compactDateToken,101,13,29]; @symbol_param<0> = [value,101,30,35]; @symbol_param<0>_type<0> = [String,101,39,45]; @symbol_return<0> = [String,101,50,56]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 138; @symbol_functiondef = [compactDateToken,138,13,29]; @symbol_param<0> = [value,138,30,35]; @symbol_param<0>_type<0> = [String,138,39,45]; @symbol_return<0> = [String,138,50,56]; ]
     function compactDateToken(value as String) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_101_57_109_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 102 8 ]
-        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_101_57_109_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_101_57_109_4_stop" ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_138_57_146_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 139 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_138_57_146_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_138_57_146_4_stop" ]
         %upper.1 = local;
-        symbol [ upper %upper.1 102 12 17 ];
+        symbol [ upper %upper.1 139 12 17 ];
         %tmp.1 = lgetv %value;
-        symbol [ value %tmp.1 102 20 25 ];
-        symbol [ toUpper %tmp.2 102 26 33 ];
+        symbol [ value %tmp.1 139 20 25 ];
+        symbol [ toUpper %tmp.2 139 26 33 ];
         %tmp.2 = getv function %tmp.1 :toUpper;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %upper.1 %tmp.3;
-        symbol [ upper %upper.1 102 12 17 ];
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 104 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_8_106_8_if_stmt:
+        symbol [ upper %upper.1 139 12 17 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 141 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_8_143_8_if_stmt:
         %tmp.4 = lgetv %upper.1;
-        symbol [ upper %tmp.4 104 12 17 ];
-        symbol [ length %tmp.5 104 18 24 ];
+        symbol [ upper %tmp.4 141 12 17 ];
+        symbol [ length %tmp.5 141 18 24 ];
         %tmp.5 = getv function %tmp.4 :length;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = 3;
         %tmp.8 = gt %tmp.6 %tmp.7;
-        bf %tmp.8 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_8_106_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_8_106_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_32_106_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 105 12 ]
+        bf %tmp.8 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_8_143_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_8_143_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_32_143_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 142 12 ]
         %tmp.9 = lgetv %upper.1;
-        symbol [ upper %tmp.9 105 19 24 ];
-        symbol [ substring %tmp.10 105 25 34 ];
+        symbol [ upper %tmp.9 142 19 24 ];
+        symbol [ substring %tmp.10 142 25 34 ];
         %tmp.10 = getv function %tmp.9 :substring;
         %tmp.11 = 0;
         %tmp.12 = 3;
         %tmp.13 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12);
         %tmp.14 = as %tmp.13 String;
-        symbol [ String %tmp.14 105 44 50 ];
+        symbol [ String %tmp.14 142 44 50 ];
         ret %tmp.14;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_32_106_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_8_106_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_104_8_106_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 108 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_32_143_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_8_143_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_141_8_143_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 145 8 ]
         %tmp.15 = lgetv %upper.1;
-        symbol [ upper %tmp.15 108 15 20 ];
+        symbol [ upper %tmp.15 145 15 20 ];
         ret %tmp.15;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_101_57_109_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Settings_mc_138_57_146_4_stop:
     }
 }
 [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 1; ]

@@ -2,176 +2,803 @@
 import Toybox.Graphics;
 [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
 import Toybox.Lang;
-[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 4; @symbol_classdef = [Renderer,4,6,14]; ]
+[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Math,3,14,18]; ]
+import Toybox.Math;
+[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 5; @symbol_classdef = [Renderer,5,6,14]; ]
 class Renderer {
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 4; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 4; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
     function initialize() as Void {
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 9; @symbol_functiondef = [draw,9,13,17]; @symbol_param<0> = [dc,9,18,20]; @symbol_param<0>_type<0> = [Dc,9,24,26]; @symbol_param<1> = [data,9,28,32]; @symbol_param<1>_type<0> = [WatchFaceData,9,36,49]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 10; @symbol_functiondef = [draw,10,13,17]; @symbol_param<0> = [dc,10,18,20]; @symbol_param<0>_type<0> = [Dc,10,24,26]; @symbol_param<1> = [data,10,28,32]; @symbol_param<1>_type<0> = [WatchFaceData,10,36,49]; ]
     function draw(dc as Dc, data as WatchFaceData) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_9_59_16_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 10 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_10_59_21_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 11 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 10 8 10 ];
-        symbol [ setColor %tmp.2 10 11 19 ];
+        symbol [ dc %tmp.1 11 8 10 ];
+        symbol [ setColor %tmp.2 11 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Settings %tmp.4 10 20 28 ];
+        symbol [ Settings %tmp.4 11 20 28 ];
         %tmp.4 = getv ? :Settings;
-        symbol [ PRIMARY_COLOR %tmp.5 10 29 42 ];
+        symbol [ PRIMARY_COLOR %tmp.5 11 29 42 ];
         %tmp.5 = getv %tmp.4 :PRIMARY_COLOR;
-        symbol [ Settings %tmp.7 10 44 52 ];
+        symbol [ Settings %tmp.7 11 44 52 ];
         %tmp.7 = getv ? :Settings;
-        symbol [ BACKGROUND_COLOR %tmp.8 10 53 69 ];
+        symbol [ BACKGROUND_COLOR %tmp.8 11 53 69 ];
         %tmp.8 = getv %tmp.7 :BACKGROUND_COLOR;
         invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 11 8 ]
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 12 8 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 11 8 10 ];
-        symbol [ clear %tmp.10 11 11 16 ];
+        symbol [ dc %tmp.9 12 8 10 ];
+        symbol [ clear %tmp.10 12 11 16 ];
         %tmp.10 = getv function %tmp.9 :clear;
         invoke %tmp.9 %tmp.10();
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 13 8 ]
-        %tmp.11 = self;
-        symbol [ drawDate %tmp.12 13 8 16 ];
-        %tmp.12 = getv function %tmp.11 :drawDate;
-        %tmp.13 = lgetv %dc;
-        symbol [ dc %tmp.13 13 17 19 ];
-        %tmp.14 = lgetv %data;
-        symbol [ data %tmp.14 13 21 25 ];
-        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14);
 [ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 14 8 ]
-        %tmp.15 = self;
-        symbol [ drawTime %tmp.16 14 8 16 ];
-        %tmp.16 = getv function %tmp.15 :drawTime;
-        %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 14 17 19 ];
-        %tmp.18 = lgetv %data;
-        symbol [ data %tmp.18 14 21 25 ];
-        invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18);
+        %tmp.11 = self;
+        symbol [ drawOuterRings %tmp.12 14 8 22 ];
+        %tmp.12 = getv function %tmp.11 :drawOuterRings;
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 14 23 25 ];
+        invoke %tmp.11 %tmp.12(%tmp.13);
 [ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 15 8 ]
-        %tmp.19 = self;
-        symbol [ drawMetrics %tmp.20 15 8 19 ];
-        %tmp.20 = getv function %tmp.19 :drawMetrics;
-        %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 15 20 22 ];
-        %tmp.22 = lgetv %data;
-        symbol [ data %tmp.22 15 24 28 ];
-        invoke %tmp.19 %tmp.20(%tmp.21, %tmp.22);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_9_59_16_4_stop:
-    }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 18; @symbol_functiondef = [drawDate,18,13,21]; @symbol_param<0> = [dc,18,22,24]; @symbol_param<0>_type<0> = [Dc,18,28,30]; @symbol_param<1> = [data,18,32,36]; @symbol_param<1>_type<0> = [WatchFaceData,18,40,53]; ]
-    function drawDate(dc as Dc, data as WatchFaceData) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_18_63_29_4_start:
+        %tmp.14 = self;
+        symbol [ drawTopInfo %tmp.15 15 8 19 ];
+        %tmp.15 = getv function %tmp.14 :drawTopInfo;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 15 20 22 ];
+        invoke %tmp.14 %tmp.15(%tmp.16);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 16 8 ]
+        %tmp.17 = self;
+        symbol [ drawDate %tmp.18 16 8 16 ];
+        %tmp.18 = getv function %tmp.17 :drawDate;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 16 17 19 ];
+        %tmp.20 = lgetv %data;
+        symbol [ data %tmp.20 16 21 25 ];
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 17 8 ]
+        %tmp.21 = self;
+        symbol [ drawTime %tmp.22 17 8 16 ];
+        %tmp.22 = getv function %tmp.21 :drawTime;
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 17 17 19 ];
+        %tmp.24 = lgetv %data;
+        symbol [ data %tmp.24 17 21 25 ];
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 18 8 ]
+        %tmp.25 = self;
+        symbol [ drawMetrics %tmp.26 18 8 19 ];
+        %tmp.26 = getv function %tmp.25 :drawMetrics;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 18 20 22 ];
+        %tmp.28 = lgetv %data;
+        symbol [ data %tmp.28 18 24 28 ];
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28);
 [ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 19 8 ]
-        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_18_63_29_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_18_63_29_4_stop" ]
-        %text.1 = local;
-        symbol [ text %text.1 19 12 16 ];
-        symbol [ Lang %tmp.1 19 19 23 ];
+        %tmp.29 = self;
+        symbol [ drawBodyBattery %tmp.30 19 8 23 ];
+        %tmp.30 = getv function %tmp.29 :drawBodyBattery;
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 19 24 26 ];
+        invoke %tmp.29 %tmp.30(%tmp.31);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 20 8 ]
+        %tmp.32 = self;
+        symbol [ drawBottomDistance %tmp.33 20 8 26 ];
+        %tmp.33 = getv function %tmp.32 :drawBottomDistance;
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 20 27 29 ];
+        invoke %tmp.32 %tmp.33(%tmp.34);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_10_59_21_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 23; @symbol_functiondef = [drawOuterRings,23,13,27]; @symbol_param<0> = [dc,23,28,30]; @symbol_param<0>_type<0> = [Dc,23,34,36]; ]
+    function drawOuterRings(dc as Dc) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_23_46_36_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 26 8 ]
+        %tmp.1 = self;
+        symbol [ drawSegmentRange %tmp.2 26 8 24 ];
+        %tmp.2 = getv function %tmp.1 :drawSegmentRange;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 26 25 27 ];
+        %tmp.4 = 310;
+        %tmp.5 = 360;
+        %tmp.6 = 118;
+        %tmp.7 = 123;
+        %tmp.8 = 4;
+        symbol [ Settings %tmp.10 26 52 60 ];
+        %tmp.10 = getv ? :Settings;
+        symbol [ ORANGE %tmp.11 26 61 67 ];
+        %tmp.11 = getv %tmp.10 :ORANGE;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6, %tmp.7, %tmp.8, %tmp.11);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 27 8 ]
+        %tmp.12 = self;
+        symbol [ drawSegmentRange %tmp.13 27 8 24 ];
+        %tmp.13 = getv function %tmp.12 :drawSegmentRange;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 27 25 27 ];
+        %tmp.15 = 0;
+        %tmp.16 = 58;
+        %tmp.17 = 118;
+        %tmp.18 = 123;
+        %tmp.19 = 4;
+        symbol [ Settings %tmp.21 27 49 57 ];
+        %tmp.21 = getv ? :Settings;
+        symbol [ ORANGE %tmp.22 27 58 64 ];
+        %tmp.22 = getv %tmp.21 :ORANGE;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.16, %tmp.17, %tmp.18, %tmp.19, %tmp.22);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 29 8 ]
+        %tmp.23 = self;
+        symbol [ drawSegmentRange %tmp.24 29 8 24 ];
+        %tmp.24 = getv function %tmp.23 :drawSegmentRange;
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 29 25 27 ];
+        %tmp.26 = 78;
+        %tmp.27 = 148;
+        %tmp.28 = 118;
+        %tmp.29 = 123;
+        %tmp.30 = 4;
+        symbol [ Settings %tmp.32 29 51 59 ];
+        %tmp.32 = getv ? :Settings;
+        symbol [ BLUE %tmp.33 29 60 64 ];
+        %tmp.33 = getv %tmp.32 :BLUE;
+        invoke %tmp.23 %tmp.24(%tmp.25, %tmp.26, %tmp.27, %tmp.28, %tmp.29, %tmp.30, %tmp.33);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 30 8 ]
+        %tmp.34 = self;
+        symbol [ drawSegmentRange %tmp.35 30 8 24 ];
+        %tmp.35 = getv function %tmp.34 :drawSegmentRange;
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 30 25 27 ];
+        %tmp.37 = 205;
+        %tmp.38 = 280;
+        %tmp.39 = 118;
+        %tmp.40 = 123;
+        %tmp.41 = 4;
+        symbol [ Settings %tmp.43 30 52 60 ];
+        %tmp.43 = getv ? :Settings;
+        symbol [ GREEN %tmp.44 30 61 66 ];
+        %tmp.44 = getv %tmp.43 :GREEN;
+        invoke %tmp.34 %tmp.35(%tmp.36, %tmp.37, %tmp.38, %tmp.39, %tmp.40, %tmp.41, %tmp.44);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 33 8 ]
+        %tmp.45 = self;
+        symbol [ drawSegmentRange %tmp.46 33 8 24 ];
+        %tmp.46 = getv function %tmp.45 :drawSegmentRange;
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 33 25 27 ];
+        %tmp.48 = 60;
+        %tmp.49 = 76;
+        %tmp.50 = 118;
+        %tmp.51 = 123;
+        %tmp.52 = 8;
+        symbol [ Settings %tmp.54 33 50 58 ];
+        %tmp.54 = getv ? :Settings;
+        symbol [ DARK_RING %tmp.55 33 59 68 ];
+        %tmp.55 = getv %tmp.54 :DARK_RING;
+        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48, %tmp.49, %tmp.50, %tmp.51, %tmp.52, %tmp.55);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 34 8 ]
+        %tmp.56 = self;
+        symbol [ drawSegmentRange %tmp.57 34 8 24 ];
+        %tmp.57 = getv function %tmp.56 :drawSegmentRange;
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 34 25 27 ];
+        %tmp.59 = 150;
+        %tmp.60 = 200;
+        %tmp.61 = 118;
+        %tmp.62 = 123;
+        %tmp.63 = 8;
+        symbol [ Settings %tmp.65 34 52 60 ];
+        %tmp.65 = getv ? :Settings;
+        symbol [ DARK_RING %tmp.66 34 61 70 ];
+        %tmp.66 = getv %tmp.65 :DARK_RING;
+        invoke %tmp.56 %tmp.57(%tmp.58, %tmp.59, %tmp.60, %tmp.61, %tmp.62, %tmp.63, %tmp.66);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 35 8 ]
+        %tmp.67 = self;
+        symbol [ drawSegmentRange %tmp.68 35 8 24 ];
+        %tmp.68 = getv function %tmp.67 :drawSegmentRange;
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 35 25 27 ];
+        %tmp.70 = 282;
+        %tmp.71 = 308;
+        %tmp.72 = 118;
+        %tmp.73 = 123;
+        %tmp.74 = 8;
+        symbol [ Settings %tmp.76 35 52 60 ];
+        %tmp.76 = getv ? :Settings;
+        symbol [ DARK_RING %tmp.77 35 61 70 ];
+        %tmp.77 = getv %tmp.76 :DARK_RING;
+        invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70, %tmp.71, %tmp.72, %tmp.73, %tmp.74, %tmp.77);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_23_46_36_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 38; @symbol_functiondef = [drawSegmentRange,38,13,29]; @symbol_param<0> = [dc,38,30,32]; @symbol_param<0>_type<0> = [Dc,38,36,38]; @symbol_param<1> = [startDeg,38,40,48]; @symbol_param<1>_type<0> = [Number,38,52,58]; @symbol_param<2> = [endDeg,38,60,66]; @symbol_param<2>_type<0> = [Number,38,70,76]; @symbol_param<3> = [innerR,38,78,84]; @symbol_param<3>_type<0> = [Number,38,88,94]; @symbol_param<4> = [outerR,38,96,102]; @symbol_param<4>_type<0> = [Number,38,106,112]; @symbol_param<5> = [step,38,114,118]; @symbol_param<5>_type<0> = [Number,38,122,128]; @symbol_param<6> = [color,38,130,135]; @symbol_param<6>_type<0> = [ColorType,38,139,148]; ]
+    function drawSegmentRange(dc as Dc, startDeg as Number, endDeg as Number, innerR as Number, outerR as Number, step as Number, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_38_158_50_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 39 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 39 8 10 ];
+        symbol [ setColor %tmp.2 39 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 39 20 25 ];
+        symbol [ Settings %tmp.5 39 27 35 ];
+        %tmp.5 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.6 39 36 52 ];
+        %tmp.6 = getv %tmp.5 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 40 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 40 8 10 ];
+        symbol [ setPenWidth %tmp.8 40 11 22 ];
+        %tmp.8 = getv function %tmp.7 :setPenWidth;
+        %tmp.9 = 3;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 42 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_38_158_50_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_38_158_50_4_stop" ]
+        %a.1 = local;
+        symbol [ a %a.1 42 12 13 ];
+        %tmp.10 = lgetv %startDeg;
+        symbol [ startDeg %tmp.10 42 16 24 ];
+        lputv %a.1 %tmp.10;
+        symbol [ a %a.1 42 12 13 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 44 8 ]
+        while @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_test @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_test:
+        %tmp.11 = lgetv %a.1;
+        symbol [ a %tmp.11 44 15 16 ];
+        %tmp.12 = lgetv %endDeg;
+        symbol [ endDeg %tmp.12 44 20 26 ];
+        %tmp.13 = lte %tmp.11 %tmp.12;
+        bf %tmp.13 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_begin:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_28_47_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 45 12 ]
+        %tmp.14 = self;
+        symbol [ drawRadialSegment %tmp.15 45 12 29 ];
+        %tmp.15 = getv function %tmp.14 :drawRadialSegment;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 45 30 32 ];
+        %tmp.17 = lgetv %a.1;
+        symbol [ a %tmp.17 45 34 35 ];
+        %tmp.18 = lgetv %innerR;
+        symbol [ innerR %tmp.18 45 37 43 ];
+        %tmp.19 = lgetv %outerR;
+        symbol [ outerR %tmp.19 45 45 51 ];
+        invoke %tmp.14 %tmp.15(%tmp.16, %tmp.17, %tmp.18, %tmp.19);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 46 12 ]
+        %tmp.20 = lgetv %a.1;
+        symbol [ a %tmp.20 46 12 13 ];
+        %tmp.21 = lgetv %step;
+        symbol [ step %tmp.21 46 17 21 ];
+        %tmp.22 = add %tmp.20 %tmp.21;
+        lputv %a.1 %tmp.22;
+        symbol [ a %a.1 46 12 13 ];
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_28_47_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_test;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_44_8_47_8_while_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 49 8 ]
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 49 8 10 ];
+        symbol [ setPenWidth %tmp.24 49 11 22 ];
+        %tmp.24 = getv function %tmp.23 :setPenWidth;
+        %tmp.25 = 1;
+        invoke %tmp.23 %tmp.24(%tmp.25);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_38_158_50_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 52; @symbol_functiondef = [drawRadialSegment,52,13,30]; @symbol_param<0> = [dc,52,31,33]; @symbol_param<0>_type<0> = [Dc,52,37,39]; @symbol_param<1> = [angleDeg,52,41,49]; @symbol_param<1>_type<0> = [Number,52,53,59]; @symbol_param<2> = [innerR,52,61,67]; @symbol_param<2>_type<0> = [Number,52,71,77]; @symbol_param<3> = [outerR,52,79,85]; @symbol_param<3>_type<0> = [Number,52,89,95]; ]
+    function drawRadialSegment(dc as Dc, angleDeg as Number, innerR as Number, outerR as Number) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 53 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_stop" ]
+        %rad.1 = local;
+        symbol [ rad %rad.1 53 12 15 ];
+        %tmp.1 = lgetv %angleDeg;
+        symbol [ angleDeg %tmp.1 53 20 28 ];
+        %tmp.2 = 90;
+        %tmp.3 = sub %tmp.1 %tmp.2;
+        symbol [ toFloat %tmp.4 53 35 42 ];
+        %tmp.4 = getv function %tmp.3 :toFloat;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = 3.1415926;
+        %tmp.7 = mul %tmp.5 %tmp.6;
+        %tmp.8 = 180.0;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %rad.1 %tmp.9;
+        symbol [ rad %rad.1 53 12 15 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 55 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_stop" ]
+        %x1.2 = local;
+        symbol [ x1 %x1.2 55 12 14 ];
+        symbol [ Settings %tmp.11 55 17 25 ];
+        %tmp.11 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.12 55 26 34 ];
+        %tmp.12 = getv %tmp.11 :CENTER_X;
+        symbol [ Math %tmp.13 55 38 42 ];
+        %tmp.13 = getm $.Toybox.Math;
+        symbol [ cos %tmp.14 55 43 46 ];
+        %tmp.14 = getv function %tmp.13 :cos;
+        %tmp.15 = lgetv %rad.1;
+        symbol [ rad %tmp.15 55 47 50 ];
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        %tmp.17 = lgetv %innerR;
+        symbol [ innerR %tmp.17 55 54 60 ];
+        %tmp.18 = mul %tmp.16 %tmp.17;
+        %tmp.19 = add %tmp.12 %tmp.18;
+        lputv %x1.2 %tmp.19;
+        symbol [ x1 %x1.2 55 12 14 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 56 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_stop" ]
+        %y1.3 = local;
+        symbol [ y1 %y1.3 56 12 14 ];
+        symbol [ Settings %tmp.21 56 17 25 ];
+        %tmp.21 = getv ? :Settings;
+        symbol [ CENTER_Y %tmp.22 56 26 34 ];
+        %tmp.22 = getv %tmp.21 :CENTER_Y;
+        symbol [ Math %tmp.23 56 38 42 ];
+        %tmp.23 = getm $.Toybox.Math;
+        symbol [ sin %tmp.24 56 43 46 ];
+        %tmp.24 = getv function %tmp.23 :sin;
+        %tmp.25 = lgetv %rad.1;
+        symbol [ rad %tmp.25 56 47 50 ];
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        %tmp.27 = lgetv %innerR;
+        symbol [ innerR %tmp.27 56 54 60 ];
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        %tmp.29 = add %tmp.22 %tmp.28;
+        lputv %y1.3 %tmp.29;
+        symbol [ y1 %y1.3 56 12 14 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 57 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_stop" ]
+        %x2.4 = local;
+        symbol [ x2 %x2.4 57 12 14 ];
+        symbol [ Settings %tmp.31 57 17 25 ];
+        %tmp.31 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.32 57 26 34 ];
+        %tmp.32 = getv %tmp.31 :CENTER_X;
+        symbol [ Math %tmp.33 57 38 42 ];
+        %tmp.33 = getm $.Toybox.Math;
+        symbol [ cos %tmp.34 57 43 46 ];
+        %tmp.34 = getv function %tmp.33 :cos;
+        %tmp.35 = lgetv %rad.1;
+        symbol [ rad %tmp.35 57 47 50 ];
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        %tmp.37 = lgetv %outerR;
+        symbol [ outerR %tmp.37 57 54 60 ];
+        %tmp.38 = mul %tmp.36 %tmp.37;
+        %tmp.39 = add %tmp.32 %tmp.38;
+        lputv %x2.4 %tmp.39;
+        symbol [ x2 %x2.4 57 12 14 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 58 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_stop" ]
+        %y2.5 = local;
+        symbol [ y2 %y2.5 58 12 14 ];
+        symbol [ Settings %tmp.41 58 17 25 ];
+        %tmp.41 = getv ? :Settings;
+        symbol [ CENTER_Y %tmp.42 58 26 34 ];
+        %tmp.42 = getv %tmp.41 :CENTER_Y;
+        symbol [ Math %tmp.43 58 38 42 ];
+        %tmp.43 = getm $.Toybox.Math;
+        symbol [ sin %tmp.44 58 43 46 ];
+        %tmp.44 = getv function %tmp.43 :sin;
+        %tmp.45 = lgetv %rad.1;
+        symbol [ rad %tmp.45 58 47 50 ];
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = lgetv %outerR;
+        symbol [ outerR %tmp.47 58 54 60 ];
+        %tmp.48 = mul %tmp.46 %tmp.47;
+        %tmp.49 = add %tmp.42 %tmp.48;
+        lputv %y2.5 %tmp.49;
+        symbol [ y2 %y2.5 58 12 14 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 60 8 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 60 8 10 ];
+        symbol [ drawLine %tmp.51 60 11 19 ];
+        %tmp.51 = getv function %tmp.50 :drawLine;
+        %tmp.52 = lgetv %x1.2;
+        symbol [ x1 %tmp.52 60 20 22 ];
+        %tmp.53 = lgetv %y1.3;
+        symbol [ y1 %tmp.53 60 24 26 ];
+        %tmp.54 = lgetv %x2.4;
+        symbol [ x2 %tmp.54 60 28 30 ];
+        %tmp.55 = lgetv %y2.5;
+        symbol [ y2 %tmp.55 60 32 34 ];
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.53, %tmp.54, %tmp.55);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_52_105_61_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 63; @symbol_functiondef = [drawTopInfo,63,13,24]; @symbol_param<0> = [dc,63,25,27]; @symbol_param<0>_type<0> = [Dc,63,31,33]; ]
+    function drawTopInfo(dc as Dc) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_63_43_78_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 64 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_63_43_78_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_63_43_78_4_stop" ]
+        %moveText.1 = local;
+        symbol [ moveText %moveText.1 64 12 20 ];
+        symbol [ Lang %tmp.1 64 23 27 ];
         %tmp.1 = getm $.Toybox.Lang;
-        symbol [ format %tmp.2 19 24 30 ];
+        symbol [ format %tmp.2 64 28 34 ];
+        %tmp.2 = getv function %tmp.1 :format;
+        %tmp.3 = "MOVE $1$%";
+        %tmp.4 = newa 1;
+        symbol [ Settings %tmp.6 64 49 57 ];
+        %tmp.6 = getv ? :Settings;
+        symbol [ MOVE_VALUE %tmp.7 64 58 68 ];
+        %tmp.7 = getv %tmp.6 :MOVE_VALUE;
+        %tmp.8 = dup %tmp.4;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        %tmp.10 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9);
+        lputv %moveText.1 %tmp.10;
+        symbol [ moveText %moveText.1 64 12 20 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 65 8 ]
+        %tmp.11 = self;
+        symbol [ drawCenteredText %tmp.12 65 8 24 ];
+        %tmp.12 = getv function %tmp.11 :drawCenteredText;
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 65 25 27 ];
+        %tmp.14 = lgetv %moveText.1;
+        symbol [ moveText %tmp.14 65 29 37 ];
+        symbol [ Settings %tmp.16 65 39 47 ];
+        %tmp.16 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.17 65 48 56 ];
+        %tmp.17 = getv %tmp.16 :CENTER_X;
+        symbol [ Settings %tmp.19 65 58 66 ];
+        %tmp.19 = getv ? :Settings;
+        symbol [ MOVE_Y %tmp.20 65 67 73 ];
+        %tmp.20 = getv %tmp.19 :MOVE_Y;
+        symbol [ Settings %tmp.22 65 75 83 ];
+        %tmp.22 = getv ? :Settings;
+        symbol [ TOP_META_FONT %tmp.23 65 84 97 ];
+        %tmp.23 = getv %tmp.22 :TOP_META_FONT;
+        symbol [ Settings %tmp.25 65 99 107 ];
+        %tmp.25 = getv ? :Settings;
+        symbol [ ORANGE %tmp.26 65 108 114 ];
+        %tmp.26 = getv %tmp.25 :ORANGE;
+        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14, %tmp.17, %tmp.20, %tmp.23, %tmp.26);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 67 8 ]
+        %tmp.27 = self;
+        symbol [ drawMountainIcon %tmp.28 67 8 24 ];
+        %tmp.28 = getv function %tmp.27 :drawMountainIcon;
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 67 25 27 ];
+        symbol [ Settings %tmp.31 67 29 37 ];
+        %tmp.31 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.32 67 38 46 ];
+        %tmp.32 = getv %tmp.31 :CENTER_X;
+        %tmp.33 = 34;
+        %tmp.34 = sub %tmp.32 %tmp.33;
+        symbol [ Settings %tmp.36 67 53 61 ];
+        %tmp.36 = getv ? :Settings;
+        symbol [ ALTITUDE_Y %tmp.37 67 62 72 ];
+        %tmp.37 = getv %tmp.36 :ALTITUDE_Y;
+        symbol [ Settings %tmp.39 67 74 82 ];
+        %tmp.39 = getv ? :Settings;
+        symbol [ PRIMARY_COLOR %tmp.40 67 83 96 ];
+        %tmp.40 = getv %tmp.39 :PRIMARY_COLOR;
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.34, %tmp.37, %tmp.40);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 69 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_63_43_78_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_63_43_78_4_stop" ]
+        %altitudeText.2 = local;
+        symbol [ altitudeText %altitudeText.2 69 12 24 ];
+        symbol [ Lang %tmp.41 69 27 31 ];
+        %tmp.41 = getm $.Toybox.Lang;
+        symbol [ format %tmp.42 69 32 38 ];
+        %tmp.42 = getv function %tmp.41 :format;
+        %tmp.43 = "$1$ m";
+        %tmp.44 = newa 1;
+        symbol [ Settings %tmp.46 69 49 57 ];
+        %tmp.46 = getv ? :Settings;
+        symbol [ ALTITUDE_VALUE %tmp.47 69 58 72 ];
+        %tmp.47 = getv %tmp.46 :ALTITUDE_VALUE;
+        %tmp.48 = dup %tmp.44;
+        %tmp.49 = aputv %tmp.48 0 %tmp.47;
+        %tmp.50 = invoke %tmp.41 %tmp.42(%tmp.43, %tmp.49);
+        lputv %altitudeText.2 %tmp.50;
+        symbol [ altitudeText %altitudeText.2 69 12 24 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 70 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 70 8 10 ];
+        symbol [ setColor %tmp.52 70 11 19 ];
+        %tmp.52 = getv function %tmp.51 :setColor;
+        symbol [ Settings %tmp.54 70 20 28 ];
+        %tmp.54 = getv ? :Settings;
+        symbol [ PRIMARY_COLOR %tmp.55 70 29 42 ];
+        %tmp.55 = getv %tmp.54 :PRIMARY_COLOR;
+        symbol [ Settings %tmp.57 70 44 52 ];
+        %tmp.57 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.58 70 53 69 ];
+        %tmp.58 = getv %tmp.57 :BACKGROUND_COLOR;
+        invoke %tmp.51 %tmp.52(%tmp.55, %tmp.58);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 71 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 71 8 10 ];
+        symbol [ drawText %tmp.60 71 11 19 ];
+        %tmp.60 = getv function %tmp.59 :drawText;
+        symbol [ Settings %tmp.62 72 12 20 ];
+        %tmp.62 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.63 72 21 29 ];
+        %tmp.63 = getv %tmp.62 :CENTER_X;
+        %tmp.64 = 16;
+        %tmp.65 = sub %tmp.63 %tmp.64;
+        symbol [ Settings %tmp.67 73 12 20 ];
+        %tmp.67 = getv ? :Settings;
+        symbol [ ALTITUDE_Y %tmp.68 73 21 31 ];
+        %tmp.68 = getv %tmp.67 :ALTITUDE_Y;
+        symbol [ Settings %tmp.70 74 12 20 ];
+        %tmp.70 = getv ? :Settings;
+        symbol [ TOP_META_FONT %tmp.71 74 21 34 ];
+        %tmp.71 = getv %tmp.70 :TOP_META_FONT;
+        %tmp.72 = lgetv %altitudeText.2;
+        symbol [ altitudeText %tmp.72 75 12 24 ];
+        symbol [ Graphics %tmp.73 76 12 20 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.74 76 21 38 ];
+        %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.75 76 41 49 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.76 76 50 70 ];
+        %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_VCENTER;
+        %tmp.77 = bitor %tmp.74 %tmp.76;
+        invoke %tmp.59 %tmp.60(%tmp.65, %tmp.68, %tmp.71, %tmp.72, %tmp.77);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_63_43_78_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 80; @symbol_functiondef = [drawMountainIcon,80,13,29]; @symbol_param<0> = [dc,80,30,32]; @symbol_param<0>_type<0> = [Dc,80,36,38]; @symbol_param<1> = [x,80,40,41]; @symbol_param<1>_type<0> = [Numeric,80,45,52]; @symbol_param<2> = [y,80,54,55]; @symbol_param<2>_type<0> = [Numeric,80,59,66]; @symbol_param<3> = [color,80,68,73]; @symbol_param<3>_type<0> = [ColorType,80,77,86]; ]
+    function drawMountainIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_80_96_89_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 81 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 81 8 10 ];
+        symbol [ setColor %tmp.2 81 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 81 20 25 ];
+        symbol [ Settings %tmp.5 81 27 35 ];
+        %tmp.5 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.6 81 36 52 ];
+        %tmp.6 = getv %tmp.5 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 82 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 82 8 10 ];
+        symbol [ fillPolygon %tmp.8 82 11 22 ];
+        %tmp.8 = getv function %tmp.7 :fillPolygon;
+        %tmp.9 = newa 5;
+        %tmp.10 = newa 2;
+        %tmp.11 = lgetv %x;
+        symbol [ x %tmp.11 83 13 14 ];
+        %tmp.12 = 10;
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        %tmp.14 = dup %tmp.10;
+        %tmp.15 = aputv %tmp.14 0 %tmp.13;
+        %tmp.16 = lgetv %y;
+        symbol [ y %tmp.16 83 21 22 ];
+        %tmp.17 = 7;
+        %tmp.18 = add %tmp.16 %tmp.17;
+        %tmp.19 = dup %tmp.15;
+        %tmp.20 = aputv %tmp.19 1 %tmp.18;
+        %tmp.21 = dup %tmp.9;
+        %tmp.22 = aputv %tmp.21 0 %tmp.20;
+        %tmp.23 = newa 2;
+        %tmp.24 = lgetv %x;
+        symbol [ x %tmp.24 84 13 14 ];
+        %tmp.25 = 3;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        %tmp.27 = dup %tmp.23;
+        %tmp.28 = aputv %tmp.27 0 %tmp.26;
+        %tmp.29 = lgetv %y;
+        symbol [ y %tmp.29 84 20 21 ];
+        %tmp.30 = 7;
+        %tmp.31 = sub %tmp.29 %tmp.30;
+        %tmp.32 = dup %tmp.28;
+        %tmp.33 = aputv %tmp.32 1 %tmp.31;
+        %tmp.34 = dup %tmp.22;
+        %tmp.35 = aputv %tmp.34 1 %tmp.33;
+        %tmp.36 = newa 2;
+        %tmp.37 = lgetv %x;
+        symbol [ x %tmp.37 85 13 14 ];
+        %tmp.38 = 2;
+        %tmp.39 = add %tmp.37 %tmp.38;
+        %tmp.40 = dup %tmp.36;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        %tmp.42 = lgetv %y;
+        symbol [ y %tmp.42 85 20 21 ];
+        %tmp.43 = 1;
+        %tmp.44 = add %tmp.42 %tmp.43;
+        %tmp.45 = dup %tmp.41;
+        %tmp.46 = aputv %tmp.45 1 %tmp.44;
+        %tmp.47 = dup %tmp.35;
+        %tmp.48 = aputv %tmp.47 2 %tmp.46;
+        %tmp.49 = newa 2;
+        %tmp.50 = lgetv %x;
+        symbol [ x %tmp.50 86 13 14 ];
+        %tmp.51 = 6;
+        %tmp.52 = add %tmp.50 %tmp.51;
+        %tmp.53 = dup %tmp.49;
+        %tmp.54 = aputv %tmp.53 0 %tmp.52;
+        %tmp.55 = lgetv %y;
+        symbol [ y %tmp.55 86 20 21 ];
+        %tmp.56 = 5;
+        %tmp.57 = sub %tmp.55 %tmp.56;
+        %tmp.58 = dup %tmp.54;
+        %tmp.59 = aputv %tmp.58 1 %tmp.57;
+        %tmp.60 = dup %tmp.48;
+        %tmp.61 = aputv %tmp.60 3 %tmp.59;
+        %tmp.62 = newa 2;
+        %tmp.63 = lgetv %x;
+        symbol [ x %tmp.63 87 13 14 ];
+        %tmp.64 = 14;
+        %tmp.65 = add %tmp.63 %tmp.64;
+        %tmp.66 = dup %tmp.62;
+        %tmp.67 = aputv %tmp.66 0 %tmp.65;
+        %tmp.68 = lgetv %y;
+        symbol [ y %tmp.68 87 21 22 ];
+        %tmp.69 = 7;
+        %tmp.70 = add %tmp.68 %tmp.69;
+        %tmp.71 = dup %tmp.67;
+        %tmp.72 = aputv %tmp.71 1 %tmp.70;
+        %tmp.73 = dup %tmp.61;
+        %tmp.74 = aputv %tmp.73 4 %tmp.72;
+        invoke %tmp.7 %tmp.8(%tmp.74);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_80_96_89_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 91; @symbol_functiondef = [drawDate,91,13,21]; @symbol_param<0> = [dc,91,22,24]; @symbol_param<0>_type<0> = [Dc,91,28,30]; @symbol_param<1> = [data,91,32,36]; @symbol_param<1>_type<0> = [WatchFaceData,91,40,53]; ]
+    function drawDate(dc as Dc, data as WatchFaceData) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_91_63_107_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 92 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_91_63_107_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_91_63_107_4_stop" ]
+        %text.1 = local;
+        symbol [ text %text.1 92 12 16 ];
+        symbol [ Lang %tmp.1 92 19 23 ];
+        %tmp.1 = getm $.Toybox.Lang;
+        symbol [ format %tmp.2 92 24 30 ];
         %tmp.2 = getv function %tmp.1 :format;
         %tmp.3 = "$1$ $2$ $3$";
         %tmp.4 = newa 3;
-        symbol [ Settings %tmp.6 22 16 24 ];
+        symbol [ Settings %tmp.6 95 16 24 ];
         %tmp.6 = getv ? :Settings;
-        symbol [ dayName %tmp.7 22 25 32 ];
+        symbol [ dayName %tmp.7 95 25 32 ];
         %tmp.7 = getv function %tmp.6 :dayName;
         %tmp.8 = lgetv %data;
-        symbol [ data %tmp.8 22 33 37 ];
-        symbol [ dayOfWeek %tmp.9 22 38 47 ];
+        symbol [ data %tmp.8 95 33 37 ];
+        symbol [ dayOfWeek %tmp.9 95 38 47 ];
         %tmp.9 = getv %tmp.8 :dayOfWeek;
         %tmp.10 = invoke %tmp.6 %tmp.7(%tmp.9);
         %tmp.11 = dup %tmp.4;
         %tmp.12 = aputv %tmp.11 0 %tmp.10;
         %tmp.13 = self;
-        symbol [ formatNumber %tmp.14 23 16 28 ];
+        symbol [ formatNumber %tmp.14 96 16 28 ];
         %tmp.14 = getv function %tmp.13 :formatNumber;
         %tmp.15 = lgetv %data;
-        symbol [ data %tmp.15 23 29 33 ];
-        symbol [ day %tmp.16 23 34 37 ];
+        symbol [ data %tmp.15 96 29 33 ];
+        symbol [ day %tmp.16 96 34 37 ];
         %tmp.16 = getv %tmp.15 :day;
         %tmp.17 = 2;
         %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.16, %tmp.17);
         %tmp.19 = dup %tmp.12;
         %tmp.20 = aputv %tmp.19 1 %tmp.18;
-        symbol [ Settings %tmp.22 24 16 24 ];
+        symbol [ Settings %tmp.22 97 16 24 ];
         %tmp.22 = getv ? :Settings;
-        symbol [ monthName %tmp.23 24 25 34 ];
+        symbol [ monthName %tmp.23 97 25 34 ];
         %tmp.23 = getv function %tmp.22 :monthName;
         %tmp.24 = lgetv %data;
-        symbol [ data %tmp.24 24 35 39 ];
-        symbol [ month %tmp.25 24 40 45 ];
+        symbol [ data %tmp.24 97 35 39 ];
+        symbol [ month %tmp.25 97 40 45 ];
         %tmp.25 = getv %tmp.24 :month;
         %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.25);
         %tmp.27 = dup %tmp.20;
         %tmp.28 = aputv %tmp.27 2 %tmp.26;
         %tmp.29 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.28);
         lputv %text.1 %tmp.29;
-        symbol [ text %text.1 19 12 16 ];
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 28 8 ]
-        %tmp.30 = self;
-        symbol [ drawCenteredText %tmp.31 28 8 24 ];
-        %tmp.31 = getv function %tmp.30 :drawCenteredText;
-        %tmp.32 = lgetv %dc;
-        symbol [ dc %tmp.32 28 25 27 ];
-        %tmp.33 = lgetv %text.1;
-        symbol [ text %tmp.33 28 29 33 ];
-        symbol [ Settings %tmp.35 28 35 43 ];
-        %tmp.35 = getv ? :Settings;
-        symbol [ CENTER_X %tmp.36 28 44 52 ];
-        %tmp.36 = getv %tmp.35 :CENTER_X;
-        symbol [ Settings %tmp.38 28 54 62 ];
-        %tmp.38 = getv ? :Settings;
-        symbol [ DATE_Y %tmp.39 28 63 69 ];
-        %tmp.39 = getv %tmp.38 :DATE_Y;
-        symbol [ Settings %tmp.41 28 71 79 ];
-        %tmp.41 = getv ? :Settings;
-        symbol [ TOP_FONT %tmp.42 28 80 88 ];
-        %tmp.42 = getv %tmp.41 :TOP_FONT;
-        symbol [ Settings %tmp.44 28 90 98 ];
-        %tmp.44 = getv ? :Settings;
-        symbol [ SECONDARY_COLOR %tmp.45 28 99 114 ];
-        %tmp.45 = getv %tmp.44 :SECONDARY_COLOR;
-        invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33, %tmp.36, %tmp.39, %tmp.42, %tmp.45);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_18_63_29_4_stop:
+        symbol [ text %text.1 92 12 16 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 101 8 ]
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 101 8 10 ];
+        symbol [ setColor %tmp.31 101 11 19 ];
+        %tmp.31 = getv function %tmp.30 :setColor;
+        symbol [ Settings %tmp.33 101 20 28 ];
+        %tmp.33 = getv ? :Settings;
+        symbol [ GRID_LINE %tmp.34 101 29 38 ];
+        %tmp.34 = getv %tmp.33 :GRID_LINE;
+        symbol [ Settings %tmp.36 101 40 48 ];
+        %tmp.36 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.37 101 49 65 ];
+        %tmp.37 = getv %tmp.36 :BACKGROUND_COLOR;
+        invoke %tmp.30 %tmp.31(%tmp.34, %tmp.37);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 102 8 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 102 8 10 ];
+        symbol [ setPenWidth %tmp.39 102 11 22 ];
+        %tmp.39 = getv function %tmp.38 :setPenWidth;
+        %tmp.40 = 1;
+        invoke %tmp.38 %tmp.39(%tmp.40);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 103 8 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 103 8 10 ];
+        symbol [ drawLine %tmp.42 103 11 19 ];
+        %tmp.42 = getv function %tmp.41 :drawLine;
+        %tmp.43 = 40;
+        symbol [ Settings %tmp.45 103 24 32 ];
+        %tmp.45 = getv ? :Settings;
+        symbol [ DATE_Y %tmp.46 103 33 39 ];
+        %tmp.46 = getv %tmp.45 :DATE_Y;
+        %tmp.47 = 82;
+        symbol [ Settings %tmp.49 103 45 53 ];
+        %tmp.49 = getv ? :Settings;
+        symbol [ DATE_Y %tmp.50 103 54 60 ];
+        %tmp.50 = getv %tmp.49 :DATE_Y;
+        invoke %tmp.41 %tmp.42(%tmp.43, %tmp.46, %tmp.47, %tmp.50);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 104 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 104 8 10 ];
+        symbol [ drawLine %tmp.52 104 11 19 ];
+        %tmp.52 = getv function %tmp.51 :drawLine;
+        %tmp.53 = 198;
+        symbol [ Settings %tmp.55 104 25 33 ];
+        %tmp.55 = getv ? :Settings;
+        symbol [ DATE_Y %tmp.56 104 34 40 ];
+        %tmp.56 = getv %tmp.55 :DATE_Y;
+        %tmp.57 = 240;
+        symbol [ Settings %tmp.59 104 47 55 ];
+        %tmp.59 = getv ? :Settings;
+        symbol [ DATE_Y %tmp.60 104 56 62 ];
+        %tmp.60 = getv %tmp.59 :DATE_Y;
+        invoke %tmp.51 %tmp.52(%tmp.53, %tmp.56, %tmp.57, %tmp.60);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 106 8 ]
+        %tmp.61 = self;
+        symbol [ drawCenteredText %tmp.62 106 8 24 ];
+        %tmp.62 = getv function %tmp.61 :drawCenteredText;
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 106 25 27 ];
+        %tmp.64 = lgetv %text.1;
+        symbol [ text %tmp.64 106 29 33 ];
+        symbol [ Settings %tmp.66 106 35 43 ];
+        %tmp.66 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.67 106 44 52 ];
+        %tmp.67 = getv %tmp.66 :CENTER_X;
+        symbol [ Settings %tmp.69 106 54 62 ];
+        %tmp.69 = getv ? :Settings;
+        symbol [ DATE_Y %tmp.70 106 63 69 ];
+        %tmp.70 = getv %tmp.69 :DATE_Y;
+        symbol [ Settings %tmp.72 106 71 79 ];
+        %tmp.72 = getv ? :Settings;
+        symbol [ DATE_FONT %tmp.73 106 80 89 ];
+        %tmp.73 = getv %tmp.72 :DATE_FONT;
+        symbol [ Settings %tmp.75 106 91 99 ];
+        %tmp.75 = getv ? :Settings;
+        symbol [ SECONDARY_COLOR %tmp.76 106 100 115 ];
+        %tmp.76 = getv %tmp.75 :SECONDARY_COLOR;
+        invoke %tmp.61 %tmp.62(%tmp.63, %tmp.64, %tmp.67, %tmp.70, %tmp.73, %tmp.76);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_91_63_107_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 31; @symbol_functiondef = [drawTime,31,13,21]; @symbol_param<0> = [dc,31,22,24]; @symbol_param<0>_type<0> = [Dc,31,28,30]; @symbol_param<1> = [data,31,32,36]; @symbol_param<1>_type<0> = [WatchFaceData,31,40,53]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 109; @symbol_functiondef = [drawTime,109,13,21]; @symbol_param<0> = [dc,109,22,24]; @symbol_param<0>_type<0> = [Dc,109,28,30]; @symbol_param<1> = [data,109,32,36]; @symbol_param<1>_type<0> = [WatchFaceData,109,40,53]; ]
     function drawTime(dc as Dc, data as WatchFaceData) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 32 8 ]
-        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_stop" ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 110 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_stop" ]
         %timeText.1 = local;
-        symbol [ timeText %timeText.1 32 12 20 ];
-        symbol [ Lang %tmp.1 32 23 27 ];
+        symbol [ timeText %timeText.1 110 12 20 ];
+        symbol [ Lang %tmp.1 110 23 27 ];
         %tmp.1 = getm $.Toybox.Lang;
-        symbol [ format %tmp.2 32 28 34 ];
+        symbol [ format %tmp.2 110 28 34 ];
         %tmp.2 = getv function %tmp.1 :format;
         %tmp.3 = "$1$:$2$";
         %tmp.4 = newa 2;
         %tmp.5 = self;
-        symbol [ formatNumber %tmp.6 35 16 28 ];
+        symbol [ formatNumber %tmp.6 113 16 28 ];
         %tmp.6 = getv function %tmp.5 :formatNumber;
         %tmp.7 = lgetv %data;
-        symbol [ data %tmp.7 35 29 33 ];
-        symbol [ hour %tmp.8 35 34 38 ];
+        symbol [ data %tmp.7 113 29 33 ];
+        symbol [ hour %tmp.8 113 34 38 ];
         %tmp.8 = getv %tmp.7 :hour;
         %tmp.9 = 2;
         %tmp.10 = invoke %tmp.5 %tmp.6(%tmp.8, %tmp.9);
         %tmp.11 = dup %tmp.4;
         %tmp.12 = aputv %tmp.11 0 %tmp.10;
         %tmp.13 = self;
-        symbol [ formatNumber %tmp.14 36 16 28 ];
+        symbol [ formatNumber %tmp.14 114 16 28 ];
         %tmp.14 = getv function %tmp.13 :formatNumber;
         %tmp.15 = lgetv %data;
-        symbol [ data %tmp.15 36 29 33 ];
-        symbol [ minute %tmp.16 36 34 40 ];
+        symbol [ data %tmp.15 114 29 33 ];
+        symbol [ minute %tmp.16 114 34 40 ];
         %tmp.16 = getv %tmp.15 :minute;
         %tmp.17 = 2;
         %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.16, %tmp.17);
@@ -179,1166 +806,1950 @@ _Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_
         %tmp.20 = aputv %tmp.19 1 %tmp.18;
         %tmp.21 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.20);
         lputv %timeText.1 %tmp.21;
-        symbol [ timeText %timeText.1 32 12 20 ];
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 39 8 ]
-        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_stop" ]
+        symbol [ timeText %timeText.1 110 12 20 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 118 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_stop" ]
         %timeFont.2 = local;
-        symbol [ timeFont %timeFont.2 39 12 20 ];
+        symbol [ timeFont %timeFont.2 118 12 20 ];
         %tmp.22 = self;
-        symbol [ getTimeFont %tmp.23 39 23 34 ];
+        symbol [ getTimeFont %tmp.23 118 23 34 ];
         %tmp.23 = getv function %tmp.22 :getTimeFont;
         %tmp.24 = lgetv %dc;
-        symbol [ dc %tmp.24 39 35 37 ];
+        symbol [ dc %tmp.24 118 35 37 ];
         %tmp.25 = lgetv %timeText.1;
-        symbol [ timeText %tmp.25 39 39 47 ];
+        symbol [ timeText %tmp.25 118 39 47 ];
         %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25);
         lputv %timeFont.2 %tmp.26;
-        symbol [ timeFont %timeFont.2 39 12 20 ];
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 40 8 ]
-        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_stop" ]
+        symbol [ timeFont %timeFont.2 118 12 20 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 119 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_stop" ]
         %timeWidth.3 = local;
-        symbol [ timeWidth %timeWidth.3 40 12 21 ];
+        symbol [ timeWidth %timeWidth.3 119 12 21 ];
         %tmp.27 = lgetv %dc;
-        symbol [ dc %tmp.27 40 24 26 ];
-        symbol [ getTextWidthInPixels %tmp.28 40 27 47 ];
+        symbol [ dc %tmp.27 119 24 26 ];
+        symbol [ getTextWidthInPixels %tmp.28 119 27 47 ];
         %tmp.28 = getv function %tmp.27 :getTextWidthInPixels;
         %tmp.29 = lgetv %timeText.1;
-        symbol [ timeText %tmp.29 40 48 56 ];
+        symbol [ timeText %tmp.29 119 48 56 ];
         %tmp.30 = lgetv %timeFont.2;
-        symbol [ timeFont %tmp.30 40 58 66 ];
+        symbol [ timeFont %tmp.30 119 58 66 ];
         %tmp.31 = invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30);
         lputv %timeWidth.3 %tmp.31;
-        symbol [ timeWidth %timeWidth.3 40 12 21 ];
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 41 8 ]
-        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_stop" ]
+        symbol [ timeWidth %timeWidth.3 119 12 21 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 120 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_stop" ]
         %secondsText.4 = local;
-        symbol [ secondsText %secondsText.4 41 12 23 ];
+        symbol [ secondsText %secondsText.4 120 12 23 ];
         %tmp.32 = self;
-        symbol [ formatNumber %tmp.33 41 26 38 ];
+        symbol [ formatNumber %tmp.33 120 26 38 ];
         %tmp.33 = getv function %tmp.32 :formatNumber;
         %tmp.34 = lgetv %data;
-        symbol [ data %tmp.34 41 39 43 ];
-        symbol [ second %tmp.35 41 44 50 ];
+        symbol [ data %tmp.34 120 39 43 ];
+        symbol [ second %tmp.35 120 44 50 ];
         %tmp.35 = getv %tmp.34 :second;
         %tmp.36 = 2;
         %tmp.37 = invoke %tmp.32 %tmp.33(%tmp.35, %tmp.36);
         lputv %secondsText.4 %tmp.37;
-        symbol [ secondsText %secondsText.4 41 12 23 ];
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 43 8 ]
+        symbol [ secondsText %secondsText.4 120 12 23 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 122 8 ]
         %tmp.38 = self;
-        symbol [ drawCenteredText %tmp.39 43 8 24 ];
+        symbol [ drawCenteredText %tmp.39 122 8 24 ];
         %tmp.39 = getv function %tmp.38 :drawCenteredText;
         %tmp.40 = lgetv %dc;
-        symbol [ dc %tmp.40 43 25 27 ];
+        symbol [ dc %tmp.40 122 25 27 ];
         %tmp.41 = lgetv %timeText.1;
-        symbol [ timeText %tmp.41 43 29 37 ];
-        symbol [ Settings %tmp.43 43 39 47 ];
+        symbol [ timeText %tmp.41 122 29 37 ];
+        symbol [ Settings %tmp.43 122 39 47 ];
         %tmp.43 = getv ? :Settings;
-        symbol [ CENTER_X %tmp.44 43 48 56 ];
+        symbol [ CENTER_X %tmp.44 122 48 56 ];
         %tmp.44 = getv %tmp.43 :CENTER_X;
-        symbol [ Settings %tmp.46 43 58 66 ];
+        symbol [ Settings %tmp.46 122 58 66 ];
         %tmp.46 = getv ? :Settings;
-        symbol [ TIME_Y %tmp.47 43 67 73 ];
+        symbol [ TIME_Y %tmp.47 122 67 73 ];
         %tmp.47 = getv %tmp.46 :TIME_Y;
         %tmp.48 = lgetv %timeFont.2;
-        symbol [ timeFont %tmp.48 43 75 83 ];
-        symbol [ Settings %tmp.50 43 85 93 ];
+        symbol [ timeFont %tmp.48 122 75 83 ];
+        symbol [ Settings %tmp.50 122 85 93 ];
         %tmp.50 = getv ? :Settings;
-        symbol [ PRIMARY_COLOR %tmp.51 43 94 107 ];
+        symbol [ PRIMARY_COLOR %tmp.51 122 94 107 ];
         %tmp.51 = getv %tmp.50 :PRIMARY_COLOR;
         invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.44, %tmp.47, %tmp.48, %tmp.51);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 45 8 ]
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 124 8 ]
         %tmp.52 = lgetv %dc;
-        symbol [ dc %tmp.52 45 8 10 ];
-        symbol [ setColor %tmp.53 45 11 19 ];
+        symbol [ dc %tmp.52 124 8 10 ];
+        symbol [ setColor %tmp.53 124 11 19 ];
         %tmp.53 = getv function %tmp.52 :setColor;
-        symbol [ Settings %tmp.55 45 20 28 ];
+        symbol [ Settings %tmp.55 124 20 28 ];
         %tmp.55 = getv ? :Settings;
-        symbol [ SECONDARY_COLOR %tmp.56 45 29 44 ];
+        symbol [ SECONDARY_COLOR %tmp.56 124 29 44 ];
         %tmp.56 = getv %tmp.55 :SECONDARY_COLOR;
-        symbol [ Settings %tmp.58 45 46 54 ];
+        symbol [ Settings %tmp.58 124 46 54 ];
         %tmp.58 = getv ? :Settings;
-        symbol [ BACKGROUND_COLOR %tmp.59 45 55 71 ];
+        symbol [ BACKGROUND_COLOR %tmp.59 124 55 71 ];
         %tmp.59 = getv %tmp.58 :BACKGROUND_COLOR;
         invoke %tmp.52 %tmp.53(%tmp.56, %tmp.59);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 46 8 ]
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 125 8 ]
         %tmp.60 = lgetv %dc;
-        symbol [ dc %tmp.60 46 8 10 ];
-        symbol [ drawText %tmp.61 46 11 19 ];
+        symbol [ dc %tmp.60 125 8 10 ];
+        symbol [ drawText %tmp.61 125 11 19 ];
         %tmp.61 = getv function %tmp.60 :drawText;
-        symbol [ Settings %tmp.63 47 12 20 ];
+        symbol [ Settings %tmp.63 126 12 20 ];
         %tmp.63 = getv ? :Settings;
-        symbol [ CENTER_X %tmp.64 47 21 29 ];
+        symbol [ CENTER_X %tmp.64 126 21 29 ];
         %tmp.64 = getv %tmp.63 :CENTER_X;
         %tmp.65 = lgetv %timeWidth.3;
-        symbol [ timeWidth %tmp.65 47 33 42 ];
+        symbol [ timeWidth %tmp.65 126 33 42 ];
         %tmp.66 = 2;
         %tmp.67 = div %tmp.65 %tmp.66;
         %tmp.68 = add %tmp.64 %tmp.67;
-        symbol [ Settings %tmp.70 47 50 58 ];
+        symbol [ Settings %tmp.70 126 50 58 ];
         %tmp.70 = getv ? :Settings;
-        symbol [ SECONDS_X_GAP %tmp.71 47 59 72 ];
+        symbol [ SECONDS_X_GAP %tmp.71 126 59 72 ];
         %tmp.71 = getv %tmp.70 :SECONDS_X_GAP;
         %tmp.72 = add %tmp.68 %tmp.71;
-        symbol [ Settings %tmp.74 48 12 20 ];
+        symbol [ Settings %tmp.74 127 12 20 ];
         %tmp.74 = getv ? :Settings;
-        symbol [ SECONDS_Y %tmp.75 48 21 30 ];
-        %tmp.75 = getv %tmp.74 :SECONDS_Y;
-        symbol [ Settings %tmp.77 49 12 20 ];
+        symbol [ TIME_Y %tmp.75 127 21 27 ];
+        %tmp.75 = getv %tmp.74 :TIME_Y;
+        symbol [ Settings %tmp.77 127 30 38 ];
         %tmp.77 = getv ? :Settings;
-        symbol [ SECONDS_FONT %tmp.78 49 21 33 ];
-        %tmp.78 = getv %tmp.77 :SECONDS_FONT;
-        %tmp.79 = lgetv %secondsText.4;
-        symbol [ secondsText %tmp.79 50 12 23 ];
-        symbol [ Graphics %tmp.80 51 12 20 ];
-        %tmp.80 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.81 51 21 38 ];
-        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.60 %tmp.61(%tmp.72, %tmp.75, %tmp.78, %tmp.79, %tmp.81);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_31_63_53_4_stop:
+        symbol [ SECONDS_Y_OFFSET %tmp.78 127 39 55 ];
+        %tmp.78 = getv %tmp.77 :SECONDS_Y_OFFSET;
+        %tmp.79 = add %tmp.75 %tmp.78;
+        symbol [ Settings %tmp.81 128 12 20 ];
+        %tmp.81 = getv ? :Settings;
+        symbol [ SECONDS_FONT %tmp.82 128 21 33 ];
+        %tmp.82 = getv %tmp.81 :SECONDS_FONT;
+        %tmp.83 = lgetv %secondsText.4;
+        symbol [ secondsText %tmp.83 129 12 23 ];
+        symbol [ Graphics %tmp.84 130 12 20 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.85 130 21 38 ];
+        %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.86 130 41 49 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.87 130 50 70 ];
+        %tmp.87 = getv %tmp.86 :TEXT_JUSTIFY_VCENTER;
+        %tmp.88 = bitor %tmp.85 %tmp.87;
+        invoke %tmp.60 %tmp.61(%tmp.72, %tmp.79, %tmp.82, %tmp.83, %tmp.88);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_63_132_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 55; @symbol_functiondef = [drawMetrics,55,13,24]; @symbol_param<0> = [dc,55,25,27]; @symbol_param<0>_type<0> = [Dc,55,31,33]; @symbol_param<1> = [data,55,35,39]; @symbol_param<1>_type<0> = [WatchFaceData,55,43,56]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 134; @symbol_functiondef = [drawMetrics,134,13,24]; @symbol_param<0> = [dc,134,25,27]; @symbol_param<0>_type<0> = [Dc,134,31,33]; @symbol_param<1> = [data,134,35,39]; @symbol_param<1>_type<0> = [WatchFaceData,134,43,56]; ]
     function drawMetrics(dc as Dc, data as WatchFaceData) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_55_66_60_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 56 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_134_66_141_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 135 8 ]
         %tmp.1 = self;
-        symbol [ drawMetric %tmp.2 56 8 18 ];
-        %tmp.2 = getv function %tmp.1 :drawMetric;
+        symbol [ drawMetricSeparators %tmp.2 135 8 28 ];
+        %tmp.2 = getv function %tmp.1 :drawMetricSeparators;
         %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 56 19 21 ];
-        symbol [ Settings %tmp.5 56 23 31 ];
-        %tmp.5 = getv ? :Settings;
-        symbol [ COLUMN_1_X %tmp.6 56 32 42 ];
-        %tmp.6 = getv %tmp.5 :COLUMN_1_X;
-        symbol [ Settings %tmp.8 56 44 52 ];
+        symbol [ dc %tmp.3 135 29 31 ];
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 137 8 ]
+        %tmp.4 = self;
+        symbol [ drawMetric %tmp.5 137 8 18 ];
+        %tmp.5 = getv function %tmp.4 :drawMetric;
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 137 19 21 ];
+        symbol [ Settings %tmp.8 137 23 31 ];
         %tmp.8 = getv ? :Settings;
-        symbol [ ICON_HEART %tmp.9 56 53 63 ];
-        %tmp.9 = getv %tmp.8 :ICON_HEART;
-        %tmp.10 = self;
-        symbol [ formatValue %tmp.11 56 65 76 ];
-        %tmp.11 = getv function %tmp.10 :formatValue;
-        %tmp.12 = lgetv %data;
-        symbol [ data %tmp.12 56 77 81 ];
-        symbol [ heartRate %tmp.13 56 82 91 ];
-        %tmp.13 = getv %tmp.12 :heartRate;
-        %tmp.14 = "--";
-        %tmp.15 = invoke %tmp.10 %tmp.11(%tmp.13, %tmp.14);
-        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6, %tmp.9, %tmp.15);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 57 8 ]
-        %tmp.16 = self;
-        symbol [ drawMetric %tmp.17 57 8 18 ];
-        %tmp.17 = getv function %tmp.16 :drawMetric;
-        %tmp.18 = lgetv %dc;
-        symbol [ dc %tmp.18 57 19 21 ];
-        symbol [ Settings %tmp.20 57 23 31 ];
+        symbol [ COLUMN_1_X %tmp.9 137 32 42 ];
+        %tmp.9 = getv %tmp.8 :COLUMN_1_X;
+        symbol [ Settings %tmp.11 137 44 52 ];
+        %tmp.11 = getv ? :Settings;
+        symbol [ ICON_HEART %tmp.12 137 53 63 ];
+        %tmp.12 = getv %tmp.11 :ICON_HEART;
+        %tmp.13 = self;
+        symbol [ formatValue %tmp.14 137 65 76 ];
+        %tmp.14 = getv function %tmp.13 :formatValue;
+        %tmp.15 = lgetv %data;
+        symbol [ data %tmp.15 137 77 81 ];
+        symbol [ heartRate %tmp.16 137 82 91 ];
+        %tmp.16 = getv %tmp.15 :heartRate;
+        %tmp.17 = "--";
+        %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.16, %tmp.17);
+        symbol [ Settings %tmp.20 137 100 108 ];
         %tmp.20 = getv ? :Settings;
-        symbol [ COLUMN_2_X %tmp.21 57 32 42 ];
-        %tmp.21 = getv %tmp.20 :COLUMN_2_X;
-        symbol [ Settings %tmp.23 57 44 52 ];
-        %tmp.23 = getv ? :Settings;
-        symbol [ ICON_STEPS %tmp.24 57 53 63 ];
-        %tmp.24 = getv %tmp.23 :ICON_STEPS;
-        %tmp.25 = self;
-        symbol [ compactNumber %tmp.26 57 65 78 ];
-        %tmp.26 = getv function %tmp.25 :compactNumber;
-        %tmp.27 = lgetv %data;
-        symbol [ data %tmp.27 57 79 83 ];
-        symbol [ steps %tmp.28 57 84 89 ];
-        %tmp.28 = getv %tmp.27 :steps;
-        %tmp.29 = invoke %tmp.25 %tmp.26(%tmp.28);
-        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.21, %tmp.24, %tmp.29);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 58 8 ]
-        %tmp.30 = self;
-        symbol [ drawMetric %tmp.31 58 8 18 ];
-        %tmp.31 = getv function %tmp.30 :drawMetric;
-        %tmp.32 = lgetv %dc;
-        symbol [ dc %tmp.32 58 19 21 ];
-        symbol [ Settings %tmp.34 58 23 31 ];
-        %tmp.34 = getv ? :Settings;
-        symbol [ COLUMN_3_X %tmp.35 58 32 42 ];
-        %tmp.35 = getv %tmp.34 :COLUMN_3_X;
-        symbol [ Settings %tmp.37 58 44 52 ];
+        symbol [ RED %tmp.21 137 109 112 ];
+        %tmp.21 = getv %tmp.20 :RED;
+        invoke %tmp.4 %tmp.5(%tmp.6, %tmp.9, %tmp.12, %tmp.18, %tmp.21);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 138 8 ]
+        %tmp.22 = self;
+        symbol [ drawMetric %tmp.23 138 8 18 ];
+        %tmp.23 = getv function %tmp.22 :drawMetric;
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 138 19 21 ];
+        symbol [ Settings %tmp.26 138 23 31 ];
+        %tmp.26 = getv ? :Settings;
+        symbol [ COLUMN_2_X %tmp.27 138 32 42 ];
+        %tmp.27 = getv %tmp.26 :COLUMN_2_X;
+        symbol [ Settings %tmp.29 138 44 52 ];
+        %tmp.29 = getv ? :Settings;
+        symbol [ ICON_STEPS %tmp.30 138 53 63 ];
+        %tmp.30 = getv %tmp.29 :ICON_STEPS;
+        %tmp.31 = self;
+        symbol [ compactNumber %tmp.32 138 65 78 ];
+        %tmp.32 = getv function %tmp.31 :compactNumber;
+        %tmp.33 = lgetv %data;
+        symbol [ data %tmp.33 138 79 83 ];
+        symbol [ steps %tmp.34 138 84 89 ];
+        %tmp.34 = getv %tmp.33 :steps;
+        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+        symbol [ Settings %tmp.37 138 92 100 ];
         %tmp.37 = getv ? :Settings;
-        symbol [ ICON_TEMP %tmp.38 58 53 62 ];
-        %tmp.38 = getv %tmp.37 :ICON_TEMP;
+        symbol [ GREEN %tmp.38 138 101 106 ];
+        %tmp.38 = getv %tmp.37 :GREEN;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.27, %tmp.30, %tmp.35, %tmp.38);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 139 8 ]
         %tmp.39 = self;
-        symbol [ formatWeather %tmp.40 58 64 77 ];
-        %tmp.40 = getv function %tmp.39 :formatWeather;
-        %tmp.41 = lgetv %data;
-        symbol [ data %tmp.41 58 78 82 ];
-        symbol [ temperature %tmp.42 58 83 94 ];
-        %tmp.42 = getv %tmp.41 :temperature;
-        %tmp.43 = invoke %tmp.39 %tmp.40(%tmp.42);
-        invoke %tmp.30 %tmp.31(%tmp.32, %tmp.35, %tmp.38, %tmp.43);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 59 8 ]
-        %tmp.44 = self;
-        symbol [ drawMetric %tmp.45 59 8 18 ];
-        %tmp.45 = getv function %tmp.44 :drawMetric;
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 59 19 21 ];
-        symbol [ Settings %tmp.48 59 23 31 ];
-        %tmp.48 = getv ? :Settings;
-        symbol [ COLUMN_4_X %tmp.49 59 32 42 ];
-        %tmp.49 = getv %tmp.48 :COLUMN_4_X;
-        symbol [ Settings %tmp.51 59 44 52 ];
-        %tmp.51 = getv ? :Settings;
-        symbol [ ICON_BATTERY %tmp.52 59 53 65 ];
-        %tmp.52 = getv %tmp.51 :ICON_BATTERY;
-        %tmp.53 = self;
-        symbol [ formatBattery %tmp.54 59 67 80 ];
-        %tmp.54 = getv function %tmp.53 :formatBattery;
-        %tmp.55 = lgetv %data;
-        symbol [ data %tmp.55 59 81 85 ];
-        symbol [ batteryPercent %tmp.56 59 86 100 ];
-        %tmp.56 = getv %tmp.55 :batteryPercent;
-        %tmp.57 = invoke %tmp.53 %tmp.54(%tmp.56);
-        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.49, %tmp.52, %tmp.57);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_55_66_60_4_stop:
+        symbol [ drawMetric %tmp.40 139 8 18 ];
+        %tmp.40 = getv function %tmp.39 :drawMetric;
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 139 19 21 ];
+        symbol [ Settings %tmp.43 139 23 31 ];
+        %tmp.43 = getv ? :Settings;
+        symbol [ COLUMN_3_X %tmp.44 139 32 42 ];
+        %tmp.44 = getv %tmp.43 :COLUMN_3_X;
+        symbol [ Settings %tmp.46 139 44 52 ];
+        %tmp.46 = getv ? :Settings;
+        symbol [ ICON_TEMP %tmp.47 139 53 62 ];
+        %tmp.47 = getv %tmp.46 :ICON_TEMP;
+        %tmp.48 = self;
+        symbol [ formatWeather %tmp.49 139 64 77 ];
+        %tmp.49 = getv function %tmp.48 :formatWeather;
+        %tmp.50 = lgetv %data;
+        symbol [ data %tmp.50 139 78 82 ];
+        symbol [ temperature %tmp.51 139 83 94 ];
+        %tmp.51 = getv %tmp.50 :temperature;
+        %tmp.52 = invoke %tmp.48 %tmp.49(%tmp.51);
+        symbol [ Settings %tmp.54 139 97 105 ];
+        %tmp.54 = getv ? :Settings;
+        symbol [ YELLOW %tmp.55 139 106 112 ];
+        %tmp.55 = getv %tmp.54 :YELLOW;
+        invoke %tmp.39 %tmp.40(%tmp.41, %tmp.44, %tmp.47, %tmp.52, %tmp.55);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 140 8 ]
+        %tmp.56 = self;
+        symbol [ drawMetric %tmp.57 140 8 18 ];
+        %tmp.57 = getv function %tmp.56 :drawMetric;
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 140 19 21 ];
+        symbol [ Settings %tmp.60 140 23 31 ];
+        %tmp.60 = getv ? :Settings;
+        symbol [ COLUMN_4_X %tmp.61 140 32 42 ];
+        %tmp.61 = getv %tmp.60 :COLUMN_4_X;
+        symbol [ Settings %tmp.63 140 44 52 ];
+        %tmp.63 = getv ? :Settings;
+        symbol [ ICON_BATTERY %tmp.64 140 53 65 ];
+        %tmp.64 = getv %tmp.63 :ICON_BATTERY;
+        %tmp.65 = self;
+        symbol [ formatBattery %tmp.66 140 67 80 ];
+        %tmp.66 = getv function %tmp.65 :formatBattery;
+        %tmp.67 = lgetv %data;
+        symbol [ data %tmp.67 140 81 85 ];
+        symbol [ batteryPercent %tmp.68 140 86 100 ];
+        %tmp.68 = getv %tmp.67 :batteryPercent;
+        %tmp.69 = invoke %tmp.65 %tmp.66(%tmp.68);
+        symbol [ Settings %tmp.71 140 103 111 ];
+        %tmp.71 = getv ? :Settings;
+        symbol [ GREEN %tmp.72 140 112 117 ];
+        %tmp.72 = getv %tmp.71 :GREEN;
+        invoke %tmp.56 %tmp.57(%tmp.58, %tmp.61, %tmp.64, %tmp.69, %tmp.72);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_134_66_141_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 62; @symbol_functiondef = [drawMetric,62,13,23]; @symbol_param<0> = [dc,62,24,26]; @symbol_param<0>_type<0> = [Dc,62,30,32]; @symbol_param<1> = [x,62,34,35]; @symbol_param<1>_type<0> = [Number,62,39,45]; @symbol_param<2> = [icon,62,47,51]; @symbol_param<2>_type<0> = [Number,62,55,61]; @symbol_param<3> = [value,62,63,68]; @symbol_param<3>_type<0> = [String,62,72,78]; ]
-    function drawMetric(dc as Dc, x as Number, icon as Number, value as String) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_62_88_65_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 63 8 ]
-        %tmp.1 = self;
-        symbol [ drawMetricIcon %tmp.2 63 8 22 ];
-        %tmp.2 = getv function %tmp.1 :drawMetricIcon;
-        %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 63 23 25 ];
-        %tmp.4 = lgetv %icon;
-        symbol [ icon %tmp.4 63 27 31 ];
-        %tmp.5 = lgetv %x;
-        symbol [ x %tmp.5 63 33 34 ];
-        symbol [ Settings %tmp.7 63 36 44 ];
-        %tmp.7 = getv ? :Settings;
-        symbol [ METRIC_ICON_Y %tmp.8 63 45 58 ];
-        %tmp.8 = getv %tmp.7 :METRIC_ICON_Y;
-        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.8);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 64 8 ]
-        %tmp.9 = self;
-        symbol [ drawCenteredText %tmp.10 64 8 24 ];
-        %tmp.10 = getv function %tmp.9 :drawCenteredText;
-        %tmp.11 = lgetv %dc;
-        symbol [ dc %tmp.11 64 25 27 ];
-        %tmp.12 = lgetv %value;
-        symbol [ value %tmp.12 64 29 34 ];
-        %tmp.13 = lgetv %x;
-        symbol [ x %tmp.13 64 36 37 ];
-        symbol [ Settings %tmp.15 64 39 47 ];
-        %tmp.15 = getv ? :Settings;
-        symbol [ METRIC_VALUE_Y %tmp.16 64 48 62 ];
-        %tmp.16 = getv %tmp.15 :METRIC_VALUE_Y;
-        symbol [ Settings %tmp.18 64 64 72 ];
-        %tmp.18 = getv ? :Settings;
-        symbol [ METRIC_FONT %tmp.19 64 73 84 ];
-        %tmp.19 = getv %tmp.18 :METRIC_FONT;
-        symbol [ Settings %tmp.21 64 86 94 ];
-        %tmp.21 = getv ? :Settings;
-        symbol [ PRIMARY_COLOR %tmp.22 64 95 108 ];
-        %tmp.22 = getv %tmp.21 :PRIMARY_COLOR;
-        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.13, %tmp.16, %tmp.19, %tmp.22);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_62_88_65_4_stop:
-    }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 67; @symbol_functiondef = [drawMetricIcon,67,13,27]; @symbol_param<0> = [dc,67,28,30]; @symbol_param<0>_type<0> = [Dc,67,34,36]; @symbol_param<1> = [icon,67,38,42]; @symbol_param<1>_type<0> = [Number,67,46,52]; @symbol_param<2> = [x,67,54,55]; @symbol_param<2>_type<0> = [Numeric,67,59,66]; @symbol_param<3> = [y,67,68,69]; @symbol_param<3>_type<0> = [Numeric,67,73,80]; ]
-    function drawMetricIcon(dc as Dc, icon as Number, x as Numeric, y as Numeric) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_67_90_87_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 68 8 ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 143; @symbol_functiondef = [drawMetricSeparators,143,13,33]; @symbol_param<0> = [dc,143,34,36]; @symbol_param<0>_type<0> = [Dc,143,40,42]; ]
+    function drawMetricSeparators(dc as Dc) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_143_52_150_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 144 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 68 8 10 ];
-        symbol [ setColor %tmp.2 68 11 19 ];
+        symbol [ dc %tmp.1 144 8 10 ];
+        symbol [ setColor %tmp.2 144 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Settings %tmp.4 68 20 28 ];
+        symbol [ Settings %tmp.4 144 20 28 ];
         %tmp.4 = getv ? :Settings;
-        symbol [ PRIMARY_COLOR %tmp.5 68 29 42 ];
-        %tmp.5 = getv %tmp.4 :PRIMARY_COLOR;
-        symbol [ Settings %tmp.7 68 44 52 ];
+        symbol [ GRID_LINE %tmp.5 144 29 38 ];
+        %tmp.5 = getv %tmp.4 :GRID_LINE;
+        symbol [ Settings %tmp.7 144 40 48 ];
         %tmp.7 = getv ? :Settings;
-        symbol [ BACKGROUND_COLOR %tmp.8 68 53 69 ];
+        symbol [ BACKGROUND_COLOR %tmp.8 144 49 65 ];
         %tmp.8 = getv %tmp.7 :BACKGROUND_COLOR;
         invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 69 8 ]
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 145 8 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 69 8 10 ];
-        symbol [ setPenWidth %tmp.10 69 11 22 ];
+        symbol [ dc %tmp.9 145 8 10 ];
+        symbol [ setPenWidth %tmp.10 145 11 22 ];
         %tmp.10 = getv function %tmp.9 :setPenWidth;
         %tmp.11 = 1;
         invoke %tmp.9 %tmp.10(%tmp.11);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 71 8 ]
-        %tmp.12 = lgetv %icon;
-        symbol [ icon %tmp.12 71 16 20 ];
-        push %tmp.12;
-        switch %tmp.12 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtBegin:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 72 12 ]
-        %tmp.13 = dup %tmp.12;
-        symbol [ Settings %tmp.15 72 17 25 ];
-        %tmp.15 = getv ? :Settings;
-        symbol [ ICON_HEART %tmp.16 72 26 36 ];
-        %tmp.16 = getv %tmp.15 :ICON_HEART;
-        %tmp.17 = getv function %tmp.13 :equals;
-        %tmp.18 = invoke %tmp.13 %tmp.17 (%tmp.16);
-        bt %tmp.18 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_72_12_74_21_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 75 12 ]
-        %tmp.19 = dup %tmp.12;
-        symbol [ Settings %tmp.21 75 17 25 ];
-        %tmp.21 = getv ? :Settings;
-        symbol [ ICON_STEPS %tmp.22 75 26 36 ];
-        %tmp.22 = getv %tmp.21 :ICON_STEPS;
-        %tmp.23 = getv function %tmp.19 :equals;
-        %tmp.24 = invoke %tmp.19 %tmp.23 (%tmp.22);
-        bt %tmp.24 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_75_12_77_21_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 78 12 ]
-        %tmp.25 = dup %tmp.12;
-        symbol [ Settings %tmp.27 78 17 25 ];
-        %tmp.27 = getv ? :Settings;
-        symbol [ ICON_TEMP %tmp.28 78 26 35 ];
-        %tmp.28 = getv %tmp.27 :ICON_TEMP;
-        %tmp.29 = getv function %tmp.25 :equals;
-        %tmp.30 = invoke %tmp.25 %tmp.29 (%tmp.28);
-        bt %tmp.30 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_78_12_80_21_switchCase;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 81 12 ]
-        %tmp.31 = dup %tmp.12;
-        symbol [ Settings %tmp.33 81 17 25 ];
-        %tmp.33 = getv ? :Settings;
-        symbol [ ICON_BATTERY %tmp.34 81 26 38 ];
-        %tmp.34 = getv %tmp.33 :ICON_BATTERY;
-        %tmp.35 = getv function %tmp.31 :equals;
-        %tmp.36 = invoke %tmp.31 %tmp.35 (%tmp.34);
-        bt %tmp.36 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_81_12_83_21_switchCase;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtDefault:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_defaultCodeBegin;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_72_12_74_21_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 73 16 ]
-        %tmp.37 = self;
-        symbol [ drawHeartIcon %tmp.38 73 16 29 ];
-        %tmp.38 = getv function %tmp.37 :drawHeartIcon;
-        %tmp.39 = lgetv %dc;
-        symbol [ dc %tmp.39 73 30 32 ];
-        %tmp.40 = lgetv %x;
-        symbol [ x %tmp.40 73 34 35 ];
-        %tmp.41 = lgetv %y;
-        symbol [ y %tmp.41 73 37 38 ];
-        invoke %tmp.37 %tmp.38(%tmp.39, %tmp.40, %tmp.41);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 74 16 ]
-        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_75_12_77_21_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 76 16 ]
-        %tmp.42 = self;
-        symbol [ drawStepsIcon %tmp.43 76 16 29 ];
-        %tmp.43 = getv function %tmp.42 :drawStepsIcon;
-        %tmp.44 = lgetv %dc;
-        symbol [ dc %tmp.44 76 30 32 ];
-        %tmp.45 = lgetv %x;
-        symbol [ x %tmp.45 76 34 35 ];
-        %tmp.46 = lgetv %y;
-        symbol [ y %tmp.46 76 37 38 ];
-        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45, %tmp.46);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 77 16 ]
-        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_78_12_80_21_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 79 16 ]
-        %tmp.47 = self;
-        symbol [ drawSunIcon %tmp.48 79 16 27 ];
-        %tmp.48 = getv function %tmp.47 :drawSunIcon;
-        %tmp.49 = lgetv %dc;
-        symbol [ dc %tmp.49 79 28 30 ];
-        %tmp.50 = lgetv %x;
-        symbol [ x %tmp.50 79 32 33 ];
-        %tmp.51 = lgetv %y;
-        symbol [ y %tmp.51 79 35 36 ];
-        invoke %tmp.47 %tmp.48(%tmp.49, %tmp.50, %tmp.51);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 80 16 ]
-        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_81_12_83_21_switchCase:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 82 16 ]
-        %tmp.52 = self;
-        symbol [ drawBatteryIcon %tmp.53 82 16 31 ];
-        %tmp.53 = getv function %tmp.52 :drawBatteryIcon;
-        %tmp.54 = lgetv %dc;
-        symbol [ dc %tmp.54 82 32 34 ];
-        %tmp.55 = lgetv %x;
-        symbol [ x %tmp.55 82 36 37 ];
-        %tmp.56 = lgetv %y;
-        symbol [ y %tmp.56 82 39 40 ];
-        invoke %tmp.52 %tmp.53(%tmp.54, %tmp.55, %tmp.56);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 83 16 ]
-        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtEnd;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_defaultCodeBegin:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_71_8_84_8_switchStmtEnd:
-        pop;
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 86 8 ]
-        %tmp.57 = lgetv %dc;
-        symbol [ dc %tmp.57 86 8 10 ];
-        symbol [ setPenWidth %tmp.58 86 11 22 ];
-        %tmp.58 = getv function %tmp.57 :setPenWidth;
-        %tmp.59 = 1;
-        invoke %tmp.57 %tmp.58(%tmp.59);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_67_90_87_4_stop:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 147 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 147 8 10 ];
+        symbol [ drawLine %tmp.13 147 11 19 ];
+        %tmp.13 = getv function %tmp.12 :drawLine;
+        %tmp.14 = 78;
+        symbol [ Settings %tmp.16 147 24 32 ];
+        %tmp.16 = getv ? :Settings;
+        symbol [ METRIC_SEPARATOR_TOP %tmp.17 147 33 53 ];
+        %tmp.17 = getv %tmp.16 :METRIC_SEPARATOR_TOP;
+        %tmp.18 = 78;
+        symbol [ Settings %tmp.20 147 59 67 ];
+        %tmp.20 = getv ? :Settings;
+        symbol [ METRIC_SEPARATOR_BOTTOM %tmp.21 147 68 91 ];
+        %tmp.21 = getv %tmp.20 :METRIC_SEPARATOR_BOTTOM;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.17, %tmp.18, %tmp.21);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 148 8 ]
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 148 8 10 ];
+        symbol [ drawLine %tmp.23 148 11 19 ];
+        %tmp.23 = getv function %tmp.22 :drawLine;
+        %tmp.24 = 140;
+        symbol [ Settings %tmp.26 148 25 33 ];
+        %tmp.26 = getv ? :Settings;
+        symbol [ METRIC_SEPARATOR_TOP %tmp.27 148 34 54 ];
+        %tmp.27 = getv %tmp.26 :METRIC_SEPARATOR_TOP;
+        %tmp.28 = 140;
+        symbol [ Settings %tmp.30 148 61 69 ];
+        %tmp.30 = getv ? :Settings;
+        symbol [ METRIC_SEPARATOR_BOTTOM %tmp.31 148 70 93 ];
+        %tmp.31 = getv %tmp.30 :METRIC_SEPARATOR_BOTTOM;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.27, %tmp.28, %tmp.31);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 149 8 ]
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 149 8 10 ];
+        symbol [ drawLine %tmp.33 149 11 19 ];
+        %tmp.33 = getv function %tmp.32 :drawLine;
+        %tmp.34 = 202;
+        symbol [ Settings %tmp.36 149 25 33 ];
+        %tmp.36 = getv ? :Settings;
+        symbol [ METRIC_SEPARATOR_TOP %tmp.37 149 34 54 ];
+        %tmp.37 = getv %tmp.36 :METRIC_SEPARATOR_TOP;
+        %tmp.38 = 202;
+        symbol [ Settings %tmp.40 149 61 69 ];
+        %tmp.40 = getv ? :Settings;
+        symbol [ METRIC_SEPARATOR_BOTTOM %tmp.41 149 70 93 ];
+        %tmp.41 = getv %tmp.40 :METRIC_SEPARATOR_BOTTOM;
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.37, %tmp.38, %tmp.41);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_143_52_150_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 89; @symbol_functiondef = [drawHeartIcon,89,13,26]; @symbol_param<0> = [dc,89,27,29]; @symbol_param<0>_type<0> = [Dc,89,33,35]; @symbol_param<1> = [x,89,37,38]; @symbol_param<1>_type<0> = [Numeric,89,42,49]; @symbol_param<2> = [y,89,51,52]; @symbol_param<2>_type<0> = [Numeric,89,56,63]; ]
-    function drawHeartIcon(dc as Dc, x as Numeric, y as Numeric) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_89_73_98_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 90 8 ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 152; @symbol_functiondef = [drawMetric,152,13,23]; @symbol_param<0> = [dc,152,24,26]; @symbol_param<0>_type<0> = [Dc,152,30,32]; @symbol_param<1> = [x,152,34,35]; @symbol_param<1>_type<0> = [Number,152,39,45]; @symbol_param<2> = [icon,152,47,51]; @symbol_param<2>_type<0> = [Number,152,55,61]; @symbol_param<3> = [value,152,63,68]; @symbol_param<3>_type<0> = [String,152,72,78]; @symbol_param<4> = [iconColor,152,80,89]; @symbol_param<4>_type<0> = [ColorType,152,93,102]; ]
+    function drawMetric(dc as Dc, x as Number, icon as Number, value as String, iconColor as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_152_112_169_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 153 8 ]
+        %tmp.1 = lgetv %icon;
+        symbol [ icon %tmp.1 153 16 20 ];
+        push %tmp.1;
+        switch %tmp.1 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtBegin:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 154 12 ]
+        %tmp.2 = dup %tmp.1;
+        symbol [ Settings %tmp.4 154 17 25 ];
+        %tmp.4 = getv ? :Settings;
+        symbol [ ICON_HEART %tmp.5 154 26 36 ];
+        %tmp.5 = getv %tmp.4 :ICON_HEART;
+        %tmp.6 = getv function %tmp.2 :equals;
+        %tmp.7 = invoke %tmp.2 %tmp.6 (%tmp.5);
+        bt %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_154_12_156_21_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 157 12 ]
+        %tmp.8 = dup %tmp.1;
+        symbol [ Settings %tmp.10 157 17 25 ];
+        %tmp.10 = getv ? :Settings;
+        symbol [ ICON_STEPS %tmp.11 157 26 36 ];
+        %tmp.11 = getv %tmp.10 :ICON_STEPS;
+        %tmp.12 = getv function %tmp.8 :equals;
+        %tmp.13 = invoke %tmp.8 %tmp.12 (%tmp.11);
+        bt %tmp.13 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_12_159_21_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 160 12 ]
+        %tmp.14 = dup %tmp.1;
+        symbol [ Settings %tmp.16 160 17 25 ];
+        %tmp.16 = getv ? :Settings;
+        symbol [ ICON_TEMP %tmp.17 160 26 35 ];
+        %tmp.17 = getv %tmp.16 :ICON_TEMP;
+        %tmp.18 = getv function %tmp.14 :equals;
+        %tmp.19 = invoke %tmp.14 %tmp.18 (%tmp.17);
+        bt %tmp.19 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_160_12_162_21_switchCase;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 163 12 ]
+        %tmp.20 = dup %tmp.1;
+        symbol [ Settings %tmp.22 163 17 25 ];
+        %tmp.22 = getv ? :Settings;
+        symbol [ ICON_BATTERY %tmp.23 163 26 38 ];
+        %tmp.23 = getv %tmp.22 :ICON_BATTERY;
+        %tmp.24 = getv function %tmp.20 :equals;
+        %tmp.25 = invoke %tmp.20 %tmp.24 (%tmp.23);
+        bt %tmp.25 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_163_12_165_21_switchCase;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtDefault:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_defaultCodeBegin;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_154_12_156_21_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 155 16 ]
+        %tmp.26 = self;
+        symbol [ drawHeartIcon %tmp.27 155 16 29 ];
+        %tmp.27 = getv function %tmp.26 :drawHeartIcon;
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 155 30 32 ];
+        %tmp.29 = lgetv %x;
+        symbol [ x %tmp.29 155 34 35 ];
+        symbol [ Settings %tmp.31 155 37 45 ];
+        %tmp.31 = getv ? :Settings;
+        symbol [ METRIC_ICON_Y %tmp.32 155 46 59 ];
+        %tmp.32 = getv %tmp.31 :METRIC_ICON_Y;
+        %tmp.33 = lgetv %iconColor;
+        symbol [ iconColor %tmp.33 155 61 70 ];
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.32, %tmp.33);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 156 16 ]
+        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_12_159_21_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 158 16 ]
+        %tmp.34 = self;
+        symbol [ drawStepsIcon %tmp.35 158 16 29 ];
+        %tmp.35 = getv function %tmp.34 :drawStepsIcon;
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 158 30 32 ];
+        %tmp.37 = lgetv %x;
+        symbol [ x %tmp.37 158 34 35 ];
+        symbol [ Settings %tmp.39 158 37 45 ];
+        %tmp.39 = getv ? :Settings;
+        symbol [ METRIC_ICON_Y %tmp.40 158 46 59 ];
+        %tmp.40 = getv %tmp.39 :METRIC_ICON_Y;
+        %tmp.41 = lgetv %iconColor;
+        symbol [ iconColor %tmp.41 158 61 70 ];
+        invoke %tmp.34 %tmp.35(%tmp.36, %tmp.37, %tmp.40, %tmp.41);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 159 16 ]
+        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_160_12_162_21_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 161 16 ]
+        %tmp.42 = self;
+        symbol [ drawWeatherIcon %tmp.43 161 16 31 ];
+        %tmp.43 = getv function %tmp.42 :drawWeatherIcon;
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 161 32 34 ];
+        %tmp.45 = lgetv %x;
+        symbol [ x %tmp.45 161 36 37 ];
+        symbol [ Settings %tmp.47 161 39 47 ];
+        %tmp.47 = getv ? :Settings;
+        symbol [ METRIC_ICON_Y %tmp.48 161 48 61 ];
+        %tmp.48 = getv %tmp.47 :METRIC_ICON_Y;
+        %tmp.49 = lgetv %iconColor;
+        symbol [ iconColor %tmp.49 161 63 72 ];
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45, %tmp.48, %tmp.49);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 162 16 ]
+        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_163_12_165_21_switchCase:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 164 16 ]
+        %tmp.50 = self;
+        symbol [ drawBatteryIcon %tmp.51 164 16 31 ];
+        %tmp.51 = getv function %tmp.50 :drawBatteryIcon;
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 164 32 34 ];
+        %tmp.53 = lgetv %x;
+        symbol [ x %tmp.53 164 36 37 ];
+        symbol [ Settings %tmp.55 164 39 47 ];
+        %tmp.55 = getv ? :Settings;
+        symbol [ METRIC_ICON_Y %tmp.56 164 48 61 ];
+        %tmp.56 = getv %tmp.55 :METRIC_ICON_Y;
+        %tmp.57 = lgetv %iconColor;
+        symbol [ iconColor %tmp.57 164 63 72 ];
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.53, %tmp.56, %tmp.57);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 165 16 ]
+        goto break @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtEnd;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_defaultCodeBegin:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_166_8_switchStmtEnd:
+        pop;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 168 8 ]
+        %tmp.58 = self;
+        symbol [ drawCenteredText %tmp.59 168 8 24 ];
+        %tmp.59 = getv function %tmp.58 :drawCenteredText;
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 168 25 27 ];
+        %tmp.61 = lgetv %value;
+        symbol [ value %tmp.61 168 29 34 ];
+        %tmp.62 = lgetv %x;
+        symbol [ x %tmp.62 168 36 37 ];
+        symbol [ Settings %tmp.64 168 39 47 ];
+        %tmp.64 = getv ? :Settings;
+        symbol [ METRIC_VALUE_Y %tmp.65 168 48 62 ];
+        %tmp.65 = getv %tmp.64 :METRIC_VALUE_Y;
+        symbol [ Settings %tmp.67 168 64 72 ];
+        %tmp.67 = getv ? :Settings;
+        symbol [ METRIC_FONT %tmp.68 168 73 84 ];
+        %tmp.68 = getv %tmp.67 :METRIC_FONT;
+        symbol [ Settings %tmp.70 168 86 94 ];
+        %tmp.70 = getv ? :Settings;
+        symbol [ PRIMARY_COLOR %tmp.71 168 95 108 ];
+        %tmp.71 = getv %tmp.70 :PRIMARY_COLOR;
+        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.61, %tmp.62, %tmp.65, %tmp.68, %tmp.71);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_152_112_169_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 171; @symbol_functiondef = [drawHeartIcon,171,13,26]; @symbol_param<0> = [dc,171,27,29]; @symbol_param<0>_type<0> = [Dc,171,33,35]; @symbol_param<1> = [x,171,37,38]; @symbol_param<1>_type<0> = [Numeric,171,42,49]; @symbol_param<2> = [y,171,51,52]; @symbol_param<2>_type<0> = [Numeric,171,56,63]; @symbol_param<3> = [color,171,65,70]; @symbol_param<3>_type<0> = [ColorType,171,74,83]; ]
+    function drawHeartIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_171_93_183_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 172 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 90 8 10 ];
-        symbol [ fillPolygon %tmp.2 90 11 22 ];
-        %tmp.2 = getv function %tmp.1 :fillPolygon;
-        %tmp.3 = newa 6;
-        %tmp.4 = newa 2;
-        %tmp.5 = lgetv %x;
-        symbol [ x %tmp.5 91 13 14 ];
-        %tmp.6 = dup %tmp.4;
-        %tmp.7 = aputv %tmp.6 0 %tmp.5;
-        %tmp.8 = lgetv %y;
-        symbol [ y %tmp.8 91 16 17 ];
-        %tmp.9 = 7;
-        %tmp.10 = add %tmp.8 %tmp.9;
-        %tmp.11 = dup %tmp.7;
-        %tmp.12 = aputv %tmp.11 1 %tmp.10;
-        %tmp.13 = dup %tmp.3;
-        %tmp.14 = aputv %tmp.13 0 %tmp.12;
-        %tmp.15 = newa 2;
-        %tmp.16 = lgetv %x;
-        symbol [ x %tmp.16 92 13 14 ];
-        %tmp.17 = 8;
-        %tmp.18 = sub %tmp.16 %tmp.17;
-        %tmp.19 = dup %tmp.15;
+        symbol [ dc %tmp.1 172 8 10 ];
+        symbol [ setColor %tmp.2 172 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 172 20 25 ];
+        symbol [ Settings %tmp.5 172 27 35 ];
+        %tmp.5 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.6 172 36 52 ];
+        %tmp.6 = getv %tmp.5 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 173 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 173 8 10 ];
+        symbol [ fillPolygon %tmp.8 173 11 22 ];
+        %tmp.8 = getv function %tmp.7 :fillPolygon;
+        %tmp.9 = newa 8;
+        %tmp.10 = newa 2;
+        %tmp.11 = lgetv %x;
+        symbol [ x %tmp.11 174 13 14 ];
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 0 %tmp.11;
+        %tmp.14 = lgetv %y;
+        symbol [ y %tmp.14 174 16 17 ];
+        %tmp.15 = 12;
+        %tmp.16 = add %tmp.14 %tmp.15;
+        %tmp.17 = dup %tmp.13;
+        %tmp.18 = aputv %tmp.17 1 %tmp.16;
+        %tmp.19 = dup %tmp.9;
         %tmp.20 = aputv %tmp.19 0 %tmp.18;
+        %tmp.21 = newa 2;
+        %tmp.22 = lgetv %x;
+        symbol [ x %tmp.22 175 13 14 ];
+        %tmp.23 = 13;
+        %tmp.24 = sub %tmp.22 %tmp.23;
+        %tmp.25 = dup %tmp.21;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = lgetv %y;
+        symbol [ y %tmp.27 175 21 22 ];
+        %tmp.28 = dup %tmp.26;
+        %tmp.29 = aputv %tmp.28 1 %tmp.27;
+        %tmp.30 = dup %tmp.20;
+        %tmp.31 = aputv %tmp.30 1 %tmp.29;
+        %tmp.32 = newa 2;
+        %tmp.33 = lgetv %x;
+        symbol [ x %tmp.33 176 13 14 ];
+        %tmp.34 = 11;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        %tmp.36 = dup %tmp.32;
+        %tmp.37 = aputv %tmp.36 0 %tmp.35;
+        %tmp.38 = lgetv %y;
+        symbol [ y %tmp.38 176 21 22 ];
+        %tmp.39 = 8;
+        %tmp.40 = sub %tmp.38 %tmp.39;
+        %tmp.41 = dup %tmp.37;
+        %tmp.42 = aputv %tmp.41 1 %tmp.40;
+        %tmp.43 = dup %tmp.31;
+        %tmp.44 = aputv %tmp.43 2 %tmp.42;
+        %tmp.45 = newa 2;
+        %tmp.46 = lgetv %x;
+        symbol [ x %tmp.46 177 13 14 ];
+        %tmp.47 = 5;
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        %tmp.49 = dup %tmp.45;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        %tmp.51 = lgetv %y;
+        symbol [ y %tmp.51 177 20 21 ];
+        %tmp.52 = 11;
+        %tmp.53 = sub %tmp.51 %tmp.52;
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 1 %tmp.53;
+        %tmp.56 = dup %tmp.44;
+        %tmp.57 = aputv %tmp.56 3 %tmp.55;
+        %tmp.58 = newa 2;
+        %tmp.59 = lgetv %x;
+        symbol [ x %tmp.59 178 13 14 ];
+        %tmp.60 = dup %tmp.58;
+        %tmp.61 = aputv %tmp.60 0 %tmp.59;
+        %tmp.62 = lgetv %y;
+        symbol [ y %tmp.62 178 16 17 ];
+        %tmp.63 = 6;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        %tmp.65 = dup %tmp.61;
+        %tmp.66 = aputv %tmp.65 1 %tmp.64;
+        %tmp.67 = dup %tmp.57;
+        %tmp.68 = aputv %tmp.67 4 %tmp.66;
+        %tmp.69 = newa 2;
+        %tmp.70 = lgetv %x;
+        symbol [ x %tmp.70 179 13 14 ];
+        %tmp.71 = 5;
+        %tmp.72 = add %tmp.70 %tmp.71;
+        %tmp.73 = dup %tmp.69;
+        %tmp.74 = aputv %tmp.73 0 %tmp.72;
+        %tmp.75 = lgetv %y;
+        symbol [ y %tmp.75 179 20 21 ];
+        %tmp.76 = 11;
+        %tmp.77 = sub %tmp.75 %tmp.76;
+        %tmp.78 = dup %tmp.74;
+        %tmp.79 = aputv %tmp.78 1 %tmp.77;
+        %tmp.80 = dup %tmp.68;
+        %tmp.81 = aputv %tmp.80 5 %tmp.79;
+        %tmp.82 = newa 2;
+        %tmp.83 = lgetv %x;
+        symbol [ x %tmp.83 180 13 14 ];
+        %tmp.84 = 11;
+        %tmp.85 = add %tmp.83 %tmp.84;
+        %tmp.86 = dup %tmp.82;
+        %tmp.87 = aputv %tmp.86 0 %tmp.85;
+        %tmp.88 = lgetv %y;
+        symbol [ y %tmp.88 180 21 22 ];
+        %tmp.89 = 8;
+        %tmp.90 = sub %tmp.88 %tmp.89;
+        %tmp.91 = dup %tmp.87;
+        %tmp.92 = aputv %tmp.91 1 %tmp.90;
+        %tmp.93 = dup %tmp.81;
+        %tmp.94 = aputv %tmp.93 6 %tmp.92;
+        %tmp.95 = newa 2;
+        %tmp.96 = lgetv %x;
+        symbol [ x %tmp.96 181 13 14 ];
+        %tmp.97 = 13;
+        %tmp.98 = add %tmp.96 %tmp.97;
+        %tmp.99 = dup %tmp.95;
+        %tmp.100 = aputv %tmp.99 0 %tmp.98;
+        %tmp.101 = lgetv %y;
+        symbol [ y %tmp.101 181 21 22 ];
+        %tmp.102 = dup %tmp.100;
+        %tmp.103 = aputv %tmp.102 1 %tmp.101;
+        %tmp.104 = dup %tmp.94;
+        %tmp.105 = aputv %tmp.104 7 %tmp.103;
+        invoke %tmp.7 %tmp.8(%tmp.105);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_171_93_183_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 185; @symbol_functiondef = [drawStepsIcon,185,13,26]; @symbol_param<0> = [dc,185,27,29]; @symbol_param<0>_type<0> = [Dc,185,33,35]; @symbol_param<1> = [x,185,37,38]; @symbol_param<1>_type<0> = [Numeric,185,42,49]; @symbol_param<2> = [y,185,51,52]; @symbol_param<2>_type<0> = [Numeric,185,56,63]; @symbol_param<3> = [color,185,65,70]; @symbol_param<3>_type<0> = [ColorType,185,74,83]; ]
+    function drawStepsIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_185_93_197_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 186 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 186 8 10 ];
+        symbol [ setColor %tmp.2 186 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 186 20 25 ];
+        symbol [ Settings %tmp.5 186 27 35 ];
+        %tmp.5 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.6 186 36 52 ];
+        %tmp.6 = getv %tmp.5 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 189 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 189 8 10 ];
+        symbol [ fillCircle %tmp.8 189 11 21 ];
+        %tmp.8 = getv function %tmp.7 :fillCircle;
+        %tmp.9 = lgetv %x;
+        symbol [ x %tmp.9 189 22 23 ];
+        %tmp.10 = 7;
+        %tmp.11 = sub %tmp.9 %tmp.10;
+        %tmp.12 = lgetv %y;
+        symbol [ y %tmp.12 189 29 30 ];
+        %tmp.13 = 3;
+        %tmp.14 = add %tmp.12 %tmp.13;
+        %tmp.15 = 5;
+        invoke %tmp.7 %tmp.8(%tmp.11, %tmp.14, %tmp.15);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 190 8 ]
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 190 8 10 ];
+        symbol [ fillCircle %tmp.17 190 11 21 ];
+        %tmp.17 = getv function %tmp.16 :fillCircle;
+        %tmp.18 = lgetv %x;
+        symbol [ x %tmp.18 190 22 23 ];
+        %tmp.19 = 10;
+        %tmp.20 = sub %tmp.18 %tmp.19;
         %tmp.21 = lgetv %y;
-        symbol [ y %tmp.21 92 20 21 ];
-        %tmp.22 = dup %tmp.20;
-        %tmp.23 = aputv %tmp.22 1 %tmp.21;
-        %tmp.24 = dup %tmp.14;
-        %tmp.25 = aputv %tmp.24 1 %tmp.23;
-        %tmp.26 = newa 2;
+        symbol [ y %tmp.21 190 30 31 ];
+        %tmp.22 = 6;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        %tmp.24 = 2;
+        invoke %tmp.16 %tmp.17(%tmp.20, %tmp.23, %tmp.24);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 191 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 191 8 10 ];
+        symbol [ fillCircle %tmp.26 191 11 21 ];
+        %tmp.26 = getv function %tmp.25 :fillCircle;
         %tmp.27 = lgetv %x;
-        symbol [ x %tmp.27 93 13 14 ];
+        symbol [ x %tmp.27 191 22 23 ];
         %tmp.28 = 6;
         %tmp.29 = sub %tmp.27 %tmp.28;
-        %tmp.30 = dup %tmp.26;
-        %tmp.31 = aputv %tmp.30 0 %tmp.29;
-        %tmp.32 = lgetv %y;
-        symbol [ y %tmp.32 93 20 21 ];
-        %tmp.33 = 6;
-        %tmp.34 = sub %tmp.32 %tmp.33;
-        %tmp.35 = dup %tmp.31;
-        %tmp.36 = aputv %tmp.35 1 %tmp.34;
-        %tmp.37 = dup %tmp.25;
-        %tmp.38 = aputv %tmp.37 2 %tmp.36;
-        %tmp.39 = newa 2;
-        %tmp.40 = lgetv %x;
-        symbol [ x %tmp.40 94 13 14 ];
-        %tmp.41 = dup %tmp.39;
-        %tmp.42 = aputv %tmp.41 0 %tmp.40;
-        %tmp.43 = lgetv %y;
-        symbol [ y %tmp.43 94 16 17 ];
-        %tmp.44 = 3;
-        %tmp.45 = sub %tmp.43 %tmp.44;
-        %tmp.46 = dup %tmp.42;
-        %tmp.47 = aputv %tmp.46 1 %tmp.45;
-        %tmp.48 = dup %tmp.38;
-        %tmp.49 = aputv %tmp.48 3 %tmp.47;
-        %tmp.50 = newa 2;
-        %tmp.51 = lgetv %x;
-        symbol [ x %tmp.51 95 13 14 ];
-        %tmp.52 = 6;
-        %tmp.53 = add %tmp.51 %tmp.52;
-        %tmp.54 = dup %tmp.50;
-        %tmp.55 = aputv %tmp.54 0 %tmp.53;
-        %tmp.56 = lgetv %y;
-        symbol [ y %tmp.56 95 20 21 ];
-        %tmp.57 = 6;
-        %tmp.58 = sub %tmp.56 %tmp.57;
-        %tmp.59 = dup %tmp.55;
-        %tmp.60 = aputv %tmp.59 1 %tmp.58;
-        %tmp.61 = dup %tmp.49;
-        %tmp.62 = aputv %tmp.61 4 %tmp.60;
-        %tmp.63 = newa 2;
-        %tmp.64 = lgetv %x;
-        symbol [ x %tmp.64 96 13 14 ];
-        %tmp.65 = 8;
-        %tmp.66 = add %tmp.64 %tmp.65;
-        %tmp.67 = dup %tmp.63;
-        %tmp.68 = aputv %tmp.67 0 %tmp.66;
-        %tmp.69 = lgetv %y;
-        symbol [ y %tmp.69 96 20 21 ];
-        %tmp.70 = dup %tmp.68;
-        %tmp.71 = aputv %tmp.70 1 %tmp.69;
-        %tmp.72 = dup %tmp.62;
-        %tmp.73 = aputv %tmp.72 5 %tmp.71;
-        invoke %tmp.1 %tmp.2(%tmp.73);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_89_73_98_4_stop:
+        %tmp.30 = lgetv %y;
+        symbol [ y %tmp.30 191 29 30 ];
+        %tmp.31 = 8;
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        %tmp.33 = 2;
+        invoke %tmp.25 %tmp.26(%tmp.29, %tmp.32, %tmp.33);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 194 8 ]
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 194 8 10 ];
+        symbol [ fillCircle %tmp.35 194 11 21 ];
+        %tmp.35 = getv function %tmp.34 :fillCircle;
+        %tmp.36 = lgetv %x;
+        symbol [ x %tmp.36 194 22 23 ];
+        %tmp.37 = 7;
+        %tmp.38 = add %tmp.36 %tmp.37;
+        %tmp.39 = lgetv %y;
+        symbol [ y %tmp.39 194 29 30 ];
+        %tmp.40 = 1;
+        %tmp.41 = sub %tmp.39 %tmp.40;
+        %tmp.42 = 5;
+        invoke %tmp.34 %tmp.35(%tmp.38, %tmp.41, %tmp.42);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 195 8 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 195 8 10 ];
+        symbol [ fillCircle %tmp.44 195 11 21 ];
+        %tmp.44 = getv function %tmp.43 :fillCircle;
+        %tmp.45 = lgetv %x;
+        symbol [ x %tmp.45 195 22 23 ];
+        %tmp.46 = 4;
+        %tmp.47 = add %tmp.45 %tmp.46;
+        %tmp.48 = lgetv %y;
+        symbol [ y %tmp.48 195 29 30 ];
+        %tmp.49 = 10;
+        %tmp.50 = sub %tmp.48 %tmp.49;
+        %tmp.51 = 2;
+        invoke %tmp.43 %tmp.44(%tmp.47, %tmp.50, %tmp.51);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 196 8 ]
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 196 8 10 ];
+        symbol [ fillCircle %tmp.53 196 11 21 ];
+        %tmp.53 = getv function %tmp.52 :fillCircle;
+        %tmp.54 = lgetv %x;
+        symbol [ x %tmp.54 196 22 23 ];
+        %tmp.55 = 9;
+        %tmp.56 = add %tmp.54 %tmp.55;
+        %tmp.57 = lgetv %y;
+        symbol [ y %tmp.57 196 29 30 ];
+        %tmp.58 = 10;
+        %tmp.59 = sub %tmp.57 %tmp.58;
+        %tmp.60 = 2;
+        invoke %tmp.52 %tmp.53(%tmp.56, %tmp.59, %tmp.60);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_185_93_197_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 100; @symbol_functiondef = [drawStepsIcon,100,13,26]; @symbol_param<0> = [dc,100,27,29]; @symbol_param<0>_type<0> = [Dc,100,33,35]; @symbol_param<1> = [x,100,37,38]; @symbol_param<1>_type<0> = [Numeric,100,42,49]; @symbol_param<2> = [y,100,51,52]; @symbol_param<2>_type<0> = [Numeric,100,56,63]; ]
-    function drawStepsIcon(dc as Dc, x as Numeric, y as Numeric) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_100_73_107_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 101 8 ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 199; @symbol_functiondef = [drawWeatherIcon,199,13,28]; @symbol_param<0> = [dc,199,29,31]; @symbol_param<0>_type<0> = [Dc,199,35,37]; @symbol_param<1> = [x,199,39,40]; @symbol_param<1>_type<0> = [Numeric,199,44,51]; @symbol_param<2> = [y,199,53,54]; @symbol_param<2>_type<0> = [Numeric,199,58,65]; @symbol_param<3> = [color,199,67,72]; @symbol_param<3>_type<0> = [ColorType,199,76,85]; ]
+    function drawWeatherIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_199_95_217_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 200 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 101 8 10 ];
-        symbol [ fillCircle %tmp.2 101 11 21 ];
-        %tmp.2 = getv function %tmp.1 :fillCircle;
-        %tmp.3 = lgetv %x;
-        symbol [ x %tmp.3 101 22 23 ];
-        %tmp.4 = 5;
-        %tmp.5 = sub %tmp.3 %tmp.4;
-        %tmp.6 = lgetv %y;
-        symbol [ y %tmp.6 101 29 30 ];
-        %tmp.7 = 2;
-        %tmp.8 = add %tmp.6 %tmp.7;
-        %tmp.9 = 3;
-        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8, %tmp.9);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 102 8 ]
+        symbol [ dc %tmp.1 200 8 10 ];
+        symbol [ setColor %tmp.2 200 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 200 20 25 ];
+        symbol [ Settings %tmp.5 200 27 35 ];
+        %tmp.5 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.6 200 36 52 ];
+        %tmp.6 = getv %tmp.5 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 201 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 201 8 10 ];
+        symbol [ setPenWidth %tmp.8 201 11 22 ];
+        %tmp.8 = getv function %tmp.7 :setPenWidth;
+        %tmp.9 = 2;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 202 8 ]
         %tmp.10 = lgetv %dc;
-        symbol [ dc %tmp.10 102 8 10 ];
-        symbol [ fillCircle %tmp.11 102 11 21 ];
+        symbol [ dc %tmp.10 202 8 10 ];
+        symbol [ fillCircle %tmp.11 202 11 21 ];
         %tmp.11 = getv function %tmp.10 :fillCircle;
         %tmp.12 = lgetv %x;
-        symbol [ x %tmp.12 102 22 23 ];
-        %tmp.13 = 6;
+        symbol [ x %tmp.12 202 22 23 ];
+        %tmp.13 = 3;
         %tmp.14 = sub %tmp.12 %tmp.13;
         %tmp.15 = lgetv %y;
-        symbol [ y %tmp.15 102 29 30 ];
+        symbol [ y %tmp.15 202 29 30 ];
         %tmp.16 = 4;
         %tmp.17 = sub %tmp.15 %tmp.16;
-        %tmp.18 = 2;
+        %tmp.18 = 6;
         invoke %tmp.10 %tmp.11(%tmp.14, %tmp.17, %tmp.18);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 103 8 ]
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 204 8 ]
         %tmp.19 = lgetv %dc;
-        symbol [ dc %tmp.19 103 8 10 ];
-        symbol [ fillCircle %tmp.20 103 11 21 ];
-        %tmp.20 = getv function %tmp.19 :fillCircle;
+        symbol [ dc %tmp.19 204 8 10 ];
+        symbol [ drawLine %tmp.20 204 11 19 ];
+        %tmp.20 = getv function %tmp.19 :drawLine;
         %tmp.21 = lgetv %x;
-        symbol [ x %tmp.21 103 22 23 ];
+        symbol [ x %tmp.21 204 20 21 ];
         %tmp.22 = 3;
         %tmp.23 = sub %tmp.21 %tmp.22;
         %tmp.24 = lgetv %y;
-        symbol [ y %tmp.24 103 29 30 ];
-        %tmp.25 = 5;
+        symbol [ y %tmp.24 204 27 28 ];
+        %tmp.25 = 16;
         %tmp.26 = sub %tmp.24 %tmp.25;
-        %tmp.27 = 2;
-        invoke %tmp.19 %tmp.20(%tmp.23, %tmp.26, %tmp.27);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 104 8 ]
-        %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 104 8 10 ];
-        symbol [ fillCircle %tmp.29 104 11 21 ];
-        %tmp.29 = getv function %tmp.28 :fillCircle;
-        %tmp.30 = lgetv %x;
-        symbol [ x %tmp.30 104 22 23 ];
-        %tmp.31 = 5;
-        %tmp.32 = add %tmp.30 %tmp.31;
-        %tmp.33 = lgetv %y;
-        symbol [ y %tmp.33 104 29 30 ];
-        %tmp.34 = 1;
-        %tmp.35 = sub %tmp.33 %tmp.34;
-        %tmp.36 = 3;
-        invoke %tmp.28 %tmp.29(%tmp.32, %tmp.35, %tmp.36);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 105 8 ]
-        %tmp.37 = lgetv %dc;
-        symbol [ dc %tmp.37 105 8 10 ];
-        symbol [ fillCircle %tmp.38 105 11 21 ];
-        %tmp.38 = getv function %tmp.37 :fillCircle;
-        %tmp.39 = lgetv %x;
-        symbol [ x %tmp.39 105 22 23 ];
-        %tmp.40 = 4;
-        %tmp.41 = add %tmp.39 %tmp.40;
-        %tmp.42 = lgetv %y;
-        symbol [ y %tmp.42 105 29 30 ];
-        %tmp.43 = 7;
-        %tmp.44 = sub %tmp.42 %tmp.43;
-        %tmp.45 = 2;
-        invoke %tmp.37 %tmp.38(%tmp.41, %tmp.44, %tmp.45);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 106 8 ]
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 106 8 10 ];
-        symbol [ fillCircle %tmp.47 106 11 21 ];
-        %tmp.47 = getv function %tmp.46 :fillCircle;
-        %tmp.48 = lgetv %x;
-        symbol [ x %tmp.48 106 22 23 ];
-        %tmp.49 = 7;
-        %tmp.50 = add %tmp.48 %tmp.49;
-        %tmp.51 = lgetv %y;
-        symbol [ y %tmp.51 106 29 30 ];
-        %tmp.52 = 8;
-        %tmp.53 = sub %tmp.51 %tmp.52;
-        %tmp.54 = 2;
-        invoke %tmp.46 %tmp.47(%tmp.50, %tmp.53, %tmp.54);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_100_73_107_4_stop:
+        %tmp.27 = lgetv %x;
+        symbol [ x %tmp.27 204 35 36 ];
+        %tmp.28 = 3;
+        %tmp.29 = sub %tmp.27 %tmp.28;
+        %tmp.30 = lgetv %y;
+        symbol [ y %tmp.30 204 42 43 ];
+        %tmp.31 = 12;
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        invoke %tmp.19 %tmp.20(%tmp.23, %tmp.26, %tmp.29, %tmp.32);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 205 8 ]
+        %tmp.33 = lgetv %dc;
+        symbol [ dc %tmp.33 205 8 10 ];
+        symbol [ drawLine %tmp.34 205 11 19 ];
+        %tmp.34 = getv function %tmp.33 :drawLine;
+        %tmp.35 = lgetv %x;
+        symbol [ x %tmp.35 205 20 21 ];
+        %tmp.36 = 15;
+        %tmp.37 = sub %tmp.35 %tmp.36;
+        %tmp.38 = lgetv %y;
+        symbol [ y %tmp.38 205 28 29 ];
+        %tmp.39 = 4;
+        %tmp.40 = sub %tmp.38 %tmp.39;
+        %tmp.41 = lgetv %x;
+        symbol [ x %tmp.41 205 35 36 ];
+        %tmp.42 = 11;
+        %tmp.43 = sub %tmp.41 %tmp.42;
+        %tmp.44 = lgetv %y;
+        symbol [ y %tmp.44 205 43 44 ];
+        %tmp.45 = 4;
+        %tmp.46 = sub %tmp.44 %tmp.45;
+        invoke %tmp.33 %tmp.34(%tmp.37, %tmp.40, %tmp.43, %tmp.46);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 206 8 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 206 8 10 ];
+        symbol [ drawLine %tmp.48 206 11 19 ];
+        %tmp.48 = getv function %tmp.47 :drawLine;
+        %tmp.49 = lgetv %x;
+        symbol [ x %tmp.49 206 20 21 ];
+        %tmp.50 = 5;
+        %tmp.51 = add %tmp.49 %tmp.50;
+        %tmp.52 = lgetv %y;
+        symbol [ y %tmp.52 206 27 28 ];
+        %tmp.53 = 4;
+        %tmp.54 = sub %tmp.52 %tmp.53;
+        %tmp.55 = lgetv %x;
+        symbol [ x %tmp.55 206 34 35 ];
+        %tmp.56 = 10;
+        %tmp.57 = add %tmp.55 %tmp.56;
+        %tmp.58 = lgetv %y;
+        symbol [ y %tmp.58 206 42 43 ];
+        %tmp.59 = 4;
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        invoke %tmp.47 %tmp.48(%tmp.51, %tmp.54, %tmp.57, %tmp.60);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 207 8 ]
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 207 8 10 ];
+        symbol [ drawLine %tmp.62 207 11 19 ];
+        %tmp.62 = getv function %tmp.61 :drawLine;
+        %tmp.63 = lgetv %x;
+        symbol [ x %tmp.63 207 20 21 ];
+        %tmp.64 = 11;
+        %tmp.65 = sub %tmp.63 %tmp.64;
+        %tmp.66 = lgetv %y;
+        symbol [ y %tmp.66 207 28 29 ];
+        %tmp.67 = 12;
+        %tmp.68 = sub %tmp.66 %tmp.67;
+        %tmp.69 = lgetv %x;
+        symbol [ x %tmp.69 207 36 37 ];
+        %tmp.70 = 8;
+        %tmp.71 = sub %tmp.69 %tmp.70;
+        %tmp.72 = lgetv %y;
+        symbol [ y %tmp.72 207 43 44 ];
+        %tmp.73 = 9;
+        %tmp.74 = sub %tmp.72 %tmp.73;
+        invoke %tmp.61 %tmp.62(%tmp.65, %tmp.68, %tmp.71, %tmp.74);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 208 8 ]
+        %tmp.75 = lgetv %dc;
+        symbol [ dc %tmp.75 208 8 10 ];
+        symbol [ drawLine %tmp.76 208 11 19 ];
+        %tmp.76 = getv function %tmp.75 :drawLine;
+        %tmp.77 = lgetv %x;
+        symbol [ x %tmp.77 208 20 21 ];
+        %tmp.78 = 2;
+        %tmp.79 = add %tmp.77 %tmp.78;
+        %tmp.80 = lgetv %y;
+        symbol [ y %tmp.80 208 27 28 ];
+        %tmp.81 = 9;
+        %tmp.82 = sub %tmp.80 %tmp.81;
+        %tmp.83 = lgetv %x;
+        symbol [ x %tmp.83 208 34 35 ];
+        %tmp.84 = 5;
+        %tmp.85 = add %tmp.83 %tmp.84;
+        %tmp.86 = lgetv %y;
+        symbol [ y %tmp.86 208 41 42 ];
+        %tmp.87 = 12;
+        %tmp.88 = sub %tmp.86 %tmp.87;
+        invoke %tmp.75 %tmp.76(%tmp.79, %tmp.82, %tmp.85, %tmp.88);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 210 8 ]
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 210 8 10 ];
+        symbol [ setColor %tmp.90 210 11 19 ];
+        %tmp.90 = getv function %tmp.89 :setColor;
+        symbol [ Settings %tmp.92 210 20 28 ];
+        %tmp.92 = getv ? :Settings;
+        symbol [ CLOUD %tmp.93 210 29 34 ];
+        %tmp.93 = getv %tmp.92 :CLOUD;
+        symbol [ Settings %tmp.95 210 36 44 ];
+        %tmp.95 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.96 210 45 61 ];
+        %tmp.96 = getv %tmp.95 :BACKGROUND_COLOR;
+        invoke %tmp.89 %tmp.90(%tmp.93, %tmp.96);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 211 8 ]
+        %tmp.97 = lgetv %dc;
+        symbol [ dc %tmp.97 211 8 10 ];
+        symbol [ fillCircle %tmp.98 211 11 21 ];
+        %tmp.98 = getv function %tmp.97 :fillCircle;
+        %tmp.99 = lgetv %x;
+        symbol [ x %tmp.99 211 22 23 ];
+        %tmp.100 = 8;
+        %tmp.101 = sub %tmp.99 %tmp.100;
+        %tmp.102 = lgetv %y;
+        symbol [ y %tmp.102 211 29 30 ];
+        %tmp.103 = 6;
+        %tmp.104 = add %tmp.102 %tmp.103;
+        %tmp.105 = 5;
+        invoke %tmp.97 %tmp.98(%tmp.101, %tmp.104, %tmp.105);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 212 8 ]
+        %tmp.106 = lgetv %dc;
+        symbol [ dc %tmp.106 212 8 10 ];
+        symbol [ fillCircle %tmp.107 212 11 21 ];
+        %tmp.107 = getv function %tmp.106 :fillCircle;
+        %tmp.108 = lgetv %x;
+        symbol [ x %tmp.108 212 22 23 ];
+        %tmp.109 = lgetv %y;
+        symbol [ y %tmp.109 212 25 26 ];
+        %tmp.110 = 4;
+        %tmp.111 = add %tmp.109 %tmp.110;
+        %tmp.112 = 7;
+        invoke %tmp.106 %tmp.107(%tmp.108, %tmp.111, %tmp.112);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 213 8 ]
+        %tmp.113 = lgetv %dc;
+        symbol [ dc %tmp.113 213 8 10 ];
+        symbol [ fillCircle %tmp.114 213 11 21 ];
+        %tmp.114 = getv function %tmp.113 :fillCircle;
+        %tmp.115 = lgetv %x;
+        symbol [ x %tmp.115 213 22 23 ];
+        %tmp.116 = 8;
+        %tmp.117 = add %tmp.115 %tmp.116;
+        %tmp.118 = lgetv %y;
+        symbol [ y %tmp.118 213 29 30 ];
+        %tmp.119 = 6;
+        %tmp.120 = add %tmp.118 %tmp.119;
+        %tmp.121 = 5;
+        invoke %tmp.113 %tmp.114(%tmp.117, %tmp.120, %tmp.121);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 214 8 ]
+        %tmp.122 = lgetv %dc;
+        symbol [ dc %tmp.122 214 8 10 ];
+        symbol [ fillRectangle %tmp.123 214 11 24 ];
+        %tmp.123 = getv function %tmp.122 :fillRectangle;
+        %tmp.124 = lgetv %x;
+        symbol [ x %tmp.124 214 25 26 ];
+        %tmp.125 = 13;
+        %tmp.126 = sub %tmp.124 %tmp.125;
+        %tmp.127 = lgetv %y;
+        symbol [ y %tmp.127 214 33 34 ];
+        %tmp.128 = 6;
+        %tmp.129 = add %tmp.127 %tmp.128;
+        %tmp.130 = 26;
+        %tmp.131 = 6;
+        invoke %tmp.122 %tmp.123(%tmp.126, %tmp.129, %tmp.130, %tmp.131);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 216 8 ]
+        %tmp.132 = lgetv %dc;
+        symbol [ dc %tmp.132 216 8 10 ];
+        symbol [ setPenWidth %tmp.133 216 11 22 ];
+        %tmp.133 = getv function %tmp.132 :setPenWidth;
+        %tmp.134 = 1;
+        invoke %tmp.132 %tmp.133(%tmp.134);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_199_95_217_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 109; @symbol_functiondef = [drawSunIcon,109,13,24]; @symbol_param<0> = [dc,109,25,27]; @symbol_param<0>_type<0> = [Dc,109,31,33]; @symbol_param<1> = [x,109,35,36]; @symbol_param<1>_type<0> = [Numeric,109,40,47]; @symbol_param<2> = [y,109,49,50]; @symbol_param<2>_type<0> = [Numeric,109,54,61]; ]
-    function drawSunIcon(dc as Dc, x as Numeric, y as Numeric) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_71_119_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 110 8 ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 219; @symbol_functiondef = [drawBatteryIcon,219,13,28]; @symbol_param<0> = [dc,219,29,31]; @symbol_param<0>_type<0> = [Dc,219,35,37]; @symbol_param<1> = [x,219,39,40]; @symbol_param<1>_type<0> = [Numeric,219,44,51]; @symbol_param<2> = [y,219,53,54]; @symbol_param<2>_type<0> = [Numeric,219,58,65]; @symbol_param<3> = [color,219,67,72]; @symbol_param<3>_type<0> = [ColorType,219,76,85]; ]
+    function drawBatteryIcon(dc as Dc, x as Numeric, y as Numeric, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_219_95_233_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 220 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 110 8 10 ];
-        symbol [ drawCircle %tmp.2 110 11 21 ];
-        %tmp.2 = getv function %tmp.1 :drawCircle;
-        %tmp.3 = lgetv %x;
-        symbol [ x %tmp.3 110 22 23 ];
-        %tmp.4 = lgetv %y;
-        symbol [ y %tmp.4 110 25 26 ];
-        %tmp.5 = 4;
-        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 111 8 ]
-        %tmp.6 = lgetv %dc;
-        symbol [ dc %tmp.6 111 8 10 ];
-        symbol [ drawLine %tmp.7 111 11 19 ];
-        %tmp.7 = getv function %tmp.6 :drawLine;
-        %tmp.8 = lgetv %x;
-        symbol [ x %tmp.8 111 20 21 ];
-        %tmp.9 = lgetv %y;
-        symbol [ y %tmp.9 111 23 24 ];
-        %tmp.10 = 9;
-        %tmp.11 = sub %tmp.9 %tmp.10;
-        %tmp.12 = lgetv %x;
-        symbol [ x %tmp.12 111 30 31 ];
-        %tmp.13 = lgetv %y;
-        symbol [ y %tmp.13 111 33 34 ];
-        %tmp.14 = 7;
-        %tmp.15 = sub %tmp.13 %tmp.14;
-        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.11, %tmp.12, %tmp.15);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 112 8 ]
-        %tmp.16 = lgetv %dc;
-        symbol [ dc %tmp.16 112 8 10 ];
-        symbol [ drawLine %tmp.17 112 11 19 ];
-        %tmp.17 = getv function %tmp.16 :drawLine;
-        %tmp.18 = lgetv %x;
-        symbol [ x %tmp.18 112 20 21 ];
-        %tmp.19 = lgetv %y;
-        symbol [ y %tmp.19 112 23 24 ];
-        %tmp.20 = 7;
-        %tmp.21 = add %tmp.19 %tmp.20;
-        %tmp.22 = lgetv %x;
-        symbol [ x %tmp.22 112 30 31 ];
+        symbol [ dc %tmp.1 220 8 10 ];
+        symbol [ setColor %tmp.2 220 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Settings %tmp.4 220 20 28 ];
+        %tmp.4 = getv ? :Settings;
+        symbol [ PRIMARY_COLOR %tmp.5 220 29 42 ];
+        %tmp.5 = getv %tmp.4 :PRIMARY_COLOR;
+        symbol [ Settings %tmp.7 220 44 52 ];
+        %tmp.7 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.8 220 53 69 ];
+        %tmp.8 = getv %tmp.7 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 221 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 221 8 10 ];
+        symbol [ setPenWidth %tmp.10 221 11 22 ];
+        %tmp.10 = getv function %tmp.9 :setPenWidth;
+        %tmp.11 = 2;
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 223 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 223 8 10 ];
+        symbol [ drawLine %tmp.13 223 11 19 ];
+        %tmp.13 = getv function %tmp.12 :drawLine;
+        %tmp.14 = lgetv %x;
+        symbol [ x %tmp.14 223 20 21 ];
+        %tmp.15 = 15;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        %tmp.17 = lgetv %y;
+        symbol [ y %tmp.17 223 28 29 ];
+        %tmp.18 = 8;
+        %tmp.19 = sub %tmp.17 %tmp.18;
+        %tmp.20 = lgetv %x;
+        symbol [ x %tmp.20 223 35 36 ];
+        %tmp.21 = 10;
+        %tmp.22 = add %tmp.20 %tmp.21;
         %tmp.23 = lgetv %y;
-        symbol [ y %tmp.23 112 33 34 ];
-        %tmp.24 = 9;
-        %tmp.25 = add %tmp.23 %tmp.24;
-        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.21, %tmp.22, %tmp.25);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 113 8 ]
+        symbol [ y %tmp.23 223 43 44 ];
+        %tmp.24 = 8;
+        %tmp.25 = sub %tmp.23 %tmp.24;
+        invoke %tmp.12 %tmp.13(%tmp.16, %tmp.19, %tmp.22, %tmp.25);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 224 8 ]
         %tmp.26 = lgetv %dc;
-        symbol [ dc %tmp.26 113 8 10 ];
-        symbol [ drawLine %tmp.27 113 11 19 ];
+        symbol [ dc %tmp.26 224 8 10 ];
+        symbol [ drawLine %tmp.27 224 11 19 ];
         %tmp.27 = getv function %tmp.26 :drawLine;
         %tmp.28 = lgetv %x;
-        symbol [ x %tmp.28 113 20 21 ];
-        %tmp.29 = 9;
+        symbol [ x %tmp.28 224 20 21 ];
+        %tmp.29 = 15;
         %tmp.30 = sub %tmp.28 %tmp.29;
         %tmp.31 = lgetv %y;
-        symbol [ y %tmp.31 113 27 28 ];
-        %tmp.32 = lgetv %x;
-        symbol [ x %tmp.32 113 30 31 ];
-        %tmp.33 = 7;
-        %tmp.34 = sub %tmp.32 %tmp.33;
-        %tmp.35 = lgetv %y;
-        symbol [ y %tmp.35 113 37 38 ];
-        invoke %tmp.26 %tmp.27(%tmp.30, %tmp.31, %tmp.34, %tmp.35);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 114 8 ]
-        %tmp.36 = lgetv %dc;
-        symbol [ dc %tmp.36 114 8 10 ];
-        symbol [ drawLine %tmp.37 114 11 19 ];
-        %tmp.37 = getv function %tmp.36 :drawLine;
-        %tmp.38 = lgetv %x;
-        symbol [ x %tmp.38 114 20 21 ];
-        %tmp.39 = 7;
-        %tmp.40 = add %tmp.38 %tmp.39;
-        %tmp.41 = lgetv %y;
-        symbol [ y %tmp.41 114 27 28 ];
+        symbol [ y %tmp.31 224 28 29 ];
+        %tmp.32 = 8;
+        %tmp.33 = add %tmp.31 %tmp.32;
+        %tmp.34 = lgetv %x;
+        symbol [ x %tmp.34 224 35 36 ];
+        %tmp.35 = 10;
+        %tmp.36 = add %tmp.34 %tmp.35;
+        %tmp.37 = lgetv %y;
+        symbol [ y %tmp.37 224 43 44 ];
+        %tmp.38 = 8;
+        %tmp.39 = add %tmp.37 %tmp.38;
+        invoke %tmp.26 %tmp.27(%tmp.30, %tmp.33, %tmp.36, %tmp.39);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 225 8 ]
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 225 8 10 ];
+        symbol [ drawLine %tmp.41 225 11 19 ];
+        %tmp.41 = getv function %tmp.40 :drawLine;
         %tmp.42 = lgetv %x;
-        symbol [ x %tmp.42 114 30 31 ];
-        %tmp.43 = 9;
-        %tmp.44 = add %tmp.42 %tmp.43;
+        symbol [ x %tmp.42 225 20 21 ];
+        %tmp.43 = 15;
+        %tmp.44 = sub %tmp.42 %tmp.43;
         %tmp.45 = lgetv %y;
-        symbol [ y %tmp.45 114 37 38 ];
-        invoke %tmp.36 %tmp.37(%tmp.40, %tmp.41, %tmp.44, %tmp.45);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 115 8 ]
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 115 8 10 ];
-        symbol [ drawLine %tmp.47 115 11 19 ];
-        %tmp.47 = getv function %tmp.46 :drawLine;
+        symbol [ y %tmp.45 225 28 29 ];
+        %tmp.46 = 8;
+        %tmp.47 = sub %tmp.45 %tmp.46;
         %tmp.48 = lgetv %x;
-        symbol [ x %tmp.48 115 20 21 ];
-        %tmp.49 = 6;
+        symbol [ x %tmp.48 225 35 36 ];
+        %tmp.49 = 15;
         %tmp.50 = sub %tmp.48 %tmp.49;
         %tmp.51 = lgetv %y;
-        symbol [ y %tmp.51 115 27 28 ];
-        %tmp.52 = 6;
-        %tmp.53 = sub %tmp.51 %tmp.52;
-        %tmp.54 = lgetv %x;
-        symbol [ x %tmp.54 115 34 35 ];
-        %tmp.55 = 5;
-        %tmp.56 = sub %tmp.54 %tmp.55;
-        %tmp.57 = lgetv %y;
-        symbol [ y %tmp.57 115 41 42 ];
-        %tmp.58 = 5;
-        %tmp.59 = sub %tmp.57 %tmp.58;
-        invoke %tmp.46 %tmp.47(%tmp.50, %tmp.53, %tmp.56, %tmp.59);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 116 8 ]
-        %tmp.60 = lgetv %dc;
-        symbol [ dc %tmp.60 116 8 10 ];
-        symbol [ drawLine %tmp.61 116 11 19 ];
-        %tmp.61 = getv function %tmp.60 :drawLine;
+        symbol [ y %tmp.51 225 43 44 ];
+        %tmp.52 = 8;
+        %tmp.53 = add %tmp.51 %tmp.52;
+        invoke %tmp.40 %tmp.41(%tmp.44, %tmp.47, %tmp.50, %tmp.53);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 226 8 ]
+        %tmp.54 = lgetv %dc;
+        symbol [ dc %tmp.54 226 8 10 ];
+        symbol [ drawLine %tmp.55 226 11 19 ];
+        %tmp.55 = getv function %tmp.54 :drawLine;
+        %tmp.56 = lgetv %x;
+        symbol [ x %tmp.56 226 20 21 ];
+        %tmp.57 = 10;
+        %tmp.58 = add %tmp.56 %tmp.57;
+        %tmp.59 = lgetv %y;
+        symbol [ y %tmp.59 226 28 29 ];
+        %tmp.60 = 8;
+        %tmp.61 = sub %tmp.59 %tmp.60;
         %tmp.62 = lgetv %x;
-        symbol [ x %tmp.62 116 20 21 ];
-        %tmp.63 = 5;
+        symbol [ x %tmp.62 226 35 36 ];
+        %tmp.63 = 10;
         %tmp.64 = add %tmp.62 %tmp.63;
         %tmp.65 = lgetv %y;
-        symbol [ y %tmp.65 116 27 28 ];
-        %tmp.66 = 5;
-        %tmp.67 = sub %tmp.65 %tmp.66;
-        %tmp.68 = lgetv %x;
-        symbol [ x %tmp.68 116 34 35 ];
-        %tmp.69 = 6;
-        %tmp.70 = add %tmp.68 %tmp.69;
-        %tmp.71 = lgetv %y;
-        symbol [ y %tmp.71 116 41 42 ];
-        %tmp.72 = 6;
-        %tmp.73 = sub %tmp.71 %tmp.72;
-        invoke %tmp.60 %tmp.61(%tmp.64, %tmp.67, %tmp.70, %tmp.73);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 117 8 ]
-        %tmp.74 = lgetv %dc;
-        symbol [ dc %tmp.74 117 8 10 ];
-        symbol [ drawLine %tmp.75 117 11 19 ];
-        %tmp.75 = getv function %tmp.74 :drawLine;
-        %tmp.76 = lgetv %x;
-        symbol [ x %tmp.76 117 20 21 ];
-        %tmp.77 = 6;
-        %tmp.78 = sub %tmp.76 %tmp.77;
-        %tmp.79 = lgetv %y;
-        symbol [ y %tmp.79 117 27 28 ];
-        %tmp.80 = 6;
-        %tmp.81 = add %tmp.79 %tmp.80;
-        %tmp.82 = lgetv %x;
-        symbol [ x %tmp.82 117 34 35 ];
-        %tmp.83 = 5;
-        %tmp.84 = sub %tmp.82 %tmp.83;
-        %tmp.85 = lgetv %y;
-        symbol [ y %tmp.85 117 41 42 ];
-        %tmp.86 = 5;
-        %tmp.87 = add %tmp.85 %tmp.86;
-        invoke %tmp.74 %tmp.75(%tmp.78, %tmp.81, %tmp.84, %tmp.87);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 118 8 ]
-        %tmp.88 = lgetv %dc;
-        symbol [ dc %tmp.88 118 8 10 ];
-        symbol [ drawLine %tmp.89 118 11 19 ];
-        %tmp.89 = getv function %tmp.88 :drawLine;
-        %tmp.90 = lgetv %x;
-        symbol [ x %tmp.90 118 20 21 ];
-        %tmp.91 = 5;
-        %tmp.92 = add %tmp.90 %tmp.91;
-        %tmp.93 = lgetv %y;
-        symbol [ y %tmp.93 118 27 28 ];
-        %tmp.94 = 5;
-        %tmp.95 = add %tmp.93 %tmp.94;
-        %tmp.96 = lgetv %x;
-        symbol [ x %tmp.96 118 34 35 ];
-        %tmp.97 = 6;
-        %tmp.98 = add %tmp.96 %tmp.97;
-        %tmp.99 = lgetv %y;
-        symbol [ y %tmp.99 118 41 42 ];
-        %tmp.100 = 6;
-        %tmp.101 = add %tmp.99 %tmp.100;
-        invoke %tmp.88 %tmp.89(%tmp.92, %tmp.95, %tmp.98, %tmp.101);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_109_71_119_4_stop:
-    }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 121; @symbol_functiondef = [drawBatteryIcon,121,13,28]; @symbol_param<0> = [dc,121,29,31]; @symbol_param<0>_type<0> = [Dc,121,35,37]; @symbol_param<1> = [x,121,39,40]; @symbol_param<1>_type<0> = [Numeric,121,44,51]; @symbol_param<2> = [y,121,53,54]; @symbol_param<2>_type<0> = [Numeric,121,58,65]; ]
-    function drawBatteryIcon(dc as Dc, x as Numeric, y as Numeric) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_121_75_127_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 122 8 ]
-        %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 122 8 10 ];
-        symbol [ drawLine %tmp.2 122 11 19 ];
-        %tmp.2 = getv function %tmp.1 :drawLine;
-        %tmp.3 = lgetv %x;
-        symbol [ x %tmp.3 122 20 21 ];
-        %tmp.4 = 9;
-        %tmp.5 = sub %tmp.3 %tmp.4;
-        %tmp.6 = lgetv %y;
-        symbol [ y %tmp.6 122 27 28 ];
-        %tmp.7 = 5;
-        %tmp.8 = sub %tmp.6 %tmp.7;
-        %tmp.9 = lgetv %x;
-        symbol [ x %tmp.9 122 34 35 ];
-        %tmp.10 = 6;
-        %tmp.11 = add %tmp.9 %tmp.10;
-        %tmp.12 = lgetv %y;
-        symbol [ y %tmp.12 122 41 42 ];
-        %tmp.13 = 5;
-        %tmp.14 = sub %tmp.12 %tmp.13;
-        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8, %tmp.11, %tmp.14);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 123 8 ]
-        %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 123 8 10 ];
-        symbol [ drawLine %tmp.16 123 11 19 ];
-        %tmp.16 = getv function %tmp.15 :drawLine;
-        %tmp.17 = lgetv %x;
-        symbol [ x %tmp.17 123 20 21 ];
-        %tmp.18 = 9;
-        %tmp.19 = sub %tmp.17 %tmp.18;
-        %tmp.20 = lgetv %y;
-        symbol [ y %tmp.20 123 27 28 ];
-        %tmp.21 = 5;
-        %tmp.22 = add %tmp.20 %tmp.21;
-        %tmp.23 = lgetv %x;
-        symbol [ x %tmp.23 123 34 35 ];
-        %tmp.24 = 6;
-        %tmp.25 = add %tmp.23 %tmp.24;
-        %tmp.26 = lgetv %y;
-        symbol [ y %tmp.26 123 41 42 ];
-        %tmp.27 = 5;
-        %tmp.28 = add %tmp.26 %tmp.27;
-        invoke %tmp.15 %tmp.16(%tmp.19, %tmp.22, %tmp.25, %tmp.28);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 124 8 ]
-        %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 124 8 10 ];
-        symbol [ drawLine %tmp.30 124 11 19 ];
-        %tmp.30 = getv function %tmp.29 :drawLine;
-        %tmp.31 = lgetv %x;
-        symbol [ x %tmp.31 124 20 21 ];
-        %tmp.32 = 9;
-        %tmp.33 = sub %tmp.31 %tmp.32;
-        %tmp.34 = lgetv %y;
-        symbol [ y %tmp.34 124 27 28 ];
-        %tmp.35 = 5;
-        %tmp.36 = sub %tmp.34 %tmp.35;
-        %tmp.37 = lgetv %x;
-        symbol [ x %tmp.37 124 34 35 ];
-        %tmp.38 = 9;
-        %tmp.39 = sub %tmp.37 %tmp.38;
-        %tmp.40 = lgetv %y;
-        symbol [ y %tmp.40 124 41 42 ];
-        %tmp.41 = 5;
-        %tmp.42 = add %tmp.40 %tmp.41;
-        invoke %tmp.29 %tmp.30(%tmp.33, %tmp.36, %tmp.39, %tmp.42);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 125 8 ]
-        %tmp.43 = lgetv %dc;
-        symbol [ dc %tmp.43 125 8 10 ];
-        symbol [ drawLine %tmp.44 125 11 19 ];
-        %tmp.44 = getv function %tmp.43 :drawLine;
-        %tmp.45 = lgetv %x;
-        symbol [ x %tmp.45 125 20 21 ];
-        %tmp.46 = 6;
-        %tmp.47 = add %tmp.45 %tmp.46;
-        %tmp.48 = lgetv %y;
-        symbol [ y %tmp.48 125 27 28 ];
-        %tmp.49 = 5;
-        %tmp.50 = sub %tmp.48 %tmp.49;
-        %tmp.51 = lgetv %x;
-        symbol [ x %tmp.51 125 34 35 ];
-        %tmp.52 = 6;
-        %tmp.53 = add %tmp.51 %tmp.52;
-        %tmp.54 = lgetv %y;
-        symbol [ y %tmp.54 125 41 42 ];
-        %tmp.55 = 5;
-        %tmp.56 = add %tmp.54 %tmp.55;
-        invoke %tmp.43 %tmp.44(%tmp.47, %tmp.50, %tmp.53, %tmp.56);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 126 8 ]
-        %tmp.57 = lgetv %dc;
-        symbol [ dc %tmp.57 126 8 10 ];
-        symbol [ drawLine %tmp.58 126 11 19 ];
-        %tmp.58 = getv function %tmp.57 :drawLine;
-        %tmp.59 = lgetv %x;
-        symbol [ x %tmp.59 126 20 21 ];
-        %tmp.60 = 8;
-        %tmp.61 = add %tmp.59 %tmp.60;
-        %tmp.62 = lgetv %y;
-        symbol [ y %tmp.62 126 27 28 ];
-        %tmp.63 = 2;
-        %tmp.64 = sub %tmp.62 %tmp.63;
-        %tmp.65 = lgetv %x;
-        symbol [ x %tmp.65 126 34 35 ];
+        symbol [ y %tmp.65 226 43 44 ];
         %tmp.66 = 8;
         %tmp.67 = add %tmp.65 %tmp.66;
-        %tmp.68 = lgetv %y;
-        symbol [ y %tmp.68 126 41 42 ];
-        %tmp.69 = 2;
-        %tmp.70 = add %tmp.68 %tmp.69;
-        invoke %tmp.57 %tmp.58(%tmp.61, %tmp.64, %tmp.67, %tmp.70);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_121_75_127_4_stop:
+        invoke %tmp.54 %tmp.55(%tmp.58, %tmp.61, %tmp.64, %tmp.67);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 227 8 ]
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 227 8 10 ];
+        symbol [ drawLine %tmp.69 227 11 19 ];
+        %tmp.69 = getv function %tmp.68 :drawLine;
+        %tmp.70 = lgetv %x;
+        symbol [ x %tmp.70 227 20 21 ];
+        %tmp.71 = 14;
+        %tmp.72 = add %tmp.70 %tmp.71;
+        %tmp.73 = lgetv %y;
+        symbol [ y %tmp.73 227 28 29 ];
+        %tmp.74 = 3;
+        %tmp.75 = sub %tmp.73 %tmp.74;
+        %tmp.76 = lgetv %x;
+        symbol [ x %tmp.76 227 35 36 ];
+        %tmp.77 = 14;
+        %tmp.78 = add %tmp.76 %tmp.77;
+        %tmp.79 = lgetv %y;
+        symbol [ y %tmp.79 227 43 44 ];
+        %tmp.80 = 3;
+        %tmp.81 = add %tmp.79 %tmp.80;
+        invoke %tmp.68 %tmp.69(%tmp.72, %tmp.75, %tmp.78, %tmp.81);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 229 8 ]
+        %tmp.82 = lgetv %dc;
+        symbol [ dc %tmp.82 229 8 10 ];
+        symbol [ setColor %tmp.83 229 11 19 ];
+        %tmp.83 = getv function %tmp.82 :setColor;
+        %tmp.84 = lgetv %color;
+        symbol [ color %tmp.84 229 20 25 ];
+        symbol [ Settings %tmp.86 229 27 35 ];
+        %tmp.86 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.87 229 36 52 ];
+        %tmp.87 = getv %tmp.86 :BACKGROUND_COLOR;
+        invoke %tmp.82 %tmp.83(%tmp.84, %tmp.87);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 230 8 ]
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 230 8 10 ];
+        symbol [ fillRectangle %tmp.89 230 11 24 ];
+        %tmp.89 = getv function %tmp.88 :fillRectangle;
+        %tmp.90 = lgetv %x;
+        symbol [ x %tmp.90 230 25 26 ];
+        %tmp.91 = 11;
+        %tmp.92 = sub %tmp.90 %tmp.91;
+        %tmp.93 = lgetv %y;
+        symbol [ y %tmp.93 230 33 34 ];
+        %tmp.94 = 5;
+        %tmp.95 = sub %tmp.93 %tmp.94;
+        %tmp.96 = 15;
+        %tmp.97 = 10;
+        invoke %tmp.88 %tmp.89(%tmp.92, %tmp.95, %tmp.96, %tmp.97);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 232 8 ]
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 232 8 10 ];
+        symbol [ setPenWidth %tmp.99 232 11 22 ];
+        %tmp.99 = getv function %tmp.98 :setPenWidth;
+        %tmp.100 = 1;
+        invoke %tmp.98 %tmp.99(%tmp.100);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_219_95_233_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 129; @symbol_functiondef = [drawCenteredText,129,13,29]; @symbol_param<0> = [dc,129,30,32]; @symbol_param<0>_type<0> = [Dc,129,36,38]; @symbol_param<1> = [text,129,40,44]; @symbol_param<1>_type<0> = [String,129,48,54]; @symbol_param<2> = [x,129,56,57]; @symbol_param<2>_type<0> = [Numeric,129,61,68]; @symbol_param<3> = [y,129,70,71]; @symbol_param<3>_type<0> = [Numeric,129,75,82]; @symbol_param<4> = [font,129,84,88]; @symbol_param<4>_type<0> = [FontDefinition,129,92,106]; @symbol_param<5> = [color,129,108,113]; @symbol_param<5>_type<0> = [ColorType,129,117,126]; ]
-    function drawCenteredText(dc as Dc, text as String, x as Numeric, y as Numeric, font as FontDefinition, color as ColorType) as Void {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_129_136_138_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 130 8 ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 235; @symbol_functiondef = [drawBodyBattery,235,13,28]; @symbol_param<0> = [dc,235,29,31]; @symbol_param<0>_type<0> = [Dc,235,35,37]; ]
+    function drawBodyBattery(dc as Dc) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_235_47_263_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 236 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 130 8 10 ];
-        symbol [ setColor %tmp.2 130 11 19 ];
+        symbol [ dc %tmp.1 236 8 10 ];
+        symbol [ setColor %tmp.2 236 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Settings %tmp.4 236 20 28 ];
+        %tmp.4 = getv ? :Settings;
+        symbol [ GRID_LINE %tmp.5 236 29 38 ];
+        %tmp.5 = getv %tmp.4 :GRID_LINE;
+        symbol [ Settings %tmp.7 236 40 48 ];
+        %tmp.7 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.8 236 49 65 ];
+        %tmp.8 = getv %tmp.7 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 237 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 237 8 10 ];
+        symbol [ setPenWidth %tmp.10 237 11 22 ];
+        %tmp.10 = getv function %tmp.9 :setPenWidth;
+        %tmp.11 = 1;
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 238 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 238 8 10 ];
+        symbol [ drawLine %tmp.13 238 11 19 ];
+        %tmp.13 = getv function %tmp.12 :drawLine;
+        %tmp.14 = 42;
+        symbol [ Settings %tmp.16 238 24 32 ];
+        %tmp.16 = getv ? :Settings;
+        symbol [ BODY_RULE_Y %tmp.17 238 33 44 ];
+        %tmp.17 = getv %tmp.16 :BODY_RULE_Y;
+        %tmp.18 = 238;
+        symbol [ Settings %tmp.20 238 51 59 ];
+        %tmp.20 = getv ? :Settings;
+        symbol [ BODY_RULE_Y %tmp.21 238 60 71 ];
+        %tmp.21 = getv %tmp.20 :BODY_RULE_Y;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.17, %tmp.18, %tmp.21);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 240 8 ]
+        %tmp.22 = self;
+        symbol [ drawCenteredText %tmp.23 240 8 24 ];
+        %tmp.23 = getv function %tmp.22 :drawCenteredText;
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 240 25 27 ];
+        %tmp.25 = "BODY BATTERY";
+        symbol [ Settings %tmp.27 240 45 53 ];
+        %tmp.27 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.28 240 54 62 ];
+        %tmp.28 = getv %tmp.27 :CENTER_X;
+        symbol [ Settings %tmp.30 240 64 72 ];
+        %tmp.30 = getv ? :Settings;
+        symbol [ BODY_LABEL_Y %tmp.31 240 73 85 ];
+        %tmp.31 = getv %tmp.30 :BODY_LABEL_Y;
+        symbol [ Settings %tmp.33 240 87 95 ];
+        %tmp.33 = getv ? :Settings;
+        symbol [ BODY_LABEL_FONT %tmp.34 240 96 111 ];
+        %tmp.34 = getv %tmp.33 :BODY_LABEL_FONT;
+        symbol [ Settings %tmp.36 240 113 121 ];
+        %tmp.36 = getv ? :Settings;
+        symbol [ BLUE %tmp.37 240 122 126 ];
+        %tmp.37 = getv %tmp.36 :BLUE;
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25, %tmp.28, %tmp.31, %tmp.34, %tmp.37);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 242 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_235_47_263_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_235_47_263_4_stop" ]
+        %valueText.1 = local;
+        symbol [ valueText %valueText.1 242 12 21 ];
+        symbol [ Lang %tmp.38 242 24 28 ];
+        %tmp.38 = getm $.Toybox.Lang;
+        symbol [ format %tmp.39 242 29 35 ];
+        %tmp.39 = getv function %tmp.38 :format;
+        %tmp.40 = "$1$";
+        %tmp.41 = newa 1;
+        symbol [ Settings %tmp.43 242 44 52 ];
+        %tmp.43 = getv ? :Settings;
+        symbol [ BODY_BATTERY_VALUE %tmp.44 242 53 71 ];
+        %tmp.44 = getv %tmp.43 :BODY_BATTERY_VALUE;
+        %tmp.45 = dup %tmp.41;
+        %tmp.46 = aputv %tmp.45 0 %tmp.44;
+        %tmp.47 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.46);
+        lputv %valueText.1 %tmp.47;
+        symbol [ valueText %valueText.1 242 12 21 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 244 8 ]
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 244 8 10 ];
+        symbol [ setColor %tmp.49 244 11 19 ];
+        %tmp.49 = getv function %tmp.48 :setColor;
+        symbol [ Settings %tmp.51 244 20 28 ];
+        %tmp.51 = getv ? :Settings;
+        symbol [ PRIMARY_COLOR %tmp.52 244 29 42 ];
+        %tmp.52 = getv %tmp.51 :PRIMARY_COLOR;
+        symbol [ Settings %tmp.54 244 44 52 ];
+        %tmp.54 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.55 244 53 69 ];
+        %tmp.55 = getv %tmp.54 :BACKGROUND_COLOR;
+        invoke %tmp.48 %tmp.49(%tmp.52, %tmp.55);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 245 8 ]
+        %tmp.56 = lgetv %dc;
+        symbol [ dc %tmp.56 245 8 10 ];
+        symbol [ drawText %tmp.57 245 11 19 ];
+        %tmp.57 = getv function %tmp.56 :drawText;
+        symbol [ Settings %tmp.59 246 12 20 ];
+        %tmp.59 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.60 246 21 29 ];
+        %tmp.60 = getv %tmp.59 :CENTER_X;
+        %tmp.61 = 9;
+        %tmp.62 = sub %tmp.60 %tmp.61;
+        symbol [ Settings %tmp.64 247 12 20 ];
+        %tmp.64 = getv ? :Settings;
+        symbol [ BODY_VALUE_Y %tmp.65 247 21 33 ];
+        %tmp.65 = getv %tmp.64 :BODY_VALUE_Y;
+        symbol [ Settings %tmp.67 248 12 20 ];
+        %tmp.67 = getv ? :Settings;
+        symbol [ BODY_VALUE_FONT %tmp.68 248 21 36 ];
+        %tmp.68 = getv %tmp.67 :BODY_VALUE_FONT;
+        %tmp.69 = lgetv %valueText.1;
+        symbol [ valueText %tmp.69 249 12 21 ];
+        symbol [ Graphics %tmp.70 250 12 20 ];
+        %tmp.70 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.71 250 21 39 ];
+        %tmp.71 = getv %tmp.70 :TEXT_JUSTIFY_RIGHT;
+        symbol [ Graphics %tmp.72 250 42 50 ];
+        %tmp.72 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.73 250 51 71 ];
+        %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_VCENTER;
+        %tmp.74 = bitor %tmp.71 %tmp.73;
+        invoke %tmp.56 %tmp.57(%tmp.62, %tmp.65, %tmp.68, %tmp.69, %tmp.74);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 253 8 ]
+        %tmp.75 = lgetv %dc;
+        symbol [ dc %tmp.75 253 8 10 ];
+        symbol [ setColor %tmp.76 253 11 19 ];
+        %tmp.76 = getv function %tmp.75 :setColor;
+        symbol [ Settings %tmp.78 253 20 28 ];
+        %tmp.78 = getv ? :Settings;
+        symbol [ MUTED_COLOR %tmp.79 253 29 40 ];
+        %tmp.79 = getv %tmp.78 :MUTED_COLOR;
+        symbol [ Settings %tmp.81 253 42 50 ];
+        %tmp.81 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.82 253 51 67 ];
+        %tmp.82 = getv %tmp.81 :BACKGROUND_COLOR;
+        invoke %tmp.75 %tmp.76(%tmp.79, %tmp.82);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 254 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 254 8 10 ];
+        symbol [ drawText %tmp.84 254 11 19 ];
+        %tmp.84 = getv function %tmp.83 :drawText;
+        symbol [ Settings %tmp.86 255 12 20 ];
+        %tmp.86 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.87 255 21 29 ];
+        %tmp.87 = getv %tmp.86 :CENTER_X;
+        %tmp.88 = 2;
+        %tmp.89 = sub %tmp.87 %tmp.88;
+        symbol [ Settings %tmp.91 256 12 20 ];
+        %tmp.91 = getv ? :Settings;
+        symbol [ BODY_VALUE_Y %tmp.92 256 21 33 ];
+        %tmp.92 = getv %tmp.91 :BODY_VALUE_Y;
+        symbol [ Settings %tmp.94 257 12 20 ];
+        %tmp.94 = getv ? :Settings;
+        symbol [ METRIC_FONT %tmp.95 257 21 32 ];
+        %tmp.95 = getv %tmp.94 :METRIC_FONT;
+        %tmp.96 = "/100";
+        symbol [ Graphics %tmp.97 259 12 20 ];
+        %tmp.97 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.98 259 21 38 ];
+        %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.99 259 41 49 ];
+        %tmp.99 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.100 259 50 70 ];
+        %tmp.100 = getv %tmp.99 :TEXT_JUSTIFY_VCENTER;
+        %tmp.101 = bitor %tmp.98 %tmp.100;
+        invoke %tmp.83 %tmp.84(%tmp.89, %tmp.92, %tmp.95, %tmp.96, %tmp.101);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 262 8 ]
+        %tmp.102 = self;
+        symbol [ drawBodyBlocks %tmp.103 262 8 22 ];
+        %tmp.103 = getv function %tmp.102 :drawBodyBlocks;
+        %tmp.104 = lgetv %dc;
+        symbol [ dc %tmp.104 262 23 25 ];
+        symbol [ Settings %tmp.106 262 27 35 ];
+        %tmp.106 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.107 262 36 44 ];
+        %tmp.107 = getv %tmp.106 :CENTER_X;
+        symbol [ Settings %tmp.109 262 46 54 ];
+        %tmp.109 = getv ? :Settings;
+        symbol [ BODY_BLOCK_Y %tmp.110 262 55 67 ];
+        %tmp.110 = getv %tmp.109 :BODY_BLOCK_Y;
+        symbol [ Settings %tmp.112 262 69 77 ];
+        %tmp.112 = getv ? :Settings;
+        symbol [ BODY_BATTERY_VALUE %tmp.113 262 78 96 ];
+        %tmp.113 = getv %tmp.112 :BODY_BATTERY_VALUE;
+        invoke %tmp.102 %tmp.103(%tmp.104, %tmp.107, %tmp.110, %tmp.113);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_235_47_263_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 265; @symbol_functiondef = [drawBodyBlocks,265,13,27]; @symbol_param<0> = [dc,265,28,30]; @symbol_param<0>_type<0> = [Dc,265,34,36]; @symbol_param<1> = [centerX,265,38,45]; @symbol_param<1>_type<0> = [Number,265,49,55]; @symbol_param<2> = [y,265,57,58]; @symbol_param<2>_type<0> = [Number,265,62,68]; @symbol_param<3> = [value,265,70,75]; @symbol_param<3>_type<0> = [Number,265,79,85]; ]
+    function drawBodyBlocks(dc as Dc, centerX as Number, y as Number, value as Number) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 266 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop" ]
+        %blockCount.1 = local;
+        symbol [ blockCount %blockCount.1 266 12 22 ];
+        %tmp.1 = 10;
+        lputv %blockCount.1 %tmp.1;
+        symbol [ blockCount %blockCount.1 266 12 22 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 267 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop" ]
+        %blockWidth.2 = local;
+        symbol [ blockWidth %blockWidth.2 267 12 22 ];
+        %tmp.2 = 10;
+        lputv %blockWidth.2 %tmp.2;
+        symbol [ blockWidth %blockWidth.2 267 12 22 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 268 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop" ]
+        %blockGap.3 = local;
+        symbol [ blockGap %blockGap.3 268 12 20 ];
+        %tmp.3 = 4;
+        lputv %blockGap.3 %tmp.3;
+        symbol [ blockGap %blockGap.3 268 12 20 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 269 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop" ]
+        %totalWidth.4 = local;
+        symbol [ totalWidth %totalWidth.4 269 12 22 ];
+        %tmp.4 = lgetv %blockCount.1;
+        symbol [ blockCount %tmp.4 269 26 36 ];
+        %tmp.5 = lgetv %blockWidth.2;
+        symbol [ blockWidth %tmp.5 269 39 49 ];
+        %tmp.6 = mul %tmp.4 %tmp.5;
+        %tmp.7 = lgetv %blockCount.1;
+        symbol [ blockCount %tmp.7 269 55 65 ];
+        %tmp.8 = 1;
+        %tmp.9 = sub %tmp.7 %tmp.8;
+        %tmp.10 = lgetv %blockGap.3;
+        symbol [ blockGap %tmp.10 269 73 81 ];
+        %tmp.11 = mul %tmp.9 %tmp.10;
+        %tmp.12 = add %tmp.6 %tmp.11;
+        lputv %totalWidth.4 %tmp.12;
+        symbol [ totalWidth %totalWidth.4 269 12 22 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 270 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop" ]
+        %startX.5 = local;
+        symbol [ startX %startX.5 270 12 18 ];
+        %tmp.13 = lgetv %centerX;
+        symbol [ centerX %tmp.13 270 21 28 ];
+        %tmp.14 = lgetv %totalWidth.4;
+        symbol [ totalWidth %tmp.14 270 32 42 ];
+        %tmp.15 = 2;
+        %tmp.16 = div %tmp.14 %tmp.15;
+        %tmp.17 = sub %tmp.13 %tmp.16;
+        lputv %startX.5 %tmp.17;
+        symbol [ startX %startX.5 270 12 18 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 271 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop" ]
+        %filledBlocks.6 = local;
+        symbol [ filledBlocks %filledBlocks.6 271 12 24 ];
+        %tmp.18 = lgetv %value;
+        symbol [ value %tmp.18 271 28 33 ];
+        %tmp.19 = lgetv %blockCount.1;
+        symbol [ blockCount %tmp.19 271 36 46 ];
+        %tmp.20 = mul %tmp.18 %tmp.19;
+        %tmp.21 = 100;
+        %tmp.22 = div %tmp.20 %tmp.21;
+        lputv %filledBlocks.6 %tmp.22;
+        symbol [ filledBlocks %filledBlocks.6 271 12 24 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 273 8 ]
+        for @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_test @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_incr @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_init:
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_begin" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_end" ]
+        %i.7 = local;
+        symbol [ i %i.7 273 17 18 ];
+        %tmp.23 = 0;
+        lputv %i.7 %tmp.23;
+        symbol [ i %i.7 273 17 18 ];
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_test:
+        %tmp.24 = lgetv %i.7;
+        symbol [ i %tmp.24 273 24 25 ];
+        %tmp.25 = lgetv %blockCount.1;
+        symbol [ blockCount %tmp.25 273 28 38 ];
+        %tmp.26 = lt %tmp.24 %tmp.25;
+        bf %tmp.26 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_begin:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_48_281_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 274 12 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_12_278_12_if_stmt:
+        %tmp.27 = lgetv %i.7;
+        symbol [ i %tmp.27 274 16 17 ];
+        %tmp.28 = lgetv %filledBlocks.6;
+        symbol [ filledBlocks %tmp.28 274 20 32 ];
+        %tmp.29 = lt %tmp.27 %tmp.28;
+        bf %tmp.29 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_12_278_12_if_else_false;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_12_278_12_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_34_276_12_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 275 16 ]
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 275 16 18 ];
+        symbol [ setColor %tmp.31 275 19 27 ];
+        %tmp.31 = getv function %tmp.30 :setColor;
+        symbol [ Settings %tmp.33 275 28 36 ];
+        %tmp.33 = getv ? :Settings;
+        symbol [ BLUE %tmp.34 275 37 41 ];
+        %tmp.34 = getv %tmp.33 :BLUE;
+        symbol [ Settings %tmp.36 275 43 51 ];
+        %tmp.36 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.37 275 52 68 ];
+        %tmp.37 = getv %tmp.36 :BACKGROUND_COLOR;
+        invoke %tmp.30 %tmp.31(%tmp.34, %tmp.37);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_34_276_12_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_12_278_12_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_12_278_12_if_else_false:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_276_19_278_12_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 277 16 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 277 16 18 ];
+        symbol [ setColor %tmp.39 277 19 27 ];
+        %tmp.39 = getv function %tmp.38 :setColor;
+        symbol [ Settings %tmp.41 277 28 36 ];
+        %tmp.41 = getv ? :Settings;
+        symbol [ MUTED_COLOR %tmp.42 277 37 48 ];
+        %tmp.42 = getv %tmp.41 :MUTED_COLOR;
+        symbol [ Settings %tmp.44 277 50 58 ];
+        %tmp.44 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.45 277 59 75 ];
+        %tmp.45 = getv %tmp.44 :BACKGROUND_COLOR;
+        invoke %tmp.38 %tmp.39(%tmp.42, %tmp.45);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_276_19_278_12_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_274_12_278_12_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 280 12 ]
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 280 12 14 ];
+        symbol [ fillRectangle %tmp.47 280 15 28 ];
+        %tmp.47 = getv function %tmp.46 :fillRectangle;
+        %tmp.48 = lgetv %startX.5;
+        symbol [ startX %tmp.48 280 29 35 ];
+        %tmp.49 = lgetv %i.7;
+        symbol [ i %tmp.49 280 39 40 ];
+        %tmp.50 = lgetv %blockWidth.2;
+        symbol [ blockWidth %tmp.50 280 44 54 ];
+        %tmp.51 = lgetv %blockGap.3;
+        symbol [ blockGap %tmp.51 280 57 65 ];
+        %tmp.52 = add %tmp.50 %tmp.51;
+        %tmp.53 = mul %tmp.49 %tmp.52;
+        %tmp.54 = add %tmp.48 %tmp.53;
+        %tmp.55 = lgetv %y;
+        symbol [ y %tmp.55 280 69 70 ];
+        %tmp.56 = lgetv %blockWidth.2;
+        symbol [ blockWidth %tmp.56 280 72 82 ];
+        %tmp.57 = 4;
+        invoke %tmp.46 %tmp.47(%tmp.54, %tmp.55, %tmp.56, %tmp.57);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_48_281_8_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_incr:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 273 ]
+        %tmp.58 = lgetv %i.7;
+        symbol [ i %tmp.58 273 40 41 ];
+        %tmp.59 = 1;
+        %tmp.60 = add %tmp.58 %tmp.59;
+        lputv %i.7 %tmp.60;
+        symbol [ i %i.7 273 40 41 ];
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_test;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_273_8_281_8_for_end:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_265_95_282_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 284; @symbol_functiondef = [drawBottomDistance,284,13,31]; @symbol_param<0> = [dc,284,32,34]; @symbol_param<0>_type<0> = [Dc,284,38,40]; ]
+    function drawBottomDistance(dc as Dc) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_284_50_307_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 285 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 285 8 10 ];
+        symbol [ setColor %tmp.2 285 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Settings %tmp.4 285 20 28 ];
+        %tmp.4 = getv ? :Settings;
+        symbol [ ORANGE %tmp.5 285 29 35 ];
+        %tmp.5 = getv %tmp.4 :ORANGE;
+        symbol [ Settings %tmp.7 285 37 45 ];
+        %tmp.7 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.8 285 46 62 ];
+        %tmp.8 = getv %tmp.7 :BACKGROUND_COLOR;
+        invoke %tmp.1 %tmp.2(%tmp.5, %tmp.8);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 286 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 286 8 10 ];
+        symbol [ setPenWidth %tmp.10 286 11 22 ];
+        %tmp.10 = getv function %tmp.9 :setPenWidth;
+        %tmp.11 = 2;
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 288 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_284_50_307_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_284_50_307_4_stop" ]
+        %x.1 = local;
+        symbol [ x %x.1 288 12 13 ];
+        symbol [ Settings %tmp.13 288 16 24 ];
+        %tmp.13 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.14 288 25 33 ];
+        %tmp.14 = getv %tmp.13 :CENTER_X;
+        %tmp.15 = 42;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        lputv %x.1 %tmp.16;
+        symbol [ x %x.1 288 12 13 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 289 8 ]
+        [ "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_284_50_307_4_start" "_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_284_50_307_4_stop" ]
+        %y.2 = local;
+        symbol [ y %y.2 289 12 13 ];
+        %tmp.17 = 274;
+        lputv %y.2 %tmp.17;
+        symbol [ y %y.2 289 12 13 ];
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 291 8 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 291 8 10 ];
+        symbol [ fillCircle %tmp.19 291 11 21 ];
+        %tmp.19 = getv function %tmp.18 :fillCircle;
+        %tmp.20 = lgetv %x.1;
+        symbol [ x %tmp.20 291 22 23 ];
+        %tmp.21 = lgetv %y.2;
+        symbol [ y %tmp.21 291 25 26 ];
+        %tmp.22 = 10;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        %tmp.24 = 3;
+        invoke %tmp.18 %tmp.19(%tmp.20, %tmp.23, %tmp.24);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 292 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 292 8 10 ];
+        symbol [ drawLine %tmp.26 292 11 19 ];
+        %tmp.26 = getv function %tmp.25 :drawLine;
+        %tmp.27 = lgetv %x.1;
+        symbol [ x %tmp.27 292 20 21 ];
+        %tmp.28 = lgetv %y.2;
+        symbol [ y %tmp.28 292 23 24 ];
+        %tmp.29 = 6;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        %tmp.31 = lgetv %x.1;
+        symbol [ x %tmp.31 292 30 31 ];
+        %tmp.32 = lgetv %y.2;
+        symbol [ y %tmp.32 292 33 34 ];
+        %tmp.33 = 2;
+        %tmp.34 = add %tmp.32 %tmp.33;
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.30, %tmp.31, %tmp.34);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 293 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 293 8 10 ];
+        symbol [ drawLine %tmp.36 293 11 19 ];
+        %tmp.36 = getv function %tmp.35 :drawLine;
+        %tmp.37 = lgetv %x.1;
+        symbol [ x %tmp.37 293 20 21 ];
+        %tmp.38 = lgetv %y.2;
+        symbol [ y %tmp.38 293 23 24 ];
+        %tmp.39 = 2;
+        %tmp.40 = sub %tmp.38 %tmp.39;
+        %tmp.41 = lgetv %x.1;
+        symbol [ x %tmp.41 293 30 31 ];
+        %tmp.42 = 5;
+        %tmp.43 = sub %tmp.41 %tmp.42;
+        %tmp.44 = lgetv %y.2;
+        symbol [ y %tmp.44 293 37 38 ];
+        %tmp.45 = 5;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.40, %tmp.43, %tmp.46);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 294 8 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 294 8 10 ];
+        symbol [ drawLine %tmp.48 294 11 19 ];
+        %tmp.48 = getv function %tmp.47 :drawLine;
+        %tmp.49 = lgetv %x.1;
+        symbol [ x %tmp.49 294 20 21 ];
+        %tmp.50 = lgetv %y.2;
+        symbol [ y %tmp.50 294 23 24 ];
+        %tmp.51 = 2;
+        %tmp.52 = sub %tmp.50 %tmp.51;
+        %tmp.53 = lgetv %x.1;
+        symbol [ x %tmp.53 294 30 31 ];
+        %tmp.54 = 5;
+        %tmp.55 = add %tmp.53 %tmp.54;
+        %tmp.56 = lgetv %y.2;
+        symbol [ y %tmp.56 294 37 38 ];
+        %tmp.57 = 5;
+        %tmp.58 = add %tmp.56 %tmp.57;
+        invoke %tmp.47 %tmp.48(%tmp.49, %tmp.52, %tmp.55, %tmp.58);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 295 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 295 8 10 ];
+        symbol [ drawLine %tmp.60 295 11 19 ];
+        %tmp.60 = getv function %tmp.59 :drawLine;
+        %tmp.61 = lgetv %x.1;
+        symbol [ x %tmp.61 295 20 21 ];
+        %tmp.62 = lgetv %y.2;
+        symbol [ y %tmp.62 295 23 24 ];
+        %tmp.63 = 3;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        %tmp.65 = lgetv %x.1;
+        symbol [ x %tmp.65 295 30 31 ];
+        %tmp.66 = 6;
+        %tmp.67 = add %tmp.65 %tmp.66;
+        %tmp.68 = lgetv %y.2;
+        symbol [ y %tmp.68 295 37 38 ];
+        %tmp.69 = 6;
+        %tmp.70 = sub %tmp.68 %tmp.69;
+        invoke %tmp.59 %tmp.60(%tmp.61, %tmp.64, %tmp.67, %tmp.70);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 297 8 ]
+        %tmp.71 = lgetv %dc;
+        symbol [ dc %tmp.71 297 8 10 ];
+        symbol [ setPenWidth %tmp.72 297 11 22 ];
+        %tmp.72 = getv function %tmp.71 :setPenWidth;
+        %tmp.73 = 1;
+        invoke %tmp.71 %tmp.72(%tmp.73);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 299 8 ]
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 299 8 10 ];
+        symbol [ setColor %tmp.75 299 11 19 ];
+        %tmp.75 = getv function %tmp.74 :setColor;
+        symbol [ Settings %tmp.77 299 20 28 ];
+        %tmp.77 = getv ? :Settings;
+        symbol [ PRIMARY_COLOR %tmp.78 299 29 42 ];
+        %tmp.78 = getv %tmp.77 :PRIMARY_COLOR;
+        symbol [ Settings %tmp.80 299 44 52 ];
+        %tmp.80 = getv ? :Settings;
+        symbol [ BACKGROUND_COLOR %tmp.81 299 53 69 ];
+        %tmp.81 = getv %tmp.80 :BACKGROUND_COLOR;
+        invoke %tmp.74 %tmp.75(%tmp.78, %tmp.81);
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 300 8 ]
+        %tmp.82 = lgetv %dc;
+        symbol [ dc %tmp.82 300 8 10 ];
+        symbol [ drawText %tmp.83 300 11 19 ];
+        %tmp.83 = getv function %tmp.82 :drawText;
+        symbol [ Settings %tmp.85 301 12 20 ];
+        %tmp.85 = getv ? :Settings;
+        symbol [ CENTER_X %tmp.86 301 21 29 ];
+        %tmp.86 = getv %tmp.85 :CENTER_X;
+        %tmp.87 = 25;
+        %tmp.88 = sub %tmp.86 %tmp.87;
+        %tmp.89 = 274;
+        symbol [ Settings %tmp.91 303 12 20 ];
+        %tmp.91 = getv ? :Settings;
+        symbol [ BOTTOM_FONT %tmp.92 303 21 32 ];
+        %tmp.92 = getv %tmp.91 :BOTTOM_FONT;
+        symbol [ Settings %tmp.94 304 12 20 ];
+        %tmp.94 = getv ? :Settings;
+        symbol [ DISTANCE_TEXT %tmp.95 304 21 34 ];
+        %tmp.95 = getv %tmp.94 :DISTANCE_TEXT;
+        symbol [ Graphics %tmp.96 305 12 20 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.97 305 21 38 ];
+        %tmp.97 = getv %tmp.96 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.98 305 41 49 ];
+        %tmp.98 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.99 305 50 70 ];
+        %tmp.99 = getv %tmp.98 :TEXT_JUSTIFY_VCENTER;
+        %tmp.100 = bitor %tmp.97 %tmp.99;
+        invoke %tmp.82 %tmp.83(%tmp.88, %tmp.89, %tmp.92, %tmp.95, %tmp.100);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_284_50_307_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 309; @symbol_functiondef = [drawCenteredText,309,13,29]; @symbol_param<0> = [dc,309,30,32]; @symbol_param<0>_type<0> = [Dc,309,36,38]; @symbol_param<1> = [text,309,40,44]; @symbol_param<1>_type<0> = [String,309,48,54]; @symbol_param<2> = [x,309,56,57]; @symbol_param<2>_type<0> = [Numeric,309,61,68]; @symbol_param<3> = [y,309,70,71]; @symbol_param<3>_type<0> = [Numeric,309,75,82]; @symbol_param<4> = [font,309,84,88]; @symbol_param<4>_type<0> = [FontDefinition,309,92,106]; @symbol_param<5> = [color,309,108,113]; @symbol_param<5>_type<0> = [ColorType,309,117,126]; ]
+    function drawCenteredText(dc as Dc, text as String, x as Numeric, y as Numeric, font as FontDefinition, color as ColorType) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_309_136_318_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 310 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 310 8 10 ];
+        symbol [ setColor %tmp.2 310 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
         %tmp.3 = lgetv %color;
-        symbol [ color %tmp.3 130 20 25 ];
-        symbol [ Settings %tmp.5 130 27 35 ];
+        symbol [ color %tmp.3 310 20 25 ];
+        symbol [ Settings %tmp.5 310 27 35 ];
         %tmp.5 = getv ? :Settings;
-        symbol [ BACKGROUND_COLOR %tmp.6 130 36 52 ];
+        symbol [ BACKGROUND_COLOR %tmp.6 310 36 52 ];
         %tmp.6 = getv %tmp.5 :BACKGROUND_COLOR;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 131 8 ]
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 311 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 131 8 10 ];
-        symbol [ drawText %tmp.8 131 11 19 ];
+        symbol [ dc %tmp.7 311 8 10 ];
+        symbol [ drawText %tmp.8 311 11 19 ];
         %tmp.8 = getv function %tmp.7 :drawText;
         %tmp.9 = lgetv %x;
-        symbol [ x %tmp.9 132 12 13 ];
+        symbol [ x %tmp.9 312 12 13 ];
         %tmp.10 = lgetv %y;
-        symbol [ y %tmp.10 133 12 13 ];
+        symbol [ y %tmp.10 313 12 13 ];
         %tmp.11 = lgetv %font;
-        symbol [ font %tmp.11 134 12 16 ];
+        symbol [ font %tmp.11 314 12 16 ];
         %tmp.12 = lgetv %text;
-        symbol [ text %tmp.12 135 12 16 ];
-        symbol [ Graphics %tmp.13 136 12 20 ];
+        symbol [ text %tmp.12 315 12 16 ];
+        symbol [ Graphics %tmp.13 316 12 20 ];
         %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.14 136 21 40 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.14 316 21 40 ];
         %tmp.14 = getv %tmp.13 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.15 136 43 51 ];
+        symbol [ Graphics %tmp.15 316 43 51 ];
         %tmp.15 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.16 136 52 72 ];
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.16 316 52 72 ];
         %tmp.16 = getv %tmp.15 :TEXT_JUSTIFY_VCENTER;
         %tmp.17 = bitor %tmp.14 %tmp.16;
         invoke %tmp.7 %tmp.8(%tmp.9, %tmp.10, %tmp.11, %tmp.12, %tmp.17);
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_129_136_138_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_309_136_318_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 140; @symbol_functiondef = [getTimeFont,140,13,24]; @symbol_param<0> = [dc,140,25,27]; @symbol_param<0>_type<0> = [Dc,140,31,33]; @symbol_param<1> = [text,140,35,39]; @symbol_param<1>_type<0> = [String,140,43,49]; @symbol_return<0> = [FontDefinition,140,54,68]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 320; @symbol_functiondef = [getTimeFont,320,13,24]; @symbol_param<0> = [dc,320,25,27]; @symbol_param<0>_type<0> = [Dc,320,31,33]; @symbol_param<1> = [text,320,35,39]; @symbol_param<1>_type<0> = [String,320,43,49]; @symbol_return<0> = [FontDefinition,320,54,68]; ]
     function getTimeFont(dc as Dc, text as String) as FontDefinition {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_140_69_150_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 141 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_8_143_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_320_69_330_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 321 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_8_323_8_if_stmt:
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 141 12 14 ];
-        symbol [ getTextWidthInPixels %tmp.2 141 15 35 ];
+        symbol [ dc %tmp.1 321 12 14 ];
+        symbol [ getTextWidthInPixels %tmp.2 321 15 35 ];
         %tmp.2 = getv function %tmp.1 :getTextWidthInPixels;
         %tmp.3 = lgetv %text;
-        symbol [ text %tmp.3 141 36 40 ];
-        symbol [ Settings %tmp.5 141 42 50 ];
+        symbol [ text %tmp.3 321 36 40 ];
+        symbol [ Settings %tmp.5 321 42 50 ];
         %tmp.5 = getv ? :Settings;
-        symbol [ TIME_FONT %tmp.6 141 51 60 ];
+        symbol [ TIME_FONT %tmp.6 321 51 60 ];
         %tmp.6 = getv %tmp.5 :TIME_FONT;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.6);
-        symbol [ Settings %tmp.9 141 65 73 ];
+        symbol [ Settings %tmp.9 321 65 73 ];
         %tmp.9 = getv ? :Settings;
-        symbol [ TIME_MAX_WIDTH %tmp.10 141 74 88 ];
+        symbol [ TIME_MAX_WIDTH %tmp.10 321 74 88 ];
         %tmp.10 = getv %tmp.9 :TIME_MAX_WIDTH;
         %tmp.11 = lte %tmp.7 %tmp.10;
-        bf %tmp.11 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_8_143_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_8_143_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_90_143_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 142 12 ]
-        symbol [ Settings %tmp.13 142 19 27 ];
+        bf %tmp.11 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_8_323_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_8_323_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_90_323_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 322 12 ]
+        symbol [ Settings %tmp.13 322 19 27 ];
         %tmp.13 = getv ? :Settings;
-        symbol [ TIME_FONT %tmp.14 142 28 37 ];
+        symbol [ TIME_FONT %tmp.14 322 28 37 ];
         %tmp.14 = getv %tmp.13 :TIME_FONT;
         ret %tmp.14;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_90_143_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_8_143_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_141_8_143_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 145 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_8_147_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_90_323_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_8_323_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_321_8_323_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 325 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_8_327_8_if_stmt:
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 145 12 14 ];
-        symbol [ getTextWidthInPixels %tmp.16 145 15 35 ];
+        symbol [ dc %tmp.15 325 12 14 ];
+        symbol [ getTextWidthInPixels %tmp.16 325 15 35 ];
         %tmp.16 = getv function %tmp.15 :getTextWidthInPixels;
         %tmp.17 = lgetv %text;
-        symbol [ text %tmp.17 145 36 40 ];
-        symbol [ Settings %tmp.19 145 42 50 ];
+        symbol [ text %tmp.17 325 36 40 ];
+        symbol [ Settings %tmp.19 325 42 50 ];
         %tmp.19 = getv ? :Settings;
-        symbol [ TIME_FALLBACK_FONT %tmp.20 145 51 69 ];
+        symbol [ TIME_FALLBACK_FONT %tmp.20 325 51 69 ];
         %tmp.20 = getv %tmp.19 :TIME_FALLBACK_FONT;
         %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.17, %tmp.20);
-        symbol [ Settings %tmp.23 145 74 82 ];
+        symbol [ Settings %tmp.23 325 74 82 ];
         %tmp.23 = getv ? :Settings;
-        symbol [ TIME_MAX_WIDTH %tmp.24 145 83 97 ];
+        symbol [ TIME_MAX_WIDTH %tmp.24 325 83 97 ];
         %tmp.24 = getv %tmp.23 :TIME_MAX_WIDTH;
         %tmp.25 = lte %tmp.21 %tmp.24;
-        bf %tmp.25 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_8_147_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_8_147_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_99_147_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 146 12 ]
-        symbol [ Settings %tmp.27 146 19 27 ];
+        bf %tmp.25 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_8_327_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_8_327_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_99_327_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 326 12 ]
+        symbol [ Settings %tmp.27 326 19 27 ];
         %tmp.27 = getv ? :Settings;
-        symbol [ TIME_FALLBACK_FONT %tmp.28 146 28 46 ];
+        symbol [ TIME_FALLBACK_FONT %tmp.28 326 28 46 ];
         %tmp.28 = getv %tmp.27 :TIME_FALLBACK_FONT;
         ret %tmp.28;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_99_147_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_8_147_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_145_8_147_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 149 8 ]
-        symbol [ Settings %tmp.30 149 15 23 ];
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_99_327_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_8_327_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_325_8_327_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 329 8 ]
+        symbol [ Settings %tmp.30 329 15 23 ];
         %tmp.30 = getv ? :Settings;
-        symbol [ TIME_COMPACT_FONT %tmp.31 149 24 41 ];
+        symbol [ TIME_COMPACT_FONT %tmp.31 329 24 41 ];
         %tmp.31 = getv %tmp.30 :TIME_COMPACT_FONT;
         ret %tmp.31;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_140_69_150_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_320_69_330_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 152; @symbol_functiondef = [compactNumber,152,13,26]; @symbol_param<0> = [value,152,27,32]; @symbol_param<0>_type<0> = [Number,152,36,42]; @symbol_return<0> = [String,152,48,54]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 332; @symbol_functiondef = [compactNumber,332,13,26]; @symbol_param<0> = [value,332,27,32]; @symbol_param<0>_type<0> = [Number,332,36,42]; @symbol_return<0> = [String,332,48,54]; ]
     function compactNumber(value as Number or Null) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_152_55_162_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 153 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_155_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_332_55_342_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 333 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_8_335_8_if_stmt:
         %tmp.1 = lgetv %value;
-        symbol [ value %tmp.1 153 12 17 ];
+        symbol [ value %tmp.1 333 12 17 ];
         %tmp.2 = null;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_155_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_155_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_27_155_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 154 12 ]
+        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_8_335_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_8_335_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_27_335_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 334 12 ]
         %tmp.4 = "0";
         ret %tmp.4;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_27_155_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_155_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_153_8_155_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 157 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_8_159_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_27_335_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_8_335_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_333_8_335_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 337 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_8_339_8_if_stmt:
         %tmp.5 = lgetv %value;
-        symbol [ value %tmp.5 157 12 17 ];
+        symbol [ value %tmp.5 337 12 17 ];
         %tmp.6 = 9999;
         %tmp.7 = gt %tmp.5 %tmp.6;
-        bf %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_8_159_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_8_159_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_26_159_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 158 12 ]
+        bf %tmp.7 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_8_339_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_8_339_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_26_339_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 338 12 ]
         %tmp.8 = lgetv %value;
-        symbol [ value %tmp.8 158 20 25 ];
-        symbol [ toFloat %tmp.9 158 26 33 ];
+        symbol [ value %tmp.8 338 20 25 ];
+        symbol [ toFloat %tmp.9 338 26 33 ];
         %tmp.9 = getv function %tmp.8 :toFloat;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         %tmp.11 = 1000.0;
         %tmp.12 = div %tmp.10 %tmp.11;
-        symbol [ format %tmp.13 158 46 52 ];
+        symbol [ format %tmp.13 338 46 52 ];
         %tmp.13 = getv function %tmp.12 :format;
         %tmp.14 = "%.1f";
         %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
         %tmp.16 = "k";
         %tmp.17 = add %tmp.15 %tmp.16;
         ret %tmp.17;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_26_159_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_8_159_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_157_8_159_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 161 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_26_339_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_8_339_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_337_8_339_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 341 8 ]
         %tmp.18 = lgetv %value;
-        symbol [ value %tmp.18 161 15 20 ];
-        symbol [ format %tmp.19 161 21 27 ];
+        symbol [ value %tmp.18 341 15 20 ];
+        symbol [ format %tmp.19 341 21 27 ];
         %tmp.19 = getv function %tmp.18 :format;
         %tmp.20 = "%d";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         ret %tmp.21;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_152_55_162_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_332_55_342_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 164; @symbol_functiondef = [formatNumber,164,13,25]; @symbol_param<0> = [value,164,26,31]; @symbol_param<0>_type<0> = [Number,164,35,41]; @symbol_param<1> = [width,164,44,49]; @symbol_param<1>_type<0> = [Number,164,53,59]; @symbol_return<0> = [String,164,64,70]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 344; @symbol_functiondef = [formatNumber,344,13,25]; @symbol_param<0> = [value,344,26,31]; @symbol_param<0>_type<0> = [Number,344,35,41]; @symbol_param<1> = [width,344,44,49]; @symbol_param<1>_type<0> = [Number,344,53,59]; @symbol_return<0> = [String,344,64,70]; ]
     function formatNumber(value as Number or Null, width as Number) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_164_71_170_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 165 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_8_167_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_344_71_350_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 345 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_8_347_8_if_stmt:
         %tmp.1 = lgetv %value;
-        symbol [ value %tmp.1 165 12 17 ];
+        symbol [ value %tmp.1 345 12 17 ];
         %tmp.2 = null;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_8_167_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_8_167_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_27_167_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 166 12 ]
+        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_8_347_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_8_347_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_27_347_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 346 12 ]
         %tmp.4 = "--";
         ret %tmp.4;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_27_167_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_8_167_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_165_8_167_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 169 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_27_347_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_8_347_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_345_8_347_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 349 8 ]
         %tmp.5 = lgetv %value;
-        symbol [ value %tmp.5 169 15 20 ];
-        symbol [ format %tmp.6 169 21 27 ];
+        symbol [ value %tmp.5 349 15 20 ];
+        symbol [ format %tmp.6 349 21 27 ];
         %tmp.6 = getv function %tmp.5 :format;
         %tmp.7 = "%0";
         %tmp.8 = lgetv %width;
-        symbol [ width %tmp.8 169 35 40 ];
+        symbol [ width %tmp.8 349 35 40 ];
         %tmp.9 = add %tmp.7 %tmp.8;
         %tmp.10 = "d";
         %tmp.11 = add %tmp.9 %tmp.10;
         %tmp.12 = invoke %tmp.5 %tmp.6(%tmp.11);
         ret %tmp.12;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_164_71_170_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_344_71_350_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 172; @symbol_functiondef = [formatValue,172,13,24]; @symbol_param<0> = [value,172,25,30]; @symbol_param<0>_type<0> = [Number,172,34,40]; @symbol_param<1> = [placeholder,172,43,54]; @symbol_param<1>_type<0> = [String,172,58,64]; @symbol_return<0> = [String,172,69,75]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 352; @symbol_functiondef = [formatValue,352,13,24]; @symbol_param<0> = [value,352,25,30]; @symbol_param<0>_type<0> = [Number,352,34,40]; @symbol_param<1> = [placeholder,352,43,54]; @symbol_param<1>_type<0> = [String,352,58,64]; @symbol_return<0> = [String,352,69,75]; ]
     function formatValue(value as Number or Null, placeholder as String) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_172_76_178_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 173 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_8_175_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_352_76_358_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 353 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_8_355_8_if_stmt:
         %tmp.1 = lgetv %value;
-        symbol [ value %tmp.1 173 12 17 ];
+        symbol [ value %tmp.1 353 12 17 ];
         %tmp.2 = null;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_8_175_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_8_175_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_27_175_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 174 12 ]
+        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_8_355_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_8_355_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_27_355_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 354 12 ]
         %tmp.4 = lgetv %placeholder;
-        symbol [ placeholder %tmp.4 174 19 30 ];
+        symbol [ placeholder %tmp.4 354 19 30 ];
         ret %tmp.4;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_27_175_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_8_175_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_173_8_175_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 177 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_27_355_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_8_355_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_353_8_355_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 357 8 ]
         %tmp.5 = lgetv %value;
-        symbol [ value %tmp.5 177 15 20 ];
-        symbol [ format %tmp.6 177 21 27 ];
+        symbol [ value %tmp.5 357 15 20 ];
+        symbol [ format %tmp.6 357 21 27 ];
         %tmp.6 = getv function %tmp.5 :format;
         %tmp.7 = "%d";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         ret %tmp.8;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_172_76_178_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_352_76_358_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 180; @symbol_functiondef = [formatWeather,180,13,26]; @symbol_param<0> = [value,180,27,32]; @symbol_param<0>_type<0> = [Numeric,180,36,43]; @symbol_return<0> = [String,180,49,55]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 360; @symbol_functiondef = [formatWeather,360,13,26]; @symbol_param<0> = [value,360,27,32]; @symbol_param<0>_type<0> = [Numeric,360,36,43]; @symbol_return<0> = [String,360,49,55]; ]
     function formatWeather(value as Numeric or Null) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_180_56_186_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 181 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_8_183_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_360_56_366_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 361 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_8_363_8_if_stmt:
         %tmp.1 = lgetv %value;
-        symbol [ value %tmp.1 181 12 17 ];
+        symbol [ value %tmp.1 361 12 17 ];
         %tmp.2 = null;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_8_183_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_8_183_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_27_183_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 182 12 ]
+        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_8_363_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_8_363_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_27_363_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 362 12 ]
         %tmp.4 = "--";
         ret %tmp.4;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_27_183_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_8_183_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_181_8_183_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 185 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_27_363_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_8_363_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_361_8_363_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 365 8 ]
         %tmp.5 = lgetv %value;
-        symbol [ value %tmp.5 185 15 20 ];
-        symbol [ format %tmp.6 185 21 27 ];
+        symbol [ value %tmp.5 365 15 20 ];
+        symbol [ format %tmp.6 365 21 27 ];
         %tmp.6 = getv function %tmp.5 :format;
         %tmp.7 = "%d";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         %tmp.9 = "°";
         %tmp.10 = add %tmp.8 %tmp.9;
         ret %tmp.10;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_180_56_186_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_360_56_366_4_stop:
     }
-    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 188; @symbol_functiondef = [formatBattery,188,13,26]; @symbol_param<0> = [value,188,27,32]; @symbol_param<0>_type<0> = [Numeric,188,36,43]; @symbol_return<0> = [String,188,49,55]; ]
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 368; @symbol_functiondef = [formatBattery,368,13,26]; @symbol_param<0> = [value,368,27,32]; @symbol_param<0>_type<0> = [Numeric,368,36,43]; @symbol_return<0> = [String,368,49,55]; ]
     function formatBattery(value as Numeric or Null) as String {
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_188_56_194_4_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 189 8 ]
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_8_191_8_if_stmt:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_368_56_374_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 369 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_8_371_8_if_stmt:
         %tmp.1 = lgetv %value;
-        symbol [ value %tmp.1 189 12 17 ];
+        symbol [ value %tmp.1 369 12 17 ];
         %tmp.2 = null;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_8_191_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_8_191_8_if_true:
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_27_191_8_start:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 190 12 ]
+        bf %tmp.3 @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_8_371_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_8_371_8_if_true:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_27_371_8_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 370 12 ]
         %tmp.4 = "--";
         ret %tmp.4;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_27_191_8_stop:
-        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_8_191_8_if_end;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_189_8_191_8_if_end:
-[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 193 8 ]
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_27_371_8_stop:
+        goto @_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_8_371_8_if_end;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_369_8_371_8_if_end:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" 373 8 ]
         %tmp.5 = lgetv %value;
-        symbol [ value %tmp.5 193 15 20 ];
-        symbol [ format %tmp.6 193 21 27 ];
+        symbol [ value %tmp.5 373 15 20 ];
+        symbol [ format %tmp.6 373 21 27 ];
         %tmp.6 = getv function %tmp.5 :format;
         %tmp.7 = "%d";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         ret %tmp.8;
-_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_188_56_194_4_stop:
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_Renderer_mc_368_56_374_4_stop:
     }
 }
 [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc"; @line = 1; ]

@@ -56,212 +56,308 @@
         <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" id="19" lineNum="13" parent="globals/FenixMinimalWatchFace" pc="268436076" symbol="initialize"/>
         <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" id="21" lineNum="22" parent="globals/FenixMinimalWatchFace" pc="268436102" symbol="onUpdate"/>
         <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" id="21" lineNum="23" parent="globals/FenixMinimalWatchFace" pc="268436104" symbol="onUpdate"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="109" parent="globals/Renderer" pc="268436132" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="110" parent="globals/Renderer" pc="268436134" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="111" parent="globals/Renderer" pc="268436150" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="112" parent="globals/Renderer" pc="268436174" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="113" parent="globals/Renderer" pc="268436198" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="114" parent="globals/Renderer" pc="268436222" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="115" parent="globals/Renderer" pc="268436246" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="116" parent="globals/Renderer" pc="268436276" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="117" parent="globals/Renderer" pc="268436306" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="118" parent="globals/Renderer" pc="268436336" symbol="drawSunIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="100" parent="globals/Renderer" pc="268436367" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="101" parent="globals/Renderer" pc="268436369" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="102" parent="globals/Renderer" pc="268436391" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="103" parent="globals/Renderer" pc="268436413" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="104" parent="globals/Renderer" pc="268436435" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="105" parent="globals/Renderer" pc="268436457" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="106" parent="globals/Renderer" pc="268436479" symbol="drawStepsIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="31" parent="globals/Renderer" pc="268436502" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="32" parent="globals/Renderer" pc="268436505" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="39" parent="globals/Renderer" pc="268436566" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="40" parent="globals/Renderer" pc="268436580" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="41" parent="globals/Renderer" pc="268436595" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="43" parent="globals/Renderer" pc="268436613" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="45" parent="globals/Renderer" pc="268436638" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="46" parent="globals/Renderer" pc="268436654" symbol="drawTime"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="55" parent="globals/Renderer" pc="268436686" symbol="drawMetrics"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="56" parent="globals/Renderer" pc="268436688" symbol="drawMetrics"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="57" parent="globals/Renderer" pc="268436721" symbol="drawMetrics"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="58" parent="globals/Renderer" pc="268436750" symbol="drawMetrics"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="59" parent="globals/Renderer" pc="268436780" symbol="drawMetrics"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="152" parent="globals/Renderer" pc="268436811" symbol="compactNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="153" parent="globals/Renderer" pc="268436813" symbol="compactNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="154" parent="globals/Renderer" pc="268436819" symbol="compactNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="157" parent="globals/Renderer" pc="268436828" symbol="compactNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="158" parent="globals/Renderer" pc="268436837" symbol="compactNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="161" parent="globals/Renderer" pc="268436873" symbol="compactNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="9" parent="globals/Renderer" pc="268436888" symbol="draw"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="10" parent="globals/Renderer" pc="268436890" symbol="draw"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="11" parent="globals/Renderer" pc="268436906" symbol="draw"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="13" parent="globals/Renderer" pc="268436914" symbol="draw"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="14" parent="globals/Renderer" pc="268436927" symbol="draw"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="15" parent="globals/Renderer" pc="268436940" symbol="draw"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="164" parent="globals/Renderer" pc="268436954" symbol="formatNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="165" parent="globals/Renderer" pc="268436956" symbol="formatNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="166" parent="globals/Renderer" pc="268436962" symbol="formatNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="169" parent="globals/Renderer" pc="268436971" symbol="formatNumber"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="29" lineNum="89" parent="globals/Renderer" pc="268436995" symbol="drawHeartIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="29" lineNum="90" parent="globals/Renderer" pc="268436997" symbol="drawHeartIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="180" parent="globals/Renderer" pc="268437138" symbol="formatWeather"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="181" parent="globals/Renderer" pc="268437140" symbol="formatWeather"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="182" parent="globals/Renderer" pc="268437146" symbol="formatWeather"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="185" parent="globals/Renderer" pc="268437155" symbol="formatWeather"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="67" parent="globals/Renderer" pc="268437176" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="68" parent="globals/Renderer" pc="268437178" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="69" parent="globals/Renderer" pc="268437194" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="71" parent="globals/Renderer" pc="268437206" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="72" parent="globals/Renderer" pc="268437208" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="75" parent="globals/Renderer" pc="268437223" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="78" parent="globals/Renderer" pc="268437239" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="81" parent="globals/Renderer" pc="268437255" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="73" parent="globals/Renderer" pc="268437274" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="74" parent="globals/Renderer" pc="268437289" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="76" parent="globals/Renderer" pc="268437292" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="77" parent="globals/Renderer" pc="268437307" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="79" parent="globals/Renderer" pc="268437310" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="80" parent="globals/Renderer" pc="268437325" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="82" parent="globals/Renderer" pc="268437328" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="83" parent="globals/Renderer" pc="268437343" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="86" parent="globals/Renderer" pc="268437347" symbol="drawMetricIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="129" parent="globals/Renderer" pc="268437360" symbol="drawCenteredText"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="130" parent="globals/Renderer" pc="268437362" symbol="drawCenteredText"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="131" parent="globals/Renderer" pc="268437375" symbol="drawCenteredText"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="121" parent="globals/Renderer" pc="268437396" symbol="drawBatteryIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="122" parent="globals/Renderer" pc="268437398" symbol="drawBatteryIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="123" parent="globals/Renderer" pc="268437428" symbol="drawBatteryIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="124" parent="globals/Renderer" pc="268437458" symbol="drawBatteryIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="125" parent="globals/Renderer" pc="268437488" symbol="drawBatteryIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="126" parent="globals/Renderer" pc="268437518" symbol="drawBatteryIcon"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="140" parent="globals/Renderer" pc="268437549" symbol="getTimeFont"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="141" parent="globals/Renderer" pc="268437551" symbol="getTimeFont"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="142" parent="globals/Renderer" pc="268437571" symbol="getTimeFont"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="145" parent="globals/Renderer" pc="268437577" symbol="getTimeFont"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="146" parent="globals/Renderer" pc="268437597" symbol="getTimeFont"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="149" parent="globals/Renderer" pc="268437603" symbol="getTimeFont"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="172" parent="globals/Renderer" pc="268437606" symbol="formatValue"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="173" parent="globals/Renderer" pc="268437608" symbol="formatValue"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="174" parent="globals/Renderer" pc="268437614" symbol="formatValue"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="177" parent="globals/Renderer" pc="268437620" symbol="formatValue"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="62" parent="globals/Renderer" pc="268437635" symbol="drawMetric"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="63" parent="globals/Renderer" pc="268437637" symbol="drawMetric"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="64" parent="globals/Renderer" pc="268437655" symbol="drawMetric"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="18" parent="globals/Renderer" pc="268437681" symbol="drawDate"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="19" parent="globals/Renderer" pc="268437684" symbol="drawDate"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="28" parent="globals/Renderer" pc="268437768" symbol="drawDate"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="188" parent="globals/Renderer" pc="268437794" symbol="formatBattery"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="189" parent="globals/Renderer" pc="268437796" symbol="formatBattery"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="190" parent="globals/Renderer" pc="268437802" symbol="formatBattery"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="193" parent="globals/Renderer" pc="268437811" symbol="formatBattery"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="37" parent="globals/Settings" pc="268437826" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="38" parent="globals/Settings" pc="268437836" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="39" parent="globals/Settings" pc="268437851" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="40" parent="globals/Settings" pc="268437853" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="42" parent="globals/Settings" pc="268437869" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="44" parent="globals/Settings" pc="268437885" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="46" parent="globals/Settings" pc="268437901" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="48" parent="globals/Settings" pc="268437917" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="50" parent="globals/Settings" pc="268437933" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="52" parent="globals/Settings" pc="268437949" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="54" parent="globals/Settings" pc="268437965" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="41" parent="globals/Settings" pc="268437968" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="43" parent="globals/Settings" pc="268437974" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="45" parent="globals/Settings" pc="268437980" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="47" parent="globals/Settings" pc="268437986" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="49" parent="globals/Settings" pc="268437992" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="51" parent="globals/Settings" pc="268437998" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="53" parent="globals/Settings" pc="268438004" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="55" parent="globals/Settings" pc="268438010" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="57" parent="globals/Settings" pc="268438020" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="58" parent="globals/Settings" pc="268438035" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="40" lineNum="61" parent="globals/Settings" pc="268438049" symbol="dayName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="41" lineNum="101" parent="globals/Settings" pc="268438055" symbol="compactDateToken"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="41" lineNum="102" parent="globals/Settings" pc="268438066" symbol="compactDateToken"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="41" lineNum="104" parent="globals/Settings" pc="268438075" symbol="compactDateToken"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="41" lineNum="105" parent="globals/Settings" pc="268438088" symbol="compactDateToken"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="41" lineNum="108" parent="globals/Settings" pc="268438104" symbol="compactDateToken"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="64" parent="globals/Settings" pc="268438107" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="65" parent="globals/Settings" pc="268438117" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="66" parent="globals/Settings" pc="268438132" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="67" parent="globals/Settings" pc="268438134" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="69" parent="globals/Settings" pc="268438150" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="71" parent="globals/Settings" pc="268438166" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="73" parent="globals/Settings" pc="268438182" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="75" parent="globals/Settings" pc="268438198" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="77" parent="globals/Settings" pc="268438214" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="79" parent="globals/Settings" pc="268438230" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="81" parent="globals/Settings" pc="268438246" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="83" parent="globals/Settings" pc="268438262" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="85" parent="globals/Settings" pc="268438278" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="87" parent="globals/Settings" pc="268438294" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="89" parent="globals/Settings" pc="268438310" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="91" parent="globals/Settings" pc="268438326" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="68" parent="globals/Settings" pc="268438329" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="70" parent="globals/Settings" pc="268438335" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="72" parent="globals/Settings" pc="268438341" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="74" parent="globals/Settings" pc="268438347" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="76" parent="globals/Settings" pc="268438353" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="78" parent="globals/Settings" pc="268438359" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="80" parent="globals/Settings" pc="268438365" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="82" parent="globals/Settings" pc="268438371" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="84" parent="globals/Settings" pc="268438377" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="86" parent="globals/Settings" pc="268438383" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="88" parent="globals/Settings" pc="268438389" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="90" parent="globals/Settings" pc="268438395" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="92" parent="globals/Settings" pc="268438401" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="94" parent="globals/Settings" pc="268438411" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="95" parent="globals/Settings" pc="268438426" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="42" lineNum="98" parent="globals/Settings" pc="268438440" symbol="monthName"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/bin/gen/006-B4533-00/source/Rez.mcgen" id="44" lineNum="13" parent="globals/Rez/Layouts" pc="268438446" symbol="WatchFace"/>
-        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/bin/gen/006-B4533-00/source/Rez.mcgen" id="44" lineNum="14" parent="globals/Rez/Layouts" pc="268438456" symbol="WatchFace"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="235" parent="globals/Renderer" pc="268436132" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="236" parent="globals/Renderer" pc="268436135" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="237" parent="globals/Renderer" pc="268436150" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="238" parent="globals/Renderer" pc="268436162" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="240" parent="globals/Renderer" pc="268436183" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="242" parent="globals/Renderer" pc="268436211" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="244" parent="globals/Renderer" pc="268436235" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="245" parent="globals/Renderer" pc="268436251" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="253" parent="globals/Renderer" pc="268436273" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="254" parent="globals/Renderer" pc="268436288" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="22" lineNum="262" parent="globals/Renderer" pc="268436313" symbol="drawBodyBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="109" parent="globals/Renderer" pc="268436333" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="110" parent="globals/Renderer" pc="268436336" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="118" parent="globals/Renderer" pc="268436397" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="119" parent="globals/Renderer" pc="268436411" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="120" parent="globals/Renderer" pc="268436426" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="122" parent="globals/Renderer" pc="268436444" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="124" parent="globals/Renderer" pc="268436469" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="23" lineNum="125" parent="globals/Renderer" pc="268436485" symbol="drawTime"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="23" parent="globals/Renderer" pc="268436517" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="26" parent="globals/Renderer" pc="268436519" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="27" parent="globals/Renderer" pc="268436547" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="29" parent="globals/Renderer" pc="268436572" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="30" parent="globals/Renderer" pc="268436598" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="33" parent="globals/Renderer" pc="268436625" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="34" parent="globals/Renderer" pc="268436650" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="24" lineNum="35" parent="globals/Renderer" pc="268436677" symbol="drawOuterRings"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="134" parent="globals/Renderer" pc="268436705" symbol="drawMetrics"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="135" parent="globals/Renderer" pc="268436707" symbol="drawMetrics"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="137" parent="globals/Renderer" pc="268436718" symbol="drawMetrics"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="138" parent="globals/Renderer" pc="268436756" symbol="drawMetrics"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="139" parent="globals/Renderer" pc="268436789" symbol="drawMetrics"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="25" lineNum="140" parent="globals/Renderer" pc="268436824" symbol="drawMetrics"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="332" parent="globals/Renderer" pc="268436859" symbol="compactNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="333" parent="globals/Renderer" pc="268436861" symbol="compactNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="334" parent="globals/Renderer" pc="268436867" symbol="compactNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="337" parent="globals/Renderer" pc="268436876" symbol="compactNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="338" parent="globals/Renderer" pc="268436885" symbol="compactNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="26" lineNum="341" parent="globals/Renderer" pc="268436921" symbol="compactNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="344" parent="globals/Renderer" pc="268436936" symbol="formatNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="345" parent="globals/Renderer" pc="268436938" symbol="formatNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="346" parent="globals/Renderer" pc="268436944" symbol="formatNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="27" lineNum="349" parent="globals/Renderer" pc="268436953" symbol="formatNumber"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="171" parent="globals/Renderer" pc="268436977" symbol="drawHeartIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="172" parent="globals/Renderer" pc="268436979" symbol="drawHeartIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="28" lineNum="173" parent="globals/Renderer" pc="268436992" symbol="drawHeartIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="29" lineNum="360" parent="globals/Renderer" pc="268437179" symbol="formatWeather"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="29" lineNum="361" parent="globals/Renderer" pc="268437181" symbol="formatWeather"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="29" lineNum="362" parent="globals/Renderer" pc="268437187" symbol="formatWeather"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="29" lineNum="365" parent="globals/Renderer" pc="268437196" symbol="formatWeather"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="199" parent="globals/Renderer" pc="268437217" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="200" parent="globals/Renderer" pc="268437219" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="201" parent="globals/Renderer" pc="268437232" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="202" parent="globals/Renderer" pc="268437244" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="204" parent="globals/Renderer" pc="268437266" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="205" parent="globals/Renderer" pc="268437296" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="206" parent="globals/Renderer" pc="268437326" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="207" parent="globals/Renderer" pc="268437356" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="208" parent="globals/Renderer" pc="268437386" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="210" parent="globals/Renderer" pc="268437416" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="211" parent="globals/Renderer" pc="268437432" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="212" parent="globals/Renderer" pc="268437454" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="213" parent="globals/Renderer" pc="268437473" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="214" parent="globals/Renderer" pc="268437495" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="30" lineNum="216" parent="globals/Renderer" pc="268437519" symbol="drawWeatherIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="352" parent="globals/Renderer" pc="268437532" symbol="formatValue"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="353" parent="globals/Renderer" pc="268437534" symbol="formatValue"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="354" parent="globals/Renderer" pc="268437540" symbol="formatValue"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="31" lineNum="357" parent="globals/Renderer" pc="268437546" symbol="formatValue"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="63" parent="globals/Renderer" pc="268437561" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="64" parent="globals/Renderer" pc="268437564" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="65" parent="globals/Renderer" pc="268437588" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="67" parent="globals/Renderer" pc="268437613" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="69" parent="globals/Renderer" pc="268437633" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="70" parent="globals/Renderer" pc="268437657" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="32" lineNum="71" parent="globals/Renderer" pc="268437673" symbol="drawTopInfo"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="80" parent="globals/Renderer" pc="268437694" symbol="drawMountainIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="81" parent="globals/Renderer" pc="268437696" symbol="drawMountainIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="33" lineNum="82" parent="globals/Renderer" pc="268437709" symbol="drawMountainIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="368" parent="globals/Renderer" pc="268437839" symbol="formatBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="369" parent="globals/Renderer" pc="268437841" symbol="formatBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="370" parent="globals/Renderer" pc="268437847" symbol="formatBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="34" lineNum="373" parent="globals/Renderer" pc="268437856" symbol="formatBattery"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="52" parent="globals/Renderer" pc="268437871" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="53" parent="globals/Renderer" pc="268437874" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="55" parent="globals/Renderer" pc="268437899" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="56" parent="globals/Renderer" pc="268437922" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="57" parent="globals/Renderer" pc="268437945" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="58" parent="globals/Renderer" pc="268437968" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="35" lineNum="60" parent="globals/Renderer" pc="268437991" symbol="drawRadialSegment"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="38" parent="globals/Renderer" pc="268438010" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="39" parent="globals/Renderer" pc="268438013" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="40" parent="globals/Renderer" pc="268438026" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="42" parent="globals/Renderer" pc="268438038" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="44" parent="globals/Renderer" pc="268438042" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="45" parent="globals/Renderer" pc="268438050" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="46" parent="globals/Renderer" pc="268438067" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="36" lineNum="49" parent="globals/Renderer" pc="268438077" symbol="drawSegmentRange"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="185" parent="globals/Renderer" pc="268438090" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="186" parent="globals/Renderer" pc="268438092" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="189" parent="globals/Renderer" pc="268438105" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="190" parent="globals/Renderer" pc="268438127" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="191" parent="globals/Renderer" pc="268438149" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="194" parent="globals/Renderer" pc="268438171" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="195" parent="globals/Renderer" pc="268438193" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="37" lineNum="196" parent="globals/Renderer" pc="268438215" symbol="drawStepsIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="10" parent="globals/Renderer" pc="268438238" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="11" parent="globals/Renderer" pc="268438240" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="12" parent="globals/Renderer" pc="268438256" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="14" parent="globals/Renderer" pc="268438264" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="15" parent="globals/Renderer" pc="268438275" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="16" parent="globals/Renderer" pc="268438286" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="17" parent="globals/Renderer" pc="268438299" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="18" parent="globals/Renderer" pc="268438312" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="19" parent="globals/Renderer" pc="268438325" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="38" lineNum="20" parent="globals/Renderer" pc="268438336" symbol="draw"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="284" parent="globals/Renderer" pc="268438348" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="285" parent="globals/Renderer" pc="268438351" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="286" parent="globals/Renderer" pc="268438367" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="288" parent="globals/Renderer" pc="268438379" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="289" parent="globals/Renderer" pc="268438383" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="291" parent="globals/Renderer" pc="268438388" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="292" parent="globals/Renderer" pc="268438407" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="293" parent="globals/Renderer" pc="268438431" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="294" parent="globals/Renderer" pc="268438458" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="295" parent="globals/Renderer" pc="268438485" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="297" parent="globals/Renderer" pc="268438512" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="299" parent="globals/Renderer" pc="268438524" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="39" lineNum="300" parent="globals/Renderer" pc="268438540" symbol="drawBottomDistance"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="265" parent="globals/Renderer" pc="268438565" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="266" parent="globals/Renderer" pc="268438568" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="267" parent="globals/Renderer" pc="268438572" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="268" parent="globals/Renderer" pc="268438576" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="269" parent="globals/Renderer" pc="268438580" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="270" parent="globals/Renderer" pc="268438596" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="271" parent="globals/Renderer" pc="268438606" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="273" parent="globals/Renderer" pc="268438616" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="274" parent="globals/Renderer" pc="268438627" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="275" parent="globals/Renderer" pc="268438635" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="277" parent="globals/Renderer" pc="268438653" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="40" lineNum="280" parent="globals/Renderer" pc="268438668" symbol="drawBodyBlocks"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="41" lineNum="309" parent="globals/Renderer" pc="268438706" symbol="drawCenteredText"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="41" lineNum="310" parent="globals/Renderer" pc="268438708" symbol="drawCenteredText"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="41" lineNum="311" parent="globals/Renderer" pc="268438721" symbol="drawCenteredText"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="42" lineNum="143" parent="globals/Renderer" pc="268438742" symbol="drawMetricSeparators"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="42" lineNum="144" parent="globals/Renderer" pc="268438744" symbol="drawMetricSeparators"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="42" lineNum="145" parent="globals/Renderer" pc="268438759" symbol="drawMetricSeparators"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="42" lineNum="147" parent="globals/Renderer" pc="268438771" symbol="drawMetricSeparators"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="42" lineNum="148" parent="globals/Renderer" pc="268438791" symbol="drawMetricSeparators"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="42" lineNum="149" parent="globals/Renderer" pc="268438813" symbol="drawMetricSeparators"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="219" parent="globals/Renderer" pc="268438836" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="220" parent="globals/Renderer" pc="268438838" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="221" parent="globals/Renderer" pc="268438854" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="223" parent="globals/Renderer" pc="268438866" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="224" parent="globals/Renderer" pc="268438896" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="225" parent="globals/Renderer" pc="268438926" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="226" parent="globals/Renderer" pc="268438956" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="227" parent="globals/Renderer" pc="268438986" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="229" parent="globals/Renderer" pc="268439016" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="230" parent="globals/Renderer" pc="268439029" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="43" lineNum="232" parent="globals/Renderer" pc="268439053" symbol="drawBatteryIcon"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="44" lineNum="320" parent="globals/Renderer" pc="268439066" symbol="getTimeFont"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="44" lineNum="321" parent="globals/Renderer" pc="268439068" symbol="getTimeFont"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="44" lineNum="322" parent="globals/Renderer" pc="268439088" symbol="getTimeFont"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="44" lineNum="325" parent="globals/Renderer" pc="268439094" symbol="getTimeFont"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="44" lineNum="326" parent="globals/Renderer" pc="268439114" symbol="getTimeFont"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="44" lineNum="329" parent="globals/Renderer" pc="268439120" symbol="getTimeFont"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="152" parent="globals/Renderer" pc="268439123" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="153" parent="globals/Renderer" pc="268439125" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="154" parent="globals/Renderer" pc="268439127" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="157" parent="globals/Renderer" pc="268439142" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="160" parent="globals/Renderer" pc="268439158" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="163" parent="globals/Renderer" pc="268439174" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="155" parent="globals/Renderer" pc="268439193" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="156" parent="globals/Renderer" pc="268439211" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="158" parent="globals/Renderer" pc="268439214" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="159" parent="globals/Renderer" pc="268439232" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="161" parent="globals/Renderer" pc="268439235" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="162" parent="globals/Renderer" pc="268439253" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="164" parent="globals/Renderer" pc="268439256" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="165" parent="globals/Renderer" pc="268439274" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="45" lineNum="168" parent="globals/Renderer" pc="268439278" symbol="drawMetric"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="91" parent="globals/Renderer" pc="268439304" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="92" parent="globals/Renderer" pc="268439307" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="101" parent="globals/Renderer" pc="268439391" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="102" parent="globals/Renderer" pc="268439406" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="103" parent="globals/Renderer" pc="268439418" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="104" parent="globals/Renderer" pc="268439436" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Renderer.mc" id="47" lineNum="106" parent="globals/Renderer" pc="268439456" symbol="drawDate"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="74" parent="globals/Settings" pc="268439482" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="75" parent="globals/Settings" pc="268439492" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="76" parent="globals/Settings" pc="268439507" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="77" parent="globals/Settings" pc="268439509" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="79" parent="globals/Settings" pc="268439525" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="81" parent="globals/Settings" pc="268439541" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="83" parent="globals/Settings" pc="268439557" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="85" parent="globals/Settings" pc="268439573" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="87" parent="globals/Settings" pc="268439589" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="89" parent="globals/Settings" pc="268439605" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="91" parent="globals/Settings" pc="268439621" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="78" parent="globals/Settings" pc="268439624" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="80" parent="globals/Settings" pc="268439630" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="82" parent="globals/Settings" pc="268439636" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="84" parent="globals/Settings" pc="268439642" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="86" parent="globals/Settings" pc="268439648" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="88" parent="globals/Settings" pc="268439654" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="90" parent="globals/Settings" pc="268439660" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="92" parent="globals/Settings" pc="268439666" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="94" parent="globals/Settings" pc="268439676" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="95" parent="globals/Settings" pc="268439691" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="48" lineNum="98" parent="globals/Settings" pc="268439705" symbol="dayName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="101" parent="globals/Settings" pc="268439711" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="102" parent="globals/Settings" pc="268439721" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="103" parent="globals/Settings" pc="268439736" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="104" parent="globals/Settings" pc="268439738" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="106" parent="globals/Settings" pc="268439754" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="108" parent="globals/Settings" pc="268439770" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="110" parent="globals/Settings" pc="268439786" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="112" parent="globals/Settings" pc="268439802" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="114" parent="globals/Settings" pc="268439818" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="116" parent="globals/Settings" pc="268439834" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="118" parent="globals/Settings" pc="268439850" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="120" parent="globals/Settings" pc="268439866" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="122" parent="globals/Settings" pc="268439882" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="124" parent="globals/Settings" pc="268439898" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="126" parent="globals/Settings" pc="268439914" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="128" parent="globals/Settings" pc="268439930" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="105" parent="globals/Settings" pc="268439933" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="107" parent="globals/Settings" pc="268439939" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="109" parent="globals/Settings" pc="268439945" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="111" parent="globals/Settings" pc="268439951" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="113" parent="globals/Settings" pc="268439957" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="115" parent="globals/Settings" pc="268439963" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="117" parent="globals/Settings" pc="268439969" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="119" parent="globals/Settings" pc="268439975" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="121" parent="globals/Settings" pc="268439981" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="123" parent="globals/Settings" pc="268439987" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="125" parent="globals/Settings" pc="268439993" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="127" parent="globals/Settings" pc="268439999" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="129" parent="globals/Settings" pc="268440005" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="131" parent="globals/Settings" pc="268440015" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="132" parent="globals/Settings" pc="268440030" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="49" lineNum="135" parent="globals/Settings" pc="268440044" symbol="monthName"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="50" lineNum="138" parent="globals/Settings" pc="268440050" symbol="compactDateToken"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="50" lineNum="139" parent="globals/Settings" pc="268440061" symbol="compactDateToken"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="50" lineNum="141" parent="globals/Settings" pc="268440070" symbol="compactDateToken"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="50" lineNum="142" parent="globals/Settings" pc="268440083" symbol="compactDateToken"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" id="50" lineNum="145" parent="globals/Settings" pc="268440099" symbol="compactDateToken"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/bin/gen/006-B4533-00/source/Rez.mcgen" id="52" lineNum="13" parent="globals/Rez/Layouts" pc="268440102" symbol="WatchFace"/>
+        <entry filename="/Users/yangming/toys/watch-face/yondmn-watch-face/bin/gen/006-B4533-00/source/Rez.mcgen" id="52" lineNum="14" parent="globals/Rez/Layouts" pc="268440112" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="29" method="true" symbol="drawMetricSeparators"/>
         <entry id="20" method="true" symbol="compactNumber"/>
         <entry id="8" object="true" symbol="FenixMinimalApp"/>
         <entry field="true" id="18" symbol="_renderer"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="23" method="true" symbol="drawDate"/>
-        <entry field="true" id="40" symbol="dayOfWeek"/>
-        <entry id="22" method="true" symbol="drawCenteredText"/>
-        <entry id="27" method="true" symbol="drawMetrics"/>
+        <entry id="26" method="true" symbol="drawDate"/>
+        <entry field="true" id="48" symbol="dayOfWeek"/>
+        <entry id="25" method="true" symbol="drawCenteredText"/>
+        <entry id="30" method="true" symbol="drawMetrics"/>
+        <entry id="24" method="true" symbol="drawBottomDistance"/>
         <entry field="true" id="8388938" symbol="month"/>
-        <entry id="28" method="true" symbol="drawStepsIcon"/>
+        <entry id="35" method="true" symbol="drawStepsIcon"/>
         <entry id="7" object="true" symbol="DataProvider"/>
-        <entry id="38" method="true" symbol="monthName"/>
-        <entry id="25" method="true" symbol="drawMetric"/>
+        <entry id="46" method="true" symbol="monthName"/>
+        <entry id="32" method="true" symbol="drawOuterRings"/>
+        <entry id="31" method="true" symbol="drawMountainIcon"/>
+        <entry id="28" method="true" symbol="drawMetric"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
         <entry id="15" method="true" symbol="getSteps"/>
-        <entry id="29" method="true" symbol="drawSunIcon"/>
+        <entry id="33" method="true" symbol="drawRadialSegment"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="8388962" symbol="temperature"/>
-        <entry id="30" method="true" symbol="drawTime"/>
-        <entry field="true" id="42" symbol="AppName"/>
+        <entry id="36" method="true" symbol="drawTime"/>
+        <entry field="true" id="50" symbol="AppName"/>
         <entry field="true" id="8389339" symbol="second"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry id="11" object="true" symbol="WatchFaceData"/>
         <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="23" method="true" symbol="drawBodyBlocks"/>
         <entry field="true" id="8388724" symbol="battery"/>
         <entry field="true" id="8388912" symbol="steps"/>
         <entry id="13" method="true" symbol="getHeartRate"/>
-        <entry id="34" method="true" symbol="formatWeather"/>
-        <entry field="true" id="39" symbol="batteryPercent"/>
+        <entry id="42" method="true" symbol="formatWeather"/>
+        <entry field="true" id="47" symbol="batteryPercent"/>
         <entry field="true" id="8389338" symbol="minute"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="9" object="true" symbol="FenixMinimalWatchFace"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry id="24" method="true" symbol="drawHeartIcon"/>
+        <entry id="27" method="true" symbol="drawHeartIcon"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry id="16" method="true" symbol="getTemperature"/>
-        <entry id="32" method="true" symbol="formatNumber"/>
+        <entry id="40" method="true" symbol="formatNumber"/>
         <entry id="8391489" module="true" symbol="Weather"/>
-        <entry id="36" method="true" symbol="compactDateToken"/>
+        <entry id="44" method="true" symbol="compactDateToken"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
-        <entry id="26" method="true" symbol="drawMetricIcon"/>
+        <entry id="34" method="true" symbol="drawSegmentRange"/>
         <entry field="true" id="17" symbol="_dataProvider"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
@@ -276,26 +372,30 @@
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry field="true" id="8388720" symbol="hour"/>
-        <entry id="31" method="true" symbol="formatBattery"/>
+        <entry id="39" method="true" symbol="formatBattery"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8389068" method="true" symbol="draw"/>
-        <entry field="true" id="41" symbol="LauncherIcon"/>
+        <entry field="true" id="49" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="6" module="true" symbol="globals/Settings"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry field="true" id="8388960" symbol="heartRate"/>
-        <entry id="33" method="true" symbol="formatValue"/>
+        <entry id="38" method="true" symbol="drawWeatherIcon"/>
+        <entry id="41" method="true" symbol="formatValue"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="37" method="true" symbol="dayName"/>
+        <entry id="37" method="true" symbol="drawTopInfo"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="45" method="true" symbol="dayName"/>
         <entry field="true" id="8388747" symbol="currentHeartRate"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry field="true" id="8388939" symbol="day"/>
         <entry id="19" module="true" symbol="Layouts"/>
-        <entry id="35" method="true" symbol="getTimeFont"/>
+        <entry id="43" method="true" symbol="getTimeFont"/>
+        <entry id="22" method="true" symbol="drawBodyBattery"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="10" object="true" symbol="Renderer"/>
         <entry id="8388635" module="true" symbol="Application"/>
@@ -309,59 +409,102 @@
         <entry endPc="268435977" name="data" stackId="3" startPc="268435778"/>
         <entry endPc="268436033" name="info" stackId="1" startPc="268435981"/>
         <entry arg="true" endPc="268436131" name="dc" stackId="1" startPc="268436102"/>
-        <entry arg="true" endPc="268436366" name="dc" stackId="1" startPc="268436132"/>
-        <entry arg="true" endPc="268436366" name="x" stackId="2" startPc="268436132"/>
-        <entry arg="true" endPc="268436366" name="y" stackId="3" startPc="268436132"/>
-        <entry arg="true" endPc="268436501" name="dc" stackId="1" startPc="268436367"/>
-        <entry arg="true" endPc="268436501" name="x" stackId="2" startPc="268436367"/>
-        <entry arg="true" endPc="268436501" name="y" stackId="3" startPc="268436367"/>
-        <entry arg="true" endPc="268436685" name="dc" stackId="1" startPc="268436502"/>
-        <entry arg="true" endPc="268436685" name="data" stackId="2" startPc="268436502"/>
-        <entry endPc="268436684" name="timeText" stackId="3" startPc="268436505"/>
-        <entry endPc="268436684" name="timeFont" stackId="4" startPc="268436505"/>
-        <entry endPc="268436684" name="timeWidth" stackId="5" startPc="268436505"/>
-        <entry endPc="268436684" name="secondsText" stackId="6" startPc="268436505"/>
-        <entry arg="true" endPc="268436810" name="dc" stackId="1" startPc="268436686"/>
-        <entry arg="true" endPc="268436810" name="data" stackId="2" startPc="268436686"/>
-        <entry arg="true" endPc="268436887" name="value" stackId="1" startPc="268436811"/>
-        <entry arg="true" endPc="268436953" name="dc" stackId="1" startPc="268436888"/>
-        <entry arg="true" endPc="268436953" name="data" stackId="2" startPc="268436888"/>
-        <entry arg="true" endPc="268436994" name="value" stackId="1" startPc="268436954"/>
-        <entry arg="true" endPc="268436994" name="width" stackId="2" startPc="268436954"/>
-        <entry arg="true" endPc="268437137" name="dc" stackId="1" startPc="268436995"/>
-        <entry arg="true" endPc="268437137" name="x" stackId="2" startPc="268436995"/>
-        <entry arg="true" endPc="268437137" name="y" stackId="3" startPc="268436995"/>
-        <entry arg="true" endPc="268437175" name="value" stackId="1" startPc="268437138"/>
-        <entry arg="true" endPc="268437359" name="dc" stackId="1" startPc="268437176"/>
-        <entry arg="true" endPc="268437359" name="icon" stackId="2" startPc="268437176"/>
-        <entry arg="true" endPc="268437359" name="x" stackId="3" startPc="268437176"/>
-        <entry arg="true" endPc="268437359" name="y" stackId="4" startPc="268437176"/>
-        <entry arg="true" endPc="268437395" name="dc" stackId="1" startPc="268437360"/>
-        <entry arg="true" endPc="268437395" name="text" stackId="2" startPc="268437360"/>
-        <entry arg="true" endPc="268437395" name="x" stackId="3" startPc="268437360"/>
-        <entry arg="true" endPc="268437395" name="y" stackId="4" startPc="268437360"/>
-        <entry arg="true" endPc="268437395" name="font" stackId="5" startPc="268437360"/>
-        <entry arg="true" endPc="268437395" name="color" stackId="6" startPc="268437360"/>
-        <entry arg="true" endPc="268437548" name="dc" stackId="1" startPc="268437396"/>
-        <entry arg="true" endPc="268437548" name="x" stackId="2" startPc="268437396"/>
-        <entry arg="true" endPc="268437548" name="y" stackId="3" startPc="268437396"/>
-        <entry arg="true" endPc="268437605" name="dc" stackId="1" startPc="268437549"/>
-        <entry arg="true" endPc="268437605" name="text" stackId="2" startPc="268437549"/>
-        <entry arg="true" endPc="268437634" name="value" stackId="1" startPc="268437606"/>
-        <entry arg="true" endPc="268437634" name="placeholder" stackId="2" startPc="268437606"/>
-        <entry arg="true" endPc="268437680" name="dc" stackId="1" startPc="268437635"/>
-        <entry arg="true" endPc="268437680" name="x" stackId="2" startPc="268437635"/>
-        <entry arg="true" endPc="268437680" name="icon" stackId="3" startPc="268437635"/>
-        <entry arg="true" endPc="268437680" name="value" stackId="4" startPc="268437635"/>
-        <entry arg="true" endPc="268437793" name="dc" stackId="1" startPc="268437681"/>
-        <entry arg="true" endPc="268437793" name="data" stackId="2" startPc="268437681"/>
-        <entry endPc="268437792" name="text" stackId="3" startPc="268437684"/>
-        <entry arg="true" endPc="268437825" name="value" stackId="1" startPc="268437794"/>
-        <entry arg="true" endPc="268438054" name="dayOfWeek" stackId="1" startPc="268437826"/>
-        <entry arg="true" endPc="268438106" name="value" stackId="1" startPc="268438055"/>
-        <entry endPc="268438106" name="upper" stackId="2" startPc="268438066"/>
-        <entry arg="true" endPc="268438445" name="month" stackId="1" startPc="268438107"/>
-        <entry arg="true" endPc="268438458" name="dc" stackId="1" startPc="268438446"/>
+        <entry arg="true" endPc="268436332" name="dc" stackId="1" startPc="268436132"/>
+        <entry endPc="268436331" name="valueText" stackId="2" startPc="268436135"/>
+        <entry arg="true" endPc="268436516" name="dc" stackId="1" startPc="268436333"/>
+        <entry arg="true" endPc="268436516" name="data" stackId="2" startPc="268436333"/>
+        <entry endPc="268436515" name="timeText" stackId="3" startPc="268436336"/>
+        <entry endPc="268436515" name="timeFont" stackId="4" startPc="268436336"/>
+        <entry endPc="268436515" name="timeWidth" stackId="5" startPc="268436336"/>
+        <entry endPc="268436515" name="secondsText" stackId="6" startPc="268436336"/>
+        <entry arg="true" endPc="268436704" name="dc" stackId="1" startPc="268436517"/>
+        <entry arg="true" endPc="268436858" name="dc" stackId="1" startPc="268436705"/>
+        <entry arg="true" endPc="268436858" name="data" stackId="2" startPc="268436705"/>
+        <entry arg="true" endPc="268436935" name="value" stackId="1" startPc="268436859"/>
+        <entry arg="true" endPc="268436976" name="value" stackId="1" startPc="268436936"/>
+        <entry arg="true" endPc="268436976" name="width" stackId="2" startPc="268436936"/>
+        <entry arg="true" endPc="268437178" name="dc" stackId="1" startPc="268436977"/>
+        <entry arg="true" endPc="268437178" name="x" stackId="2" startPc="268436977"/>
+        <entry arg="true" endPc="268437178" name="y" stackId="3" startPc="268436977"/>
+        <entry arg="true" endPc="268437178" name="color" stackId="4" startPc="268436977"/>
+        <entry arg="true" endPc="268437216" name="value" stackId="1" startPc="268437179"/>
+        <entry arg="true" endPc="268437531" name="dc" stackId="1" startPc="268437217"/>
+        <entry arg="true" endPc="268437531" name="x" stackId="2" startPc="268437217"/>
+        <entry arg="true" endPc="268437531" name="y" stackId="3" startPc="268437217"/>
+        <entry arg="true" endPc="268437531" name="color" stackId="4" startPc="268437217"/>
+        <entry arg="true" endPc="268437560" name="value" stackId="1" startPc="268437532"/>
+        <entry arg="true" endPc="268437560" name="placeholder" stackId="2" startPc="268437532"/>
+        <entry arg="true" endPc="268437693" name="dc" stackId="1" startPc="268437561"/>
+        <entry endPc="268437692" name="moveText" stackId="2" startPc="268437564"/>
+        <entry endPc="268437692" name="altitudeText" stackId="3" startPc="268437564"/>
+        <entry arg="true" endPc="268437838" name="dc" stackId="1" startPc="268437694"/>
+        <entry arg="true" endPc="268437838" name="x" stackId="2" startPc="268437694"/>
+        <entry arg="true" endPc="268437838" name="y" stackId="3" startPc="268437694"/>
+        <entry arg="true" endPc="268437838" name="color" stackId="4" startPc="268437694"/>
+        <entry arg="true" endPc="268437870" name="value" stackId="1" startPc="268437839"/>
+        <entry arg="true" endPc="268438009" name="dc" stackId="1" startPc="268437871"/>
+        <entry arg="true" endPc="268438009" name="angleDeg" stackId="2" startPc="268437871"/>
+        <entry arg="true" endPc="268438009" name="innerR" stackId="3" startPc="268437871"/>
+        <entry arg="true" endPc="268438009" name="outerR" stackId="4" startPc="268437871"/>
+        <entry endPc="268438008" name="rad" stackId="5" startPc="268437874"/>
+        <entry endPc="268438008" name="x1" stackId="6" startPc="268437874"/>
+        <entry endPc="268438008" name="y1" stackId="7" startPc="268437874"/>
+        <entry endPc="268438008" name="x2" stackId="8" startPc="268437874"/>
+        <entry endPc="268438008" name="y2" stackId="9" startPc="268437874"/>
+        <entry arg="true" endPc="268438089" name="dc" stackId="1" startPc="268438010"/>
+        <entry arg="true" endPc="268438089" name="startDeg" stackId="2" startPc="268438010"/>
+        <entry arg="true" endPc="268438089" name="endDeg" stackId="3" startPc="268438010"/>
+        <entry arg="true" endPc="268438089" name="innerR" stackId="4" startPc="268438010"/>
+        <entry arg="true" endPc="268438089" name="outerR" stackId="5" startPc="268438010"/>
+        <entry arg="true" endPc="268438089" name="step" stackId="6" startPc="268438010"/>
+        <entry arg="true" endPc="268438089" name="color" stackId="7" startPc="268438010"/>
+        <entry endPc="268438088" name="a" stackId="8" startPc="268438013"/>
+        <entry arg="true" endPc="268438237" name="dc" stackId="1" startPc="268438090"/>
+        <entry arg="true" endPc="268438237" name="x" stackId="2" startPc="268438090"/>
+        <entry arg="true" endPc="268438237" name="y" stackId="3" startPc="268438090"/>
+        <entry arg="true" endPc="268438237" name="color" stackId="4" startPc="268438090"/>
+        <entry arg="true" endPc="268438347" name="dc" stackId="1" startPc="268438238"/>
+        <entry arg="true" endPc="268438347" name="data" stackId="2" startPc="268438238"/>
+        <entry arg="true" endPc="268438564" name="dc" stackId="1" startPc="268438348"/>
+        <entry endPc="268438563" name="x" stackId="2" startPc="268438351"/>
+        <entry endPc="268438563" name="y" stackId="3" startPc="268438351"/>
+        <entry arg="true" endPc="268438705" name="dc" stackId="1" startPc="268438565"/>
+        <entry arg="true" endPc="268438705" name="centerX" stackId="2" startPc="268438565"/>
+        <entry arg="true" endPc="268438705" name="y" stackId="3" startPc="268438565"/>
+        <entry arg="true" endPc="268438705" name="value" stackId="4" startPc="268438565"/>
+        <entry endPc="268438704" name="blockCount" stackId="5" startPc="268438568"/>
+        <entry endPc="268438704" name="blockWidth" stackId="6" startPc="268438568"/>
+        <entry endPc="268438704" name="blockGap" stackId="7" startPc="268438568"/>
+        <entry endPc="268438704" name="totalWidth" stackId="8" startPc="268438568"/>
+        <entry endPc="268438704" name="startX" stackId="9" startPc="268438568"/>
+        <entry endPc="268438704" name="filledBlocks" stackId="10" startPc="268438568"/>
+        <entry endPc="268438704" name="i" stackId="11" startPc="268438627"/>
+        <entry arg="true" endPc="268438741" name="dc" stackId="1" startPc="268438706"/>
+        <entry arg="true" endPc="268438741" name="text" stackId="2" startPc="268438706"/>
+        <entry arg="true" endPc="268438741" name="x" stackId="3" startPc="268438706"/>
+        <entry arg="true" endPc="268438741" name="y" stackId="4" startPc="268438706"/>
+        <entry arg="true" endPc="268438741" name="font" stackId="5" startPc="268438706"/>
+        <entry arg="true" endPc="268438741" name="color" stackId="6" startPc="268438706"/>
+        <entry arg="true" endPc="268438835" name="dc" stackId="1" startPc="268438742"/>
+        <entry arg="true" endPc="268439065" name="dc" stackId="1" startPc="268438836"/>
+        <entry arg="true" endPc="268439065" name="x" stackId="2" startPc="268438836"/>
+        <entry arg="true" endPc="268439065" name="y" stackId="3" startPc="268438836"/>
+        <entry arg="true" endPc="268439065" name="color" stackId="4" startPc="268438836"/>
+        <entry arg="true" endPc="268439122" name="dc" stackId="1" startPc="268439066"/>
+        <entry arg="true" endPc="268439122" name="text" stackId="2" startPc="268439066"/>
+        <entry arg="true" endPc="268439303" name="dc" stackId="1" startPc="268439123"/>
+        <entry arg="true" endPc="268439303" name="x" stackId="2" startPc="268439123"/>
+        <entry arg="true" endPc="268439303" name="icon" stackId="3" startPc="268439123"/>
+        <entry arg="true" endPc="268439303" name="value" stackId="4" startPc="268439123"/>
+        <entry arg="true" endPc="268439303" name="iconColor" stackId="5" startPc="268439123"/>
+        <entry arg="true" endPc="268439481" name="dc" stackId="1" startPc="268439304"/>
+        <entry arg="true" endPc="268439481" name="data" stackId="2" startPc="268439304"/>
+        <entry endPc="268439480" name="text" stackId="3" startPc="268439307"/>
+        <entry arg="true" endPc="268439710" name="dayOfWeek" stackId="1" startPc="268439482"/>
+        <entry arg="true" endPc="268440049" name="month" stackId="1" startPc="268439711"/>
+        <entry arg="true" endPc="268440101" name="value" stackId="1" startPc="268440050"/>
+        <entry endPc="268440101" name="upper" stackId="2" startPc="268440061"/>
+        <entry arg="true" endPc="268440114" name="dc" stackId="1" startPc="268440102"/>
     </localVars>
     <deviceInfo deviceVersion="e6263c2a80ff43933f83afa71f1f6645dc2cb4a3" partNumber="006-B4533-00"/>
     <annotations>
@@ -375,11 +518,11 @@
         <dataEntry label="globals/FenixMinimalWatchFace" offset="330" parentId="globals" symbolId="FenixMinimalWatchFace" type="class"/>
         <dataEntry label="globals/Rez" offset="446" parentId="globals" symbolId="Rez" type="module"/>
         <dataEntry label="globals/Renderer" offset="499" parentId="globals" symbolId="Renderer" type="class"/>
-        <dataEntry label="globals/Settings" offset="696" parentId="globals" symbolId="Settings" type="module"/>
-        <dataEntry label="globals/WatchFaceData" offset="749" parentId="globals" symbolId="WatchFaceData" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="883" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="918" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="953" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Settings" offset="768" parentId="globals" symbolId="Settings" type="module"/>
+        <dataEntry label="globals/WatchFaceData" offset="821" parentId="globals" symbolId="WatchFaceData" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="955" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="990" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1025" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="FenixMinimalApp" startPc="268435460">
@@ -470,60 +613,112 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436366" name="drawSunIcon" parent="Renderer" startPc="268436132">
+        <functionEntry accessMode="public" endPc="268436332" name="drawBodyBattery" parent="Renderer" startPc="268436132">
             <param id="dc"/>
-            <param id="x"/>
-            <param id="y"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436501" name="drawStepsIcon" parent="Renderer" startPc="268436367">
-            <param id="dc"/>
-            <param id="x"/>
-            <param id="y"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436685" name="drawTime" parent="Renderer" startPc="268436502">
+        <functionEntry accessMode="public" endPc="268436516" name="drawTime" parent="Renderer" startPc="268436333">
             <param id="dc"/>
             <param id="data"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436810" name="drawMetrics" parent="Renderer" startPc="268436686">
+        <functionEntry accessMode="public" endPc="268436704" name="drawOuterRings" parent="Renderer" startPc="268436517">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436858" name="drawMetrics" parent="Renderer" startPc="268436705">
             <param id="dc"/>
             <param id="data"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436887" name="compactNumber" parent="Renderer" startPc="268436811">
+        <functionEntry accessMode="public" endPc="268436935" name="compactNumber" parent="Renderer" startPc="268436859">
             <param id="value"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436953" name="draw" parent="Renderer" startPc="268436888">
-            <param id="dc"/>
-            <param id="data"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436994" name="formatNumber" parent="Renderer" startPc="268436954">
+        <functionEntry accessMode="public" endPc="268436976" name="formatNumber" parent="Renderer" startPc="268436936">
             <param id="value"/>
             <param id="width"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437137" name="drawHeartIcon" parent="Renderer" startPc="268436995">
+        <functionEntry accessMode="public" endPc="268437178" name="drawHeartIcon" parent="Renderer" startPc="268436977">
             <param id="dc"/>
             <param id="x"/>
             <param id="y"/>
+            <param id="color"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437175" name="formatWeather" parent="Renderer" startPc="268437138">
+        <functionEntry accessMode="public" endPc="268437216" name="formatWeather" parent="Renderer" startPc="268437179">
             <param id="value"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437359" name="drawMetricIcon" parent="Renderer" startPc="268437176">
+        <functionEntry accessMode="public" endPc="268437531" name="drawWeatherIcon" parent="Renderer" startPc="268437217">
             <param id="dc"/>
-            <param id="icon"/>
             <param id="x"/>
             <param id="y"/>
+            <param id="color"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437395" name="drawCenteredText" parent="Renderer" startPc="268437360">
+        <functionEntry accessMode="public" endPc="268437560" name="formatValue" parent="Renderer" startPc="268437532">
+            <param id="value"/>
+            <param id="placeholder"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437693" name="drawTopInfo" parent="Renderer" startPc="268437561">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437838" name="drawMountainIcon" parent="Renderer" startPc="268437694">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437870" name="formatBattery" parent="Renderer" startPc="268437839">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438009" name="drawRadialSegment" parent="Renderer" startPc="268437871">
+            <param id="dc"/>
+            <param id="angleDeg"/>
+            <param id="innerR"/>
+            <param id="outerR"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438089" name="drawSegmentRange" parent="Renderer" startPc="268438010">
+            <param id="dc"/>
+            <param id="startDeg"/>
+            <param id="endDeg"/>
+            <param id="innerR"/>
+            <param id="outerR"/>
+            <param id="step"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438237" name="drawStepsIcon" parent="Renderer" startPc="268438090">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438347" name="draw" parent="Renderer" startPc="268438238">
+            <param id="dc"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438564" name="drawBottomDistance" parent="Renderer" startPc="268438348">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438705" name="drawBodyBlocks" parent="Renderer" startPc="268438565">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="y"/>
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438741" name="drawCenteredText" parent="Renderer" startPc="268438706">
             <param id="dc"/>
             <param id="text"/>
             <param id="x"/>
@@ -532,57 +727,54 @@
             <param id="color"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437548" name="drawBatteryIcon" parent="Renderer" startPc="268437396">
+        <functionEntry accessMode="public" endPc="268438835" name="drawMetricSeparators" parent="Renderer" startPc="268438742">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439065" name="drawBatteryIcon" parent="Renderer" startPc="268438836">
             <param id="dc"/>
             <param id="x"/>
             <param id="y"/>
+            <param id="color"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437605" name="getTimeFont" parent="Renderer" startPc="268437549">
+        <functionEntry accessMode="public" endPc="268439122" name="getTimeFont" parent="Renderer" startPc="268439066">
             <param id="dc"/>
             <param id="text"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437634" name="formatValue" parent="Renderer" startPc="268437606">
-            <param id="value"/>
-            <param id="placeholder"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437680" name="drawMetric" parent="Renderer" startPc="268437635">
+        <functionEntry accessMode="public" endPc="268439303" name="drawMetric" parent="Renderer" startPc="268439123">
             <param id="dc"/>
             <param id="x"/>
             <param id="icon"/>
             <param id="value"/>
+            <param id="iconColor"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="Renderer">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437793" name="drawDate" parent="Renderer" startPc="268437681">
+        <functionEntry accessMode="public" endPc="268439481" name="drawDate" parent="Renderer" startPc="268439304">
             <param id="dc"/>
             <param id="data"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437825" name="formatBattery" parent="Renderer" startPc="268437794">
-            <param id="value"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438054" name="dayName" parent="Settings" startPc="268437826">
+        <functionEntry accessMode="public" endPc="268439710" name="dayName" parent="Settings" startPc="268439482">
             <param id="dayOfWeek"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438106" name="compactDateToken" parent="Settings" startPc="268438055">
-            <param id="value"/>
+        <functionEntry accessMode="public" endPc="268440049" name="monthName" parent="Settings" startPc="268439711">
+            <param id="month"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438445" name="monthName" parent="Settings" startPc="268438107">
-            <param id="month"/>
+        <functionEntry accessMode="public" endPc="268440101" name="compactDateToken" parent="Settings" startPc="268440050">
+            <param id="value"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="WatchFaceData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438458" name="WatchFace" parent="Layouts" startPc="268438446">
+        <functionEntry accessMode="public" endPc="268440114" name="WatchFace" parent="Layouts" startPc="268440102">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
