@@ -18,23 +18,24 @@ class Renderer {
         drawMetrics(dc, data);
         drawBodyBattery(dc);
 
-        // 暂时不画底部距离，280x280 空间不够。
-        // 后续等主体稳定后再恢复。
+        // 280x280 空间太紧，底部距离暂时关闭。
+        // 下一步等主体排版稳定后再恢复。
         // drawBottomDistance(dc);
     }
 
     function drawOuterRings(dc as Dc) as Void {
-        // Rings are pushed near the bezel to avoid crossing the content area.
-        drawSegmentRange(dc, 314, 358, 130, 136, 4, Settings.ORANGE);
-        drawSegmentRange(dc, 2, 54, 130, 136, 4, Settings.ORANGE);
+        // Rings are pushed to the outer edge, close to bezel.
+        // This prevents colored segments from crossing date, time and Body Battery.
+        drawSegmentRange(dc, 316, 358, 136, 140, 4, Settings.ORANGE);
+        drawSegmentRange(dc, 2, 52, 136, 140, 4, Settings.ORANGE);
 
-        drawSegmentRange(dc, 82, 145, 130, 136, 4, Settings.BLUE);
-        drawSegmentRange(dc, 210, 278, 130, 136, 4, Settings.GREEN);
+        drawSegmentRange(dc, 84, 144, 136, 140, 4, Settings.BLUE);
+        drawSegmentRange(dc, 212, 276, 136, 140, 4, Settings.GREEN);
 
         // Muted guide arcs.
-        drawSegmentRange(dc, 58, 78, 130, 136, 8, Settings.DARK_RING);
-        drawSegmentRange(dc, 148, 205, 130, 136, 8, Settings.DARK_RING);
-        drawSegmentRange(dc, 282, 310, 130, 136, 8, Settings.DARK_RING);
+        drawSegmentRange(dc, 56, 80, 136, 140, 8, Settings.DARK_RING);
+        drawSegmentRange(dc, 148, 208, 136, 140, 8, Settings.DARK_RING);
+        drawSegmentRange(dc, 280, 312, 136, 140, 8, Settings.DARK_RING);
     }
 
     function drawSegmentRange(dc as Dc, startDeg as Number, endDeg as Number, innerR as Number, outerR as Number, step as Number, color as ColorType) as Void {
@@ -267,7 +268,7 @@ class Renderer {
 
     function drawBodyBlocks(dc as Dc, centerX as Number, y as Number, value as Number) as Void {
         var blockCount = 10;
-        var blockWidth = 9;
+        var blockWidth = 8;
         var blockGap = 3;
         var totalWidth = (blockCount * blockWidth) + ((blockCount - 1) * blockGap);
         var startX = centerX - (totalWidth / 2);
@@ -280,7 +281,7 @@ class Renderer {
                 dc.setColor(Settings.MUTED_COLOR, Settings.BACKGROUND_COLOR);
             }
 
-            dc.fillRectangle(startX + (i * (blockWidth + blockGap)), y, blockWidth, 4);
+            dc.fillRectangle(startX + (i * (blockWidth + blockGap)), y, blockWidth, 3);
         }
     }
 

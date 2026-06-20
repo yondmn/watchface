@@ -25,7 +25,7 @@ module Settings {
     const SECONDS_FONT = Graphics.FONT_TINY;
     const METRIC_FONT = Graphics.FONT_SMALL;
     const BODY_LABEL_FONT = Graphics.FONT_TINY;
-    const BODY_VALUE_FONT = Graphics.FONT_NUMBER_MEDIUM;
+    const BODY_VALUE_FONT = Graphics.FONT_LARGE;
     const BOTTOM_FONT = Graphics.FONT_TINY;
 
     const ICON_HEART = 0;
@@ -38,21 +38,21 @@ module Settings {
     const CENTER_Y = 140;
 
     // Top area
-    const MOVE_Y = 22;
-    const ALTITUDE_Y = 42;
-    const DATE_Y = 66;
+    const MOVE_Y = 20;
+    const ALTITUDE_Y = 39;
+    const DATE_Y = 69;
 
     // Main time
-    const TIME_Y = 112;
-    const TIME_MAX_WIDTH = 212;
+    const TIME_Y = 116;
+    const TIME_MAX_WIDTH = 205;
     const SECONDS_X = 238;
-    const SECONDS_Y = 126;
+    const SECONDS_Y = 128;
 
     // Metrics
-    const METRIC_ICON_Y = 164;
-    const METRIC_VALUE_Y = 190;
-    const METRIC_SEPARATOR_TOP = 158;
-    const METRIC_SEPARATOR_BOTTOM = 205;
+    const METRIC_ICON_Y = 166;
+    const METRIC_VALUE_Y = 191;
+    const METRIC_SEPARATOR_TOP = 160;
+    const METRIC_SEPARATOR_BOTTOM = 204;
     const COLUMN_1_X = 45;
     const COLUMN_2_X = 108;
     const COLUMN_3_X = 172;
@@ -61,8 +61,8 @@ module Settings {
     // Body Battery
     const BODY_RULE_Y = 213;
     const BODY_LABEL_Y = 224;
-    const BODY_VALUE_Y = 244;
-    const BODY_BLOCK_Y = 264;
+    const BODY_VALUE_Y = 247;
+    const BODY_BLOCK_Y = 268;
 
     // Temporary placeholders for V2 visual restoration.
     // Later we can wire these to real Garmin APIs.

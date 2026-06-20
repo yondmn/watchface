@@ -81,8 +81,8 @@ module Settings {
 [ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 28 10 ]
         symbol [ Graphics %tmp.25 28 28 36 ];
         %tmp.25 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.26 28 37 55 ];
-        %tmp.26 = getv %tmp.25 :FONT_NUMBER_MEDIUM;
+        symbol [ FONT_LARGE %tmp.26 28 37 47 ];
+        %tmp.26 = getv %tmp.25 :FONT_LARGE;
         putv self :BODY_VALUE_FONT %tmp.26;
 [ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc" 29 10 ]
         symbol [ Graphics %tmp.27 29 24 32 ];
@@ -150,27 +150,27 @@ module Settings {
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 38; @position = 10; @symbol_constdef = [CENTER_Y,38,10,18]; ]
     const CENTER_Y = 140;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 41; @position = 10; @symbol_constdef = [MOVE_Y,41,10,16]; ]
-    const MOVE_Y = 22;
+    const MOVE_Y = 20;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 42; @position = 10; @symbol_constdef = [ALTITUDE_Y,42,10,20]; ]
-    const ALTITUDE_Y = 42;
+    const ALTITUDE_Y = 39;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 43; @position = 10; @symbol_constdef = [DATE_Y,43,10,16]; ]
-    const DATE_Y = 66;
+    const DATE_Y = 69;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 46; @position = 10; @symbol_constdef = [TIME_Y,46,10,16]; ]
-    const TIME_Y = 112;
+    const TIME_Y = 116;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 47; @position = 10; @symbol_constdef = [TIME_MAX_WIDTH,47,10,24]; ]
-    const TIME_MAX_WIDTH = 212;
+    const TIME_MAX_WIDTH = 205;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 48; @position = 10; @symbol_constdef = [SECONDS_X,48,10,19]; ]
     const SECONDS_X = 238;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 49; @position = 10; @symbol_constdef = [SECONDS_Y,49,10,19]; ]
-    const SECONDS_Y = 126;
+    const SECONDS_Y = 128;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 52; @position = 10; @symbol_constdef = [METRIC_ICON_Y,52,10,23]; ]
-    const METRIC_ICON_Y = 164;
+    const METRIC_ICON_Y = 166;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 53; @position = 10; @symbol_constdef = [METRIC_VALUE_Y,53,10,24]; ]
-    const METRIC_VALUE_Y = 190;
+    const METRIC_VALUE_Y = 191;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 54; @position = 10; @symbol_constdef = [METRIC_SEPARATOR_TOP,54,10,30]; ]
-    const METRIC_SEPARATOR_TOP = 158;
+    const METRIC_SEPARATOR_TOP = 160;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 55; @position = 10; @symbol_constdef = [METRIC_SEPARATOR_BOTTOM,55,10,33]; ]
-    const METRIC_SEPARATOR_BOTTOM = 205;
+    const METRIC_SEPARATOR_BOTTOM = 204;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 56; @position = 10; @symbol_constdef = [COLUMN_1_X,56,10,20]; ]
     const COLUMN_1_X = 45;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 57; @position = 10; @symbol_constdef = [COLUMN_2_X,57,10,20]; ]
@@ -184,9 +184,9 @@ module Settings {
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 63; @position = 10; @symbol_constdef = [BODY_LABEL_Y,63,10,22]; ]
     const BODY_LABEL_Y = 224;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 64; @position = 10; @symbol_constdef = [BODY_VALUE_Y,64,10,22]; ]
-    const BODY_VALUE_Y = 244;
+    const BODY_VALUE_Y = 247;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 65; @position = 10; @symbol_constdef = [BODY_BLOCK_Y,65,10,22]; ]
-    const BODY_BLOCK_Y = 264;
+    const BODY_BLOCK_Y = 268;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 69; @position = 10; @symbol_constdef = [MOVE_VALUE,69,10,20]; ]
     const MOVE_VALUE = 78;
     [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/Settings.mc"; @line = 70; @position = 10; @symbol_constdef = [ALTITUDE_VALUE,70,10,24]; ]
