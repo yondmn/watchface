@@ -1,0 +1,77 @@
+[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 4; @symbol_classdef = [FenixMinimalWatchFace,4,6,27]; @symbol_extends<0> = [WatchUi,4,36,43]; @symbol_extends<1> = [WatchFace,4,44,53]; ]
+class FenixMinimalWatchFace extends WatchUi.WatchFace {
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 6; @position = 8; @symbol_vardef = [_dataProvider,6,8,21]; @symbol_type<0> = [DataProvider,6,25,37]; ]
+    var _dataProvider as DataProvider;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 7; @position = 8; @symbol_vardef = [_renderer,7,8,17]; @symbol_type<0> = [Renderer,7,21,29]; ]
+    var _renderer as Renderer;
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_WatchFace_mc_9_26_14_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" 10 8 ]
+        symbol [ WatchFace %tmp.2 10 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 10 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" 12 8 ]
+        symbol [ DataProvider %tmp.7 12 28 40 ];
+        %tmp.7 = getv ? :DataProvider;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _dataProvider ? 12 8 21 ];
+        putv self :_dataProvider %tmp.4;
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" 13 8 ]
+        symbol [ Renderer %tmp.11 13 24 32 ];
+        %tmp.11 = getv ? :Renderer;
+        %tmp.8 = newc %tmp.11 ();
+        symbol [ _renderer ? 13 8 17 ];
+        putv self :_renderer %tmp.8;
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_WatchFace_mc_9_26_14_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 16; @symbol_functiondef = [onLayout,16,13,21]; @symbol_param<0> = [dc,16,22,24]; @symbol_param<0>_type<0> = [Dc,16,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 19; @symbol_functiondef = [onShow,19,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 22; @symbol_functiondef = [onUpdate,22,13,21]; @symbol_param<0> = [dc,22,22,24]; @symbol_param<0>_type<0> = [Dc,22,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_WatchFace_mc_22_40_24_4_start:
+[ "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc" 23 8 ]
+        symbol [ _renderer %tmp.2 23 8 17 ];
+        %tmp.2 = getv ? :_renderer;
+        symbol [ draw %tmp.3 23 18 22 ];
+        %tmp.3 = getv function %tmp.2 :draw;
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 23 23 25 ];
+        symbol [ _dataProvider %tmp.6 23 27 40 ];
+        %tmp.6 = getv ? :_dataProvider;
+        symbol [ getSnapshot %tmp.7 23 41 52 ];
+        %tmp.7 = getv function %tmp.6 :getSnapshot;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.8);
+_Users_yangming_toys_watch_face_yondmn_watch_face_source_WatchFace_mc_22_40_24_4_stop:
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 26; @symbol_functiondef = [onHide,26,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 29; @symbol_functiondef = [onExitSleep,29,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 32; @symbol_functiondef = [onEnterSleep,32,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/Users/yangming/toys/watch-face/yondmn-watch-face/source/WatchFace.mc"; @line = 1; ]
+<init> {
+}
